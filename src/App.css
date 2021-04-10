@@ -13,6 +13,12 @@ a:hover {
   text-shadow: 0 0 12px rgba(56,56,56,1); 
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 input[type=submit] {
   font-family: 'Oaxaca';
   font-size: 10px;
