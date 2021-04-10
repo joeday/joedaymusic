@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-image: url(./images/bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Oaxaca', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Oaxaca';
+  src: local('Oaxaca'), url(./fonts/Oaxaca.eot), 
+        url(./fonts/Oaxaca.svg) format('svg'),
+        url(./fonts/Oaxaca.woff) format('woff'),
+        url(./fonts/Oaxaca.woff2) format('woff2'),
+        url(./fonts/Oaxaca.eot?#iefix) format('embedded-opentype');
+}

@@ -1,0 +1,122 @@
+h1 {
+  font-size: 32px;
+  line-height: 1.13;
+  margin: 30px 0 18px;
+}
+
+input[type=submit] {
+  font-family: 'Oaxaca';
+  font-size: 10px;
+  padding: 8px 12px 8px;
+  border-radius: 2px;
+  border: unset;
+  background-color: #383838;
+  color: #fff;
+}
+
+.button {
+  font-family: 'Oaxaca';
+}
+
+.App {
+  text-align: left;
+  color: white;
+  display: flex;
+  height: 100%;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.site-header {
+  font-size: 12px;
+  flex: 0 1 auto;
+}
+
+.site-content {
+  font-size: 12px;
+  line-height: 1;
+  flex: 1 1 auto;
+}
+
+.site-footer {
+  font-size: 10px;
+  flex: 0 1 auto;
+}
+
+.divider {
+  font-size: 32px;
+  margin: 0 0 26px;
+}
+
+.revue-email-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.revue-form-field {
+  font-family: 'Oaxaca';
+  font-size: 10px;
+  width: 148px;
+  border: 0;
+  padding: 8px 12px 8px;
+  margin-top: 32px;
+}
+
+.revue-form-footer {
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+    margin: 60px 0 37px;
+  }
+
+  input[type=submit] {
+    font-size: 14px;
+    padding: 16px 12px 12px;
+  }
+
+  .landing-page {
+    padding: 56px 84px;
+  }
+
+  .site-header {
+    font-size: 24px;
+  }
+
+  .site-content {
+    font-size: 18px;
+    width: 74%;
+  }
+
+  .site-footer {
+    font-size: 12px;
+  }
+
+  .divider {
+    font-size: 64px;
+    margin: 0 0 26px;
+  }
+
+  .revue-form-field {
+    font-size: 14px;
+    width: 200px;
+    padding: 16px 12px 12px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+
+  .site-content {
+    font-size: 24px;
+    width: 50%;
+  }
+
+}
