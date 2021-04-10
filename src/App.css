@@ -4,6 +4,15 @@ h1 {
   margin: 30px 0 18px;
 }
 
+a {
+  color:#fff;
+  text-shadow: 0 0 0 rgba(56,56,56,0); 
+}
+
+a:hover {
+  text-shadow: 0 0 12px rgba(56,56,56,1); 
+}
+
 input[type=submit] {
   font-family: 'Oaxaca';
   font-size: 10px;
@@ -38,7 +47,7 @@ input[type=submit] {
 }
 
 .site-content {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1;
   flex: 1 1 auto;
 }
@@ -92,7 +101,6 @@ input[type=submit] {
   }
 
   .site-content {
-    font-size: 18px;
     width: 74%;
   }
 

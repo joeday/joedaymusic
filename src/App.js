@@ -24,7 +24,7 @@ function App() {
         </section>
 
         <footer className="site-footer">
-          Photo by Bruno Bergher
+          <a href="https://brunobergher.com/" target="_blank">Photo by Bruno Bergher</a>
         </footer>
       </main>
     </div>
