@@ -59,8 +59,31 @@ input[type=submit] {
 }
 
 .site-footer {
+  display: flex;
   font-size: 10px;
   flex: 0 1 auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.site-footer > * {
+  margin-bottom: 12px;
+}
+
+.streaming-links {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.streaming-icon {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
 }
 
 .divider {
@@ -85,6 +108,11 @@ input[type=submit] {
 
 .revue-form-footer {
   font-size: 10px;
+}
+
+.photoCredit {
+  font-size: 10px;
+  color: rgba(255, 255, 255, .6)
 }
 
 @media only screen and (min-width: 768px) {
@@ -112,6 +140,14 @@ input[type=submit] {
 
   .site-footer {
     font-size: 12px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: unset;
+  }
+
+  .site-footer > * {
+    margin-bottom: unset;
   }
 
   .divider {

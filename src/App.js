@@ -1,4 +1,7 @@
 import './App.css';
+import spotifyLogo from './images/Spotify_logo_without_text_white.svg';
+import appleLogo from './images/Apple_Music_Icon_wht_sm_073120.svg';
+// import youTubeLogo from './images/yt_icon_mono_dark.png';
 
 function App() {
   return (
@@ -24,7 +27,19 @@ function App() {
         </section>
 
         <footer className="site-footer">
-          <a href="https://brunobergher.com/" target="_blank">Photo by Bruno Bergher</a>
+          <span className="streaming-links">
+            Listen: 
+            <a className="streaming-icon" href="https://open.spotify.com/artist/7x1PLGWhJe9SsmZ8i4VGCE?si=yQl5fRWVS0G4I9uIUl1LRQ" rel="noreferrer" target="_blank">
+              <img src={spotifyLogo} alt="Spotify logo" height="24" />
+            </a>
+            <a className="streaming-icon" href="https://music.apple.com/us/artist/joe-day/214945054" rel="noreferrer" target="_blank">
+              <img src={appleLogo} alt="Apple Music logo" height="24" />
+            </a>
+            {/* <a className="streaming-icon" href="https://spotify.com" target="_blank">
+              <img src={youTubeLogo} height="24" />
+            </a> */}
+          </span>
+          <a className="photoCredit" href="https://brunobergher.com/" rel="noreferrer" target="_blank">Photo by Bruno Bergher</a>
         </footer>
       </main>
     </div>
