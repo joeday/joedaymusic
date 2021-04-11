@@ -2,7 +2,7 @@
   "name": "joedaymusic",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://joeday.github.io/joedaymusic",
+  "homepage": "https://www.joedaymusic.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
