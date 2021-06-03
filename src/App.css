@@ -5,12 +5,16 @@ h1 {
 }
 
 a {
-  color:#fff;
-  text-shadow: 0 0 0 rgba(56,56,56,0); 
+  color: #fff;
+  text-shadow: 0 0 0 rgba(56, 56, 56, 0);
 }
 
 a:hover {
-  text-shadow: 0 0 12px rgba(56,56,56,1); 
+  text-shadow: 0 0 12px rgba(56, 56, 56, 1);
+}
+
+.small {
+  font-size: 12px;
 }
 
 input {
@@ -19,8 +23,8 @@ input {
   appearance: none;
 }
 
-input[type=submit] {
-  font-family: 'Oaxaca';
+input[type="submit"] {
+  font-family: "Oaxaca";
   font-size: 10px;
   padding: 8px 12px 8px;
   border-radius: 2px;
@@ -30,7 +34,7 @@ input[type=submit] {
 }
 
 .button {
-  font-family: 'Oaxaca';
+  font-family: "Oaxaca";
 }
 
 .App {
@@ -38,32 +42,66 @@ input[type=submit] {
   color: white;
   display: flex;
   height: 100%;
+  justify-content: center;
 }
 
 .landing-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 110px auto auto 110px;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "sidebar sidebar sidebar sidebar"
+    "footer footer footer footer";
+  column-gap: 48px;
+  max-width: 1600px;
+  margin: 0;
+  padding: 0 32px;
 }
 
 .site-header {
+  grid-area: header;
   font-size: 12px;
-  flex: 0 1 auto;
+  display: grid;
+  align-items: end;
+}
+
+.site-headline {
+  grid-area: main;
+  line-height: 1;
+  flex: 1 1 auto;
 }
 
 .site-content {
+  grid-area: sidebar;
   font-size: 18px;
   line-height: 1;
   flex: 1 1 auto;
 }
 
+.site-sidebar {
+  grid-area: sidebar;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.responsive-image-small {
+  max-width: 100%;
+  height: auto;
+}
+
 .site-footer {
+  grid-area: footer;
   display: flex;
   font-size: 10px;
   flex: 0 1 auto;
   flex-wrap: wrap;
-  justify-content: space-between ;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -89,6 +127,7 @@ input[type=submit] {
 .divider {
   font-size: 32px;
   margin: 0 0 26px;
+  display: none;
 }
 
 .revue-email-form {
@@ -98,7 +137,7 @@ input[type=submit] {
 }
 
 .revue-form-field {
-  font-family: 'Oaxaca';
+  font-family: "Oaxaca";
   font-size: 10px;
   width: 148px;
   border: 0;
@@ -112,7 +151,7 @@ input[type=submit] {
 
 .photoCredit {
   font-size: 10px;
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 0.6);
   display: none;
 }
 
@@ -122,21 +161,13 @@ input[type=submit] {
     margin: 60px 0 37px;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     font-size: 14px;
     padding: 16px 12px 12px;
   }
 
-  .landing-page {
-    padding: 56px 84px;
-  }
-
   .site-header {
     font-size: 24px;
-  }
-
-  .site-content {
-    width: 74%;
   }
 
   .site-footer {
@@ -154,6 +185,7 @@ input[type=submit] {
   .divider {
     font-size: 64px;
     margin: 0 0 26px;
+    display: unset;
   }
 
   .revue-form-field {
@@ -167,11 +199,71 @@ input[type=submit] {
   }
 }
 
-@media only screen and (min-width: 1080px) {
-
-  .site-content {
-    font-size: 24px;
-    width: 50%;
+@media only screen and (min-width: 1024px) {
+  .landing-page {
+    grid-template-rows: 110px 1fr 2fr 110px;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "sidebar-a sidebar-a sidebar-b sidebar-b "
+      "footer footer footer footer";
+    padding: 0 64px;
   }
 
+  .site-headline {
+    grid-area: main;
+    display: grid;
+    align-items: end;
+  }
+
+  .site-content {
+    grid-area: sidebar-a;
+    font-size: 24px;
+    /* width: 50%; */
+  }
+
+  .site-sidebar {
+    grid-area: sidebar-b;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: unset;
+  }
+
+  .responsive-image-small {
+    max-width: 100%;
+    height: auto;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .landing-page {
+    grid-template-rows: 110px 1fr 1fr 110px;
+    grid-template-areas:
+      "header header header header"
+      "main-a main-a sidebar sidebar"
+      "main-b main-b sidebar sidebar"
+      "footer footer footer footer";
+    padding: 0 64px;
+  }
+
+  .site-headline {
+    grid-area: main-a;
+    display: grid;
+    align-items: start;
+  }
+
+  .site-content {
+    grid-area: main-b;
+    font-size: 24px;
+    /* width: 50%; */
+  }
+
+  .site-sidebar {
+    grid-area: sidebar;
+    padding-top: 64px;
+  }
 }

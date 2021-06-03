@@ -1,6 +1,7 @@
 import './App.css';
 import spotifyLogo from './images/Spotify_logo_without_text_white.svg';
 import appleLogo from './images/Apple_Music_Icon_wht_sm_073120.svg';
+import img from './images/all-I-want-digital-small.jpg';
 // import youTubeLogo from './images/yt_icon_mono_dark.png';
 
 function App() {
@@ -8,22 +9,26 @@ function App() {
     <div className="App">
       <main className="landing-page">
         <header className="site-header">Joe Day</header>
-        <section className="site-content">
-          <h1>New album coming soon</h1>
+        
+        <section className="site-headline">
+          <h1>All I Want Is Home Streaming Everywhere</h1>
           <p className="divider">+ + +</p>
-          <p>The new album is done.</p>
-          <p>Keep your ear to the ground and be the first to know everything by joining the mailing list.</p>
-          
-
-
+        </section>
+        
+        <section className="site-content">
+          <p>Listen to the first single from Joe’s upcoming full-length album Halflight out August 6th. </p>
+          <img className="responsive-image-small" src={img} alt="Album cover for the single All I Want Is Home by Joe Day" />
+          <p className="small">Be the first to know everything by joining the mailing list.</p>
           <div id="revue-embed" className="revue-email-form">
             <form action="https://www.getrevue.co/profile/joeday/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
               <input className="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email" />
               <input className="button" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" />
-              {/* <div className="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" rel="noreferrer" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" rel="noreferrer" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div> */}
             </form>
           </div>
+        </section>
 
+        <section className="site-sidebar">
+          <img className="responsive-image" src={img} alt="Album cover for the single All I Want Is Home by Joe Day" />
         </section>
 
         <footer className="site-footer">
