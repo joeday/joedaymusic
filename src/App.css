@@ -247,7 +247,7 @@ input[type="submit"] {
       "main-a main-a sidebar sidebar"
       "main-b main-b sidebar sidebar"
       "footer footer footer footer";
-    padding: 0 64px;
+    padding: 0 128px;
   }
 
   .site-headline {

@@ -17,7 +17,9 @@ function App() {
         
         <section className="site-content">
           <p>Listen to the first single from Joe’s upcoming full-length album Halflight out August 6th. </p>
-          <img className="responsive-image-small" src={img} alt="Album cover for the single All I Want Is Home by Joe Day" />
+          <a href="https://open.spotify.com/artist/7x1PLGWhJe9SsmZ8i4VGCE?si=yQl5fRWVS0G4I9uIUl1LRQ" rel="noreferrer" target="_blank">
+            <img className="responsive-image-small" src={img} alt="Album cover for the single All I Want Is Home by Joe Day" />
+          </a>
           <p className="small">Be the first to know everything by joining the mailing list.</p>
           <div id="revue-embed" className="revue-email-form">
             <form action="https://www.getrevue.co/profile/joeday/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
@@ -28,7 +30,10 @@ function App() {
         </section>
 
         <section className="site-sidebar">
+        <a href="https://open.spotify.com/artist/7x1PLGWhJe9SsmZ8i4VGCE?si=yQl5fRWVS0G4I9uIUl1LRQ" rel="noreferrer" target="_blank">
           <img className="responsive-image" src={img} alt="Album cover for the single All I Want Is Home by Joe Day" />
+        </a>
+          
         </section>
 
         <footer className="site-footer">
@@ -40,11 +45,8 @@ function App() {
             <a className="streaming-icon" href="https://music.apple.com/us/artist/joe-day/214945054" rel="noreferrer" target="_blank">
               <img src={appleLogo} alt="Apple Music logo" height="24" />
             </a>
-            {/* <a className="streaming-icon" href="https://spotify.com" target="_blank">
-              <img src={youTubeLogo} height="24" />
-            </a> */}
           </span>
-          <a className="photoCredit" href="https://brunobergher.com/" rel="noreferrer" target="_blank">Photo by Bruno Bergher</a>
+          <a className="photoCredit" href="https://www.janaearlyphotography.com/" rel="noreferrer" target="_blank">Photos by Jana Early</a>
         </footer>
       </main>
     </div>
