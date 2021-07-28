@@ -1,0 +1,150 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "col-1 col-2"
+    "col-1 col-2";
+  column-gap: 48px;
+  margin: 0;
+}
+
+.home-headline {
+  /* grid-area: col-1; */
+  line-height: 1;
+  flex: 1 1 auto;
+}
+
+.home-content {
+  /* grid-area: col-1; */
+  flex: 1 1 auto;
+}
+
+.home-sidebar {
+  grid-area: col-2;
+  font-size: 18px;
+  line-height: 1;
+  flex: 1 1 auto;
+  margin-top: 60px;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.responsive-image-small {
+  max-width: 100%;
+  height: auto;
+}
+
+.divider {
+  font-size: 32px;
+  margin: 0 0 26px;
+  display: none;
+}
+
+.revue-email-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.revue-form-field {
+  font-family: "Oaxaca";
+  font-size: 10px;
+  width: 148px;
+  border: 0;
+  padding: 8px 12px 8px;
+  margin-top: 8px;
+}
+
+.revue-form-footer {
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+    margin: 60px 0 37px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 16px 12px 12px;
+  }
+
+  .divider {
+    font-size: 64px;
+    margin: 0 0 26px;
+    display: unset;
+  }
+
+  .revue-form-field {
+    font-size: 14px;
+    width: 200px;
+    padding: 16px 12px 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* .home-headline {
+    grid-area: main;
+    display: grid;
+    align-items: end;
+  }
+
+  .home-sidebar {
+    grid-area: sidebar-a;
+    font-size: 24px;
+  }
+
+  .home-sidebar {
+    grid-area: sidebar-b;
+  } */
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: unset;
+  }
+
+  .responsive-image-small {
+    max-width: 100%;
+    height: auto;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* .landing-page {
+    grid-template-rows: 110px 1fr 1fr 110px;
+    grid-template-areas:
+      "main main main main"
+      "main-a main-a sidebar sidebar"
+      "main-b main-b sidebar sidebar"
+      "footer footer footer footer";
+    padding: 0 128px;
+  }
+
+  .home-headline {
+    grid-area: main-a;
+    display: grid;
+    align-items: start;
+  }
+
+  .home-sidebar {
+    grid-area: main-b;
+    font-size: 24px;
+  }
+
+  .home-sidebar {
+    grid-area: sidebar;
+    padding-top: 64px;
+  } */
+
+  .small {
+    width: 75%;
+  }
+}
