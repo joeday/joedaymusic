@@ -5,9 +5,11 @@ import Shows from './Shows';
 import Bio from './Bio';
 import Contact from './Contact';
 import './App.css';
-import spotifyLogo from './images/Spotify_logo_without_text_white.svg';
-import appleLogo from './images/Apple_Music_Icon_wht_sm_073120.svg';
-import bandcampLogo from './images/bc-logotype-light.svg';
+import spotifyLogo from './images/Spotify_logo_without_text_black.svg';
+import appleLogo from './images/Apple_Music_Icon_black_sm_.svg';
+import bandcampLogo from './images/bc-logotype-black.svg';
+import fearAndLove from './images/fear_and_love.svg';
+import loveAndFear from './images/love_and_fear.svg';
 
 
 class App extends Component {
@@ -31,6 +33,10 @@ class App extends Component {
               </nav>
             </header>
 
+            <aside className="sidebar-l">
+              <img src={fearAndLove} alt="Fear and love" />
+            </aside>
+
             <section className="site-content">
               <Switch>
                 <Route exact path="/"         component={Home} />
@@ -41,6 +47,9 @@ class App extends Component {
               </Switch>
             </section>
             
+            <aside className="sidebar-r">
+              <img src={loveAndFear} alt="Love and fear" />
+            </aside>
 
             <footer className="site-footer">
               <span className="streaming-links">
@@ -55,8 +64,21 @@ class App extends Component {
                   <img src={bandcampLogo} alt="Bandcamp logo" height="24" />
                 </a>
               </span>
-              <a className="photoCredit" href="https://www.janaearlyphotography.com/" rel="noreferrer" target="_blank">Photos by Jana Early</a>
+              <div id="revue-embed" className="revue-email-form">
+                <form action="https://www.getrevue.co/profile/joeday/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
+                  <input className="revue-form-field" placeholder="Email" type="email" name="member[email]" id="member_email" />
+                  <input className="button" type="submit" value="Join" name="member[subscribe]" id="member_submit" />
+                </form>
+              </div>
             </footer>
+
+            <aside className="footer-l">
+              <p>+</p>
+            </aside>
+
+            <aside className="footer-r">
+              <p>+</p>
+            </aside>
           </main>
         </div>
       </Router>

@@ -17,31 +17,13 @@ h1 {
   margin-top: 32px;
 }
 
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-input[type="submit"] {
-  font-family: "Oaxaca";
-  font-size: 10px;
-  padding: 8px 12px 8px;
-  border-radius: 2px;
-  border: unset;
-  background-color: #383838;
-  color: #fff;
-}
-
 .button {
   font-family: "Oaxaca";
 }
 
 .App {
-  text-align: left;
   color: #35292b;
   display: flex;
-  height: 100%;
   justify-content: center;
   background: url("./images/noisy-bg.jpg") top left repeat;
   background-size: 100px;
@@ -49,14 +31,14 @@ input[type="submit"] {
 
 .app-shell {
   display: grid;
-  grid-template-columns: 270px auto 270px;
+  grid-template-columns: 270px 1fr 270px;
   grid-template-rows: 300px auto 215px;
   grid-template-areas:
     "header-l header header-r"
     "side-l content side-r"
     "footer-l footer footer-r";
-  column-gap: 48px;
-  max-width: 1600px;
+  column-gap: 0;
+  max-width: 1440px;
   margin: 0;
   padding: 0 32px;
 }
@@ -110,9 +92,22 @@ input[type="submit"] {
   content: " +";
 }
 
+.sidebar-l {
+  grid-area: side-l;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-r {
+  grid-area: side-r;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .site-content {
   grid-area: content;
-  /* flex: 1 1 auto; */
 }
 
 .site-footer {
@@ -123,10 +118,6 @@ input[type="submit"] {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-.site-footer > * {
-  margin-bottom: 12px;
 }
 
 .streaming-links {
@@ -142,12 +133,70 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
   margin: 0 8px;
+  color: #35292b;
 }
 
-.photoCredit {
+.revue-email-form input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.revue-email-form input[type="submit"] {
+  font-family: "Oaxaca";
+  font-size: 14px;
+  padding: 13px 24px 13px 24px;
+  border-radius: 2px;
+  border: unset;
+  background-color: #383838;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.revue-email-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.revue-form-field {
+  font-family: "Mojave";
+  font-size: 14px;
+  width: 200px;
+  border: 0;
+  padding: 12px 0 12px 12px;
+  border: 1px solid #35292b;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.revue-form-field:focus {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.revue-form-footer {
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.6);
-  display: none;
+}
+
+.footer-l {
+  grid-area: footer-l;
+  font-size: 24px;
+  color: #af2b38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-r {
+  grid-area: footer-r;
+  font-size: 24px;
+  color: #af2b38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -157,4 +206,14 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 1280px) {
+  /* .app-shell {
+    grid-template-columns: 130px 1fr 130px;
+    grid-template-rows: 300px auto 215px;
+    grid-template-areas:
+      "header-l header header-r"
+      "side-l content side-r"
+      "footer-l footer footer-r";
+    max-width: 1440px;
+    margin: 0;
+  } */
 }
