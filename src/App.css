@@ -67,6 +67,7 @@ h1 {
 
 .site-nav {
   font-size: 12px;
+  display: none;
 }
 
 .site-nav a {
@@ -286,5 +287,9 @@ h1 {
 
   .site-nav {
     font-size: 18px;
+  }
+
+  .streaming-icon img {
+    height: unset;
   }
 }
