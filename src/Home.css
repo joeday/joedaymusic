@@ -1,5 +1,10 @@
 .home-grid {
   margin: 0;
+  display: flex;
+}
+
+.home-content {
+  max-width: 100%;
 }
 
 .responsive-image {
@@ -24,4 +29,52 @@ a:hover {
   font-size: 29px;
   letter-spacing: -1.25px;
   margin: 10px 0 0 10px;
+}
+
+.headline-blocks {
+  margin: 0;
+}
+
+.headline-blocks p {
+  margin: 0;
+  text-align: center;
+}
+
+.headline-block-1 {
+  font-size: 13vw;
+  letter-spacing: -1vw;
+}
+
+.headline-block-2 {
+  font-size: 4vw;
+  padding-bottom: 4px;
+}
+
+.headline-block-3 {
+  font-size: 13vw;
+  letter-spacing: -1vw;
+}
+
+.headline-block-4 {
+  font-size: 3.6vw;
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 1440px) {
+  .headline-block-1 {
+    font-size: calc(900px / 100vw);
+    letter-spacing: -8px;
+  }
+
+  .headline-block-2 {
+    font-size: 1vw;
+  }
+
+  .headline-block-3 {
+    font-size: 10vw;
+  }
+
+  .headline-block-4 {
+    font-size: 2vw;
+  }
 }

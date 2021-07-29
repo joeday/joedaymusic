@@ -25,22 +25,22 @@ h1 {
   color: #35292b;
   display: flex;
   justify-content: center;
-  background: url("./images/noisy-bg.jpg") top left repeat;
-  background-size: 100px;
+  height: 100%;
 }
 
 .app-shell {
+  background: url("./images/noisy-bg.jpg") top left repeat;
+  background-size: 100px;
   display: grid;
-  grid-template-columns: 270px 1fr 270px;
-  grid-template-rows: 300px auto 215px;
+  grid-template-columns: 42px 1fr 42px;
+  grid-template-rows: 148px auto 64px;
   grid-template-areas:
-    "header-l header header-r"
+    "header header header"
     "side-l content side-r"
     "footer-l footer footer-r";
   column-gap: 0;
   max-width: 1440px;
   margin: 0;
-  padding: 0 32px;
 }
 
 .site-header {
@@ -53,7 +53,7 @@ h1 {
 }
 
 .site-logo {
-  font-size: 128px;
+  font-size: 64px;
   letter-spacing: -8px;
 }
 
@@ -67,7 +67,7 @@ h1 {
 }
 
 .site-nav {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .site-nav a {
@@ -106,6 +106,11 @@ h1 {
   justify-content: center;
 }
 
+.sidebar-l img,
+.sidebar-r img {
+  width: 27%;
+}
+
 .site-content {
   grid-area: content;
 }
@@ -113,10 +118,9 @@ h1 {
 .site-footer {
   grid-area: footer;
   display: flex;
+  flex-direction: column;
   font-size: 10px;
-  flex: 0 1 auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -124,7 +128,6 @@ h1 {
   font-size: 12px;
   display: flex;
   align-items: center;
-  margin-right: 48px;
 }
 
 .streaming-icon {
@@ -156,7 +159,7 @@ h1 {
 }
 
 .revue-email-form {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-start;
 }
@@ -200,20 +203,36 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
+  .site-logo {
+    font-size: 128px;
+    letter-spacing: -8px;
+  }
+
+  .site-nav {
+    font-size: 12px;
+  }
+
+  .site-footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
 }
 
-@media only screen and (min-width: 1280px) {
-  /* .app-shell {
-    grid-template-columns: 130px 1fr 130px;
+@media only screen and (min-width: 1440px) {
+  .app-shell {
+    grid-template-columns: 270px 1fr 270px;
     grid-template-rows: 300px auto 215px;
     grid-template-areas:
       "header-l header header-r"
       "side-l content side-r"
       "footer-l footer footer-r";
     max-width: 1440px;
-    margin: 0;
-  } */
+  }
 }
