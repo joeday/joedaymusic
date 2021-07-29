@@ -62,19 +62,21 @@ a:hover {
 
 @media only screen and (min-width: 1440px) {
   .headline-block-1 {
-    font-size: calc(900px / 100vw);
+    font-size: 161px;
     letter-spacing: -8px;
   }
 
   .headline-block-2 {
-    font-size: 1vw;
+    font-size: 53px;
   }
 
   .headline-block-3 {
-    font-size: 10vw;
+    font-size: 161px;
+    letter-spacing: -8px;
   }
 
   .headline-block-4 {
-    font-size: 2vw;
+    font-size: 28px;
+    line-height: unset;
   }
 }

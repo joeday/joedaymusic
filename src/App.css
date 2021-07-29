@@ -25,7 +25,6 @@ h1 {
   color: #35292b;
   display: flex;
   justify-content: center;
-  height: 100%;
 }
 
 .app-shell {
@@ -33,7 +32,7 @@ h1 {
   background-size: 100px;
   display: grid;
   grid-template-columns: 42px 1fr 42px;
-  grid-template-rows: 148px auto 64px;
+  grid-template-rows: 148px auto 148px;
   grid-template-areas:
     "header header header"
     "side-l content side-r"
@@ -131,12 +130,16 @@ h1 {
 }
 
 .streaming-icon {
-  height: 24px;
+  height: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 8px;
   color: #35292b;
+}
+
+.streaming-icon img {
+  height: 16px;
 }
 
 .revue-email-form input {
@@ -147,8 +150,8 @@ h1 {
 
 .revue-email-form input[type="submit"] {
   font-family: "Oaxaca";
-  font-size: 14px;
-  padding: 13px 24px 13px 24px;
+  font-size: 10px;
+  padding: 7px;
   border-radius: 2px;
   border: unset;
   background-color: #383838;
@@ -159,17 +162,17 @@ h1 {
 }
 
 .revue-email-form {
-  display: none;
   flex-direction: row;
   justify-content: flex-start;
+  order: -1;
 }
 
 .revue-form-field {
   font-family: "Mojave";
-  font-size: 14px;
-  width: 200px;
+  font-size: 10px;
+  /* width: 200px; */
   border: 0;
-  padding: 12px 0 12px 12px;
+  padding: 6px;
   border: 1px solid #35292b;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -203,13 +206,22 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
+  .app-shell {
+    grid-template-columns: 98px 1fr 98px;
+  }
+
   .site-logo {
-    font-size: 128px;
+    font-size: 96px;
     letter-spacing: -8px;
   }
 
   .site-nav {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  .sidebar-l img,
+  .sidebar-r img {
+    width: unset;
   }
 
   .site-footer {
@@ -220,19 +232,59 @@ h1 {
     justify-content: space-between;
     align-items: center;
   }
+
+  .streaming-icon img {
+    height: 20px;
+  }
+
+  .revue-email-form {
+    order: unset;
+  }
+
+  .revue-email-form input[type="submit"] {
+    font-family: "Oaxaca";
+    font-size: 14px;
+    padding: 13px 24px 13px 24px;
+    border-radius: 2px;
+    border: unset;
+    background-color: #383838;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .revue-form-field {
+    font-family: "Mojave";
+    font-size: 14px;
+    width: 200px;
+    border: 0;
+    padding: 12px 0 12px 12px;
+    border: 1px solid #35292b;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+  .app-shell {
+    grid-template-columns: 148px 1fr 148px;
+    grid-template-rows: 212px auto 215px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .app-shell {
     grid-template-columns: 270px 1fr 270px;
     grid-template-rows: 300px auto 215px;
-    grid-template-areas:
-      "header-l header header-r"
-      "side-l content side-r"
-      "footer-l footer footer-r";
-    max-width: 1440px;
+  }
+
+  .site-logo {
+    font-size: 128px;
+    letter-spacing: -8px;
+  }
+
+  .site-nav {
+    font-size: 18px;
   }
 }

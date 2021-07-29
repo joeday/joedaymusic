@@ -18,7 +18,7 @@ const Home = () => {
           <p class="headline-block-3">Halflight</p>
           <p className="headline-block-4">
             <a href="https://joeday.bandcamp.com/album/halflight" rel="noreferrer" target="_blank">Now at Bandcamp</a>
-            &nbsp; + Streaming everywhere August 6
+            &nbsp;+ Streaming everywhere August 6
           </p>    
         </p>
             
