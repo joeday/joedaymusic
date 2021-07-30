@@ -16,9 +16,6 @@
 
 .article-body {
   grid-area: copy;
-  font-family: "Mojave";
-  letter-spacing: 2px;
-  line-height: 1.3333;
 }
 
 .img-l {

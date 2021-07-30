@@ -9,7 +9,7 @@ const Bio = () => {
   return ( 
     <article className="bio-grid">
       <h1 className="article-title">Dreaming up blue skies again</h1>
-      <section className="article-body">
+      <section className="article-body body-copy">
         <p className="article-copy">
           Joe Day’s newest album, Halflight, represents a broadening of experience and self-expression. 
           In the aftermath of trauma, change, and reimagination, Halflight touches both on pain and healing, the difficulty of letting old things go, and the hope and possibility that comes from building something new from the ashes. 
