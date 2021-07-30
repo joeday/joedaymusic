@@ -1,0 +1,15 @@
+html {
+  --color-primary-black: #35292b;
+  --color-primary-white: #fffffa;
+  --color-true-white: #fff;
+  --color-accent: #af2b38;
+
+  --text-size-title: 36px;
+  --text-size-main: 18px;
+  --text-size-small: 12px;
+}
+
+h1 {
+  font-size: var(--text-size-title);
+  margin: 0;
+}

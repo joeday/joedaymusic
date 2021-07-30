@@ -4,6 +4,7 @@ import Home from './Home';
 import Shows from './Shows';
 import Bio from './Bio';
 import Contact from './Contact';
+import './Constants.css';
 import './App.css';
 import spotifyLogo from './images/Spotify_logo_without_text_black.svg';
 import appleLogo from './images/Apple_Music_Icon_black_sm_.svg';

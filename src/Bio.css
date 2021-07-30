@@ -1,0 +1,46 @@
+.bio-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "title-l  title title title title title-r"
+    "gutter-l copy  copy  copy  copy  gutter-r"
+    "creds    creds creds creds creds creds";
+  grid-gap: 20px;
+}
+
+.article-title {
+  grid-area: title;
+  letter-spacing: -1px;
+}
+
+.article-body {
+  grid-area: copy;
+  font-family: "Mojave";
+  letter-spacing: 2px;
+  line-height: 1.3333;
+}
+
+.img-l {
+  margin-top: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  margin-left: calc(-1 * (100% / 4 + 4px));
+  float: left;
+  background: green;
+}
+
+.img-r {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  margin-right: calc(-1 * (100% / 4 + 4px));
+  float: right;
+  background: red;
+}
+
+.img-container {
+  height: 269px;
+  width: 440px;
+  display: block;
+}
