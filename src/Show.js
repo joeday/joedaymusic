@@ -3,12 +3,14 @@ import './Show.css';
 
 const Show = (props) => {
   const { date, location, otherBands, onSale, onSaleStartDate, ticketLink} = props;
+  // const todaysDate = new Date.now()
+  console.log(date)
   return ( 
     <li className="show-row">
       <section className="basic-show-info">
         <div className="date">{date}</div>
         <div className="city-state">{location}</div>
-        <div className="playing-with"><span class="tiny">with</span>{otherBands}</div>
+        { otherBands ? <div className="playing-with"><span class="tiny">with</span>{otherBands}</div> : null }
       </section>
 
       <section className="ticket-info">

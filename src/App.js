@@ -26,7 +26,7 @@ class App extends Component {
               </div>
               
               <nav className="site-nav">
-                <NavLink to="/music" activeClassName="active">Music</NavLink>
+                {/* <NavLink to="/music" activeClassName="active">Music</NavLink> */}
                 <NavLink to="/bio" activeClassName="active">Bio</NavLink>
                 <NavLink to="/shows" activeClassName="active">Shows</NavLink>
                 {/* <NavLink to="/store" activeClassName="active">Store</NavLink> */}

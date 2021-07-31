@@ -8,14 +8,14 @@ const Shows = () => {
     <div className="shows">
       <h1>Upcoming shows</h1>
       <ul className="shows-list">
-        <Show date={'Oct 02'} location={'Reno, NV'} otherBands={"John Van Deusen"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
-        <Show date={'Oct 03'} location={'Portland, OR'} otherBands={"Deep Sea Diver"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
+        <Show date={'Oct 02'} location={'Reno, NV'} otherBands={null} onSale={false} onSaleStartDate={'soon'} ticketLink={'https://npr.org'} />
+        {/* <Show date={'Oct 03'} location={'Portland, OR'} otherBands={"Deep Sea Diver"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 08'} location={'San Diego, CA'} otherBands={"Ivan & Alyosha"} onSale={true} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 09'} location={'Ojai, CA'} otherBands={"RADIOHEAD"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 17'} location={'San Francisco, CA'} otherBands={"The Smallest Bear..."} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 18'} location={'Boise, ID'} otherBands={"Wilco"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 21'} location={'Spokane, WA'} otherBands={"Alice in Chains"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
-        <Show date={'Oct 22'} location={'Conway, WA'} otherBands={"John Van Deusen"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
+        <Show date={'Oct 22'} location={'Conway, WA'} otherBands={"John Van Deusen"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} /> */}
       </ul>
 
       <section className="booking">
@@ -24,7 +24,7 @@ const Shows = () => {
         <p className="divider">+ + +</p>
       </section>
 
-      <h2>Past shows</h2>
+      {/* <h2>Past shows</h2>
       <ul className="past-shows-list">
         <Show date={'Oct 02'} location={'Reno, NV'} otherBands={"John Van Deusen"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 03'} location={'Portland, OR'} otherBands={"Deep Sea Diver"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
@@ -34,7 +34,7 @@ const Shows = () => {
         <Show date={'Oct 18'} location={'Boise, ID'} otherBands={"Wilco"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 21'} location={'Spokane, WA'} otherBands={"Alice in Chains"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
         <Show date={'Oct 22'} location={'Conway, WA'} otherBands={"John Van Deusen"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
-      </ul>
+      </ul> */}
     </div>
    );
 }
