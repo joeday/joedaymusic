@@ -24,7 +24,6 @@
   margin-bottom: 24px;
   margin-left: calc(-1 * (100% / 4 + 4px));
   float: left;
-  background: green;
 }
 
 .img-r {
@@ -33,7 +32,6 @@
   margin-bottom: 24px;
   margin-right: calc(-1 * (100% / 4 + 4px));
   float: right;
-  background: red;
 }
 
 .img-container {

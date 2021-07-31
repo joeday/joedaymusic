@@ -1,14 +1,25 @@
-.shows-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "col-1 col-2"
-    "col-1 col-2";
-  column-gap: 48px;
-  margin: 0;
+.shows-list {
+  list-style-type: none;
+  margin: 32px 0;
+  padding: 0;
 }
 
-.shows-list {
-  grid-area: col-1;
+.booking {
+  text-align: center;
+  justify-content: center;
+  margin: 48px 0 72px;
+}
+
+.booking-copy {
+  font-family: "Mojave";
+}
+
+.divider {
+  font-size: 24px;
+}
+
+.past-shows-list {
+  list-style-type: none;
+  margin: 12px 0;
+  padding: 0;
 }

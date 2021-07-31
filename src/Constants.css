@@ -7,6 +7,9 @@ html {
   --text-size-title: 36px;
   --text-size-main: 18px;
   --text-size-small: 12px;
+
+  --font-family-primary: "Oajaca";
+  --font-family-secondary: "Mojave";
 }
 
 h1 {
@@ -18,4 +21,8 @@ h1 {
   font-family: "Mojave";
   letter-spacing: 2px;
   line-height: 1.3333;
+}
+
+.tiny {
+  font-size: var(--text-size-small);
 }

@@ -277,4 +277,8 @@
   .streaming-icon img {
     height: unset;
   }
+
+  .site-content {
+    min-width: 900px;
+  }
 }

@@ -39,3 +39,12 @@ code {
     url(./fonts/Mojave.woff2) format("woff2"),
     url(./fonts/Mojave.eot?#iefix) format("embedded-opentype");
 }
+
+@font-face {
+  font-family: "Sonoma";
+  src: local("Sonoma"), url(./fonts/Sonoma.eot),
+    url(./fonts/Sonoma.svg) format("svg"),
+    url(./fonts/Sonoma.woff) format("woff"),
+    url(./fonts/Sonoma.woff2) format("woff2"),
+    url(./fonts/Sonoma.eot?#iefix) format("embedded-opentype");
+}

@@ -1,0 +1,43 @@
+.show-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 20px;
+  padding: 6px 0;
+}
+
+.city-state:before,
+.playing-with:before {
+  color: var(--color-accent);
+  font-family: "Oaxaca";
+  content: "*";
+  padding: 0 18px;
+  position: relative;
+  top: 8px;
+}
+
+.playing-with,
+.tiny {
+  font-family: "Sonoma";
+  max-width: 32ch;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tiny {
+  font-size: 12px;
+  margin-right: 3px;
+}
+
+.basic-show-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ticket-info {
+  font-family: "Sonoma";
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
