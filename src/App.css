@@ -18,7 +18,7 @@
   background-size: 100px;
   display: grid;
   grid-template-columns: 42px 1fr 42px;
-  grid-template-rows: 148px auto 148px;
+  grid-template-rows: 148px calc(100vh - 296px) 148px;
   grid-template-areas:
     "header header header"
     "side-l content side-r"
@@ -38,8 +38,13 @@
 }
 
 .site-logo {
-  font-size: 64px;
+  /* font-size: 64px; */
+  /* height: 64px; */
   letter-spacing: -8px;
+}
+
+.site-logo img {
+  height: 56px;
 }
 
 .site-logo a {
@@ -53,6 +58,7 @@
 
 .site-nav {
   font-size: 12px;
+  margin: 12px 0 0;
 }
 
 .site-nav a {
@@ -77,6 +83,11 @@
   content: " +";
 }
 
+.site-nav .active:before:hover,
+.site-nav .active:after:hover {
+  text-decoration: none;
+}
+
 .sidebar-l {
   grid-area: side-l;
   display: flex;
@@ -98,6 +109,8 @@
 
 .site-content {
   grid-area: content;
+  /* display: flex;
+  align-items: center; */
 }
 
 .site-footer {
@@ -197,7 +210,8 @@
   }
 
   .site-logo {
-    font-size: 96px;
+    /* font-size: 96px; */
+    height: 96px;
     letter-spacing: -8px;
   }
 
@@ -266,12 +280,14 @@
   }
 
   .site-logo {
-    font-size: 128px;
+    /* font-size: 128px; */
+    height: 96px;
     letter-spacing: -8px;
   }
 
   .site-nav {
     font-size: 18px;
+    margin: 34px 0 0;
   }
 
   .streaming-icon img {

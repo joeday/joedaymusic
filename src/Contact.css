@@ -1,9 +1,29 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "title-l  title title title title title-r"
+    "gutter-l copy  copy  copy  copy  gutter-r"
+    "creds    creds creds creds creds creds";
+  grid-gap: 20px;
+}
+
+.article-title {
+  grid-area: title;
+}
+
 .section {
+  grid-area: copy;
   margin-bottom: 64px;
-  padding-right: 248px;
+  /* padding-right: 248px; */
   line-height: 1.2;
 }
 
 .email-link {
   font-family: "Mojave";
+}
+
+.contact-info {
+  margin-top: 64px;
 }

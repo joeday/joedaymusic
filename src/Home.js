@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import img from './images/joeday-halflight-final-digital-xs.jpg';
+import img from './images/VinylMockup-transparent.png';
 // import preorder from './images/PreorderHalflight.svg';
 
 

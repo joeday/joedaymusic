@@ -11,6 +11,7 @@ import appleLogo from './images/Apple_Music_Icon_black_sm_.svg';
 import bandcampLogo from './images/bc-logotype-black.svg';
 import fearAndLove from './images/fear_and_love.svg';
 import loveAndFear from './images/love_and_fear.svg';
+import siteLogo from './images/Joe Day.svg';
 
 
 class App extends Component {
@@ -22,7 +23,8 @@ class App extends Component {
             
             <header className="site-header">
               <div className="site-logo">
-                <Link to="/">Joe Day</Link>
+                {/* <Link to="/">Joe Day</Link> */}
+                <Link to="/"><img src={siteLogo} /></Link>
               </div>
               
               <nav className="site-nav">
