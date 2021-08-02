@@ -9,7 +9,7 @@ const Shows = () => {
       <h1 className="article-title">Upcoming shows</h1>
       <section className="shows">
         <ul className="upcoming-shows-list">
-          <Show date={'Oct 02'} location={'Reno, NV'} otherBands={'John Van Deusen'} onSale={false} onSaleStartDate={'soon'} ticketLink={'https://npr.org'} />
+          <Show date={'Oct 02'} location={'Reno, NV'} otherBands={null} onSale={false} onSaleStartDate={'soon'} ticketLink={'https://npr.org'} />
           {/* <Show date={'Oct 03'} location={'Portland, OR'} otherBands={"Deep Sea Diver"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
           <Show date={'Oct 08'} location={'San Diego, CA'} otherBands={"Ivan & Alyosha"} onSale={true} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
           <Show date={'Oct 09'} location={'Ojai, CA'} otherBands={"RADIOHEAD"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
@@ -21,7 +21,7 @@ const Shows = () => {
 
         <section className="booking">
           <p className="divider">+ + +</p>
-          <p className="booking-copy">For booking email: <a className="email-link" href="mailto:booking@joedaymusic.com">booking@joedaymusic.com</a></p>
+          <p className="booking-copy">For booking, email: <a className="email-link" href="mailto:booking@joedaymusic.com">booking@joedaymusic.com</a></p>
           <p className="divider">+ + +</p>
         </section>
 

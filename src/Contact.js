@@ -17,7 +17,7 @@ const Bio = () => {
         </div>
 
         <h2 className="contact-info">Contact info</h2>
-        <p>Management: <a className="email-link" href="mailto:meleahvallie@gmail.com">meleahvallie@gmail.com</a></p>
+        <p>Management: <a className="email-link" href="mailto:management@joedaymusic.com">management@joedaymusic.com</a></p>
         <p>Booking: <a className="email-link" href="mailto:booking@joedaymusic.com">booking@joedaymusic.com</a></p>
       </section>
     </article>

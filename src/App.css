@@ -24,7 +24,9 @@
     "side-l content side-r"
     "footer-l footer footer-r";
   column-gap: 0;
+  width: 100%;
   max-width: 1440px;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -272,10 +274,8 @@
     grid-template-rows: 300px auto 215px;
   }
 
-  .site-logo {
-    /* font-size: 128px; */
+  .site-logo img {
     height: 96px;
-    letter-spacing: -8px;
   }
 
   .site-nav {
