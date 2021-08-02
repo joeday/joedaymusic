@@ -24,7 +24,7 @@ class App extends Component {
             <header className="site-header">
               <div className="site-logo">
                 {/* <Link to="/">Joe Day</Link> */}
-                <Link to="/"><img src={siteLogo} /></Link>
+                <Link to="/"><img src={siteLogo} alt="Joe Day logo" /></Link>
               </div>
               
               <nav className="site-nav">

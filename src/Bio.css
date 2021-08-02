@@ -3,9 +3,9 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "title-l  title title title title title-r"
-    "gutter-l copy  copy  copy  copy  gutter-r"
-    "creds    creds creds creds creds creds";
+    "title  title title title title title"
+    "copy copy  copy  copy  copy  copy"
+    "creds  creds creds creds creds creds";
   grid-gap: 20px;
 }
 
@@ -19,31 +19,29 @@
 }
 
 .img-l {
-  margin-top: 24px;
-  margin-right: 24px;
-  margin-bottom: 24px;
-  margin-left: calc(-1 * (100% / 4 + 4px));
+  margin: 12px 0;
   float: left;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-r {
-  margin-top: 24px;
-  margin-left: 24px;
-  margin-bottom: 24px;
-  margin-right: calc(-1 * (100% / 4 + 4px));
+  margin: 12px 0;
   float: right;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-container {
-  height: 269px;
-  width: 440px;
+  max-height: 269px;
   display: block;
 }
 
 @media only screen and (min-width: 768px) {
-}
+  .img-container {
+    max-height: 184px;
+  }
 
-@media only screen and (min-width: 1024px) {
   .img-l {
     margin-top: 24px;
     margin-right: 24px;
@@ -59,9 +57,7 @@
     margin-right: calc(-1 * (100% / 4 + 4px));
     float: right;
   }
-}
 
-@media only screen and (min-width: 1440px) {
   .bio-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto 1fr auto;

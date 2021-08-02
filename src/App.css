@@ -18,7 +18,7 @@
   background-size: 100px;
   display: grid;
   grid-template-columns: 42px 1fr 42px;
-  grid-template-rows: 148px calc(100vh - 296px) 148px;
+  grid-template-rows: 148px 1fr 148px;
   grid-template-areas:
     "header header header"
     "side-l content side-r"
@@ -35,12 +35,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.site-logo {
-  /* font-size: 64px; */
-  /* height: 64px; */
-  letter-spacing: -8px;
 }
 
 .site-logo img {
@@ -207,12 +201,11 @@
 @media only screen and (min-width: 768px) {
   .app-shell {
     grid-template-columns: 98px 1fr 98px;
+    grid-template-rows: 212px auto 215px;
   }
 
-  .site-logo {
-    /* font-size: 96px; */
-    height: 96px;
-    letter-spacing: -8px;
+  .site-logo img {
+    height: 64px;
   }
 
   .site-nav {

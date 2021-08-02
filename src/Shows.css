@@ -1,4 +1,22 @@
-.shows-list {
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "title title title title title title"
+    "copy   copy  copy  copy  copy  copy"
+    "creds creds creds creds creds creds";
+}
+
+.article-title {
+  grid-area: title;
+}
+
+.shows {
+  grid-area: copy;
+}
+
+.upcoming-shows-list {
   list-style-type: none;
   margin: 32px 0;
   padding: 0;

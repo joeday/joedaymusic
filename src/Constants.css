@@ -5,6 +5,7 @@ html {
   --color-accent: #af2b38;
 
   --text-size-title: 36px;
+  --text-size-title-sm: 24px;
   --text-size-main: 18px;
   --text-size-small: 12px;
 
@@ -13,7 +14,11 @@ html {
 }
 
 h1 {
-  font-size: var(--text-size-title);
+  font-size: var(--text-size-title-sm);
+  margin: 0;
+}
+
+h2 {
   margin: 0;
 }
 
@@ -21,8 +26,25 @@ h1 {
   font-family: "Mojave";
   letter-spacing: 2px;
   line-height: 1.3333;
+  font-size: var(--text-size-small);
 }
 
 .tiny {
   font-size: var(--text-size-small);
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: var(--text-size-title);
+  }
+
+  .body-copy {
+    font-size: var(--text-size-main);
+  }
 }

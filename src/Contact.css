@@ -3,9 +3,9 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "title-l  title title title title title-r"
-    "gutter-l copy  copy  copy  copy  gutter-r"
-    "creds    creds creds creds creds creds";
+    "title title title title title title"
+    "copy  copy  copy  copy  copy  copy"
+    "creds creds creds creds creds creds";
   grid-gap: 20px;
 }
 
@@ -26,4 +26,15 @@
 
 .contact-info {
   margin-top: 64px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "title-l  title title title title title-r"
+      "gutter-l copy  copy  copy  copy  gutter-r"
+      "creds    creds creds creds creds creds";
+  }
 }
