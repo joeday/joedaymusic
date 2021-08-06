@@ -32,7 +32,7 @@ a:hover {
 }
 
 .headline-blocks {
-  margin: 0;
+  margin: 36px 0 0;
   line-height: 0.9;
 }
 
@@ -47,18 +47,18 @@ a:hover {
 }
 
 .headline-block-2 {
-  font-size: 4vw;
+  font-size: 4.3vw;
   padding-bottom: 4px;
 }
 
 .headline-block-3 {
-  font-size: 13vw;
+  font-size: 13.6vw;
   letter-spacing: -1vw;
 }
 
 .headline-block-4 {
-  font-size: 3.6vw;
-  line-height: 1.4;
+  font-size: 2.8vw;
+  line-height: 1;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -72,12 +72,13 @@ a:hover {
   }
 
   .headline-block-3 {
-    font-size: 161px;
+    font-size: 155px;
     letter-spacing: -8px;
   }
 
   .headline-block-4 {
-    font-size: 28px;
+    font-size: 35px;
     line-height: unset;
+    letter-spacing: -1px;
   }
 }

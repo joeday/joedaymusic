@@ -11,14 +11,13 @@ const Home = () => {
         <a href="https://joeday.bandcamp.com/album/halflight" rel="noreferrer" target="_blank">
           <img className="responsive-image" src={img} alt="Album cover for Joe Day's full length album 'Halflight'" />
         </a>
-        {/* <img className="headline-img responsive-image" src={preorder} alt="Preorder the new full length album Halflight" /> */}
         <div className="headline-blocks">
-          <p class="headline-block-1">Preorder</p>
-          <p class="headline-block-2">The new full-length album</p>
-          <p class="headline-block-3">Halflight</p>
+          {/* <p class="headline-block-1">Preorder</p> */}
+          <p className="headline-block-2">The new full-length album</p>
+          <p className="headline-block-3">Halflight</p>
           <p className="headline-block-4">
             <a href="https://joeday.bandcamp.com/album/halflight" rel="noreferrer" target="_blank">Now at Bandcamp</a>
-            &nbsp;+ Streaming everywhere August 6
+            &nbsp;+ Streaming everywhere
           </p>    
         </div>
             

@@ -67,3 +67,9 @@
       "creds    creds creds creds creds creds";
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .img-container {
+    max-height: 269px;
+  }
+}
