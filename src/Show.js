@@ -10,7 +10,7 @@ const Show = (props) => {
       <section className="basic-show-info">
         <div className="date">{date}</div>
         <div className="city-state">{location}</div>
-        { otherBands ? <div className="playing-with"><span class="tiny">with</span>{otherBands}</div> : null }
+        { otherBands ? <div className="playing-with"><span className="tiny">with</span>{otherBands}</div> : null }
       </section>
 
       <section className="ticket-info">

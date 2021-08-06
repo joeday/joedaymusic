@@ -12,7 +12,6 @@ const Home = () => {
           <img className="responsive-image" src={img} alt="Album cover for Joe Day's full length album 'Halflight'" />
         </a>
         <div className="headline-blocks">
-          {/* <p class="headline-block-1">Preorder</p> */}
           <p className="headline-block-2">The new full-length album</p>
           <p className="headline-block-3">Halflight</p>
           <p className="headline-block-4">
