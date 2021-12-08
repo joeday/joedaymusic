@@ -40,11 +40,11 @@ class App extends Component {
 
             <section className="site-content">
               <Routes>
-                <Route exact path="/"         element={<Home />} />
-                <Route exact path="/shows"    element={<Shows />} />
-                <Route exact path="/bio"      element={<Bio />} />
-                {/* <Route exact path="/store"    element={<Store />} /> */}
-                <Route exact path="/contact"  element={<Contact />} />
+                <Route index           element={<Home />} />
+                <Route path="shows"    element={<Shows />} />
+                <Route path="bio"      element={<Bio />} />
+                <Route path="contact"  element={<Contact />} />
+                <Route path="*"        element={<Home />} />
               </Routes>
             </section>
             
