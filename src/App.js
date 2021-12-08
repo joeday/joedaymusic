@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import Home from './Home';
-// import Shows from './Shows';
+import Shows from './Shows';
 import Bio from './Bio';
 import Contact from './Contact';
 import './Constants.css';
@@ -30,7 +30,7 @@ class App extends Component {
               <nav className="site-nav">
                 {/* <NavLink to="/music" activeClassName="active">Music</NavLink> */}
                 <NavLink to="/bio" activeClassName="active">Bio</NavLink>
-                {/* <NavLink to="/shows" activeClassName="active">Shows</NavLink> */}
+                <NavLink to="/shows" activeClassName="active">Shows</NavLink>
                 {/* <NavLink to="/store" activeClassName="active">Store</NavLink> */}
                 <NavLink to="/contact" activeClassName="active">Contact</NavLink>
                 <a href="https://joeday.bandcamp.com/album/halflight" target="_blank" rel="noreferrer">Store</a>
@@ -44,7 +44,7 @@ class App extends Component {
             <section className="site-content">
               <Switch>
                 <Route exact path="/"         component={Home} />
-                {/* <Route exact path="/shows"    component={Shows} /> */}
+                <Route exact path="/shows"    component={Shows} />
                 <Route exact path="/bio"      component={Bio} />
                 {/* <Route exact path="/store"    component={Store} /> */}
                 <Route exact path="/contact"  component={Contact} />
