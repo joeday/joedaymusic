@@ -1,6 +1,6 @@
 .show-row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: baseline;
   font-size: 20px;
   padding: 6px 0;
@@ -8,12 +8,11 @@
 
 .city-state:before,
 .playing-with:before {
-  color: var(--color-accent);
-  font-family: "Oaxaca";
-  content: "*";
-  padding: 0 18px;
-  position: relative;
-  top: 8px;
+  display: none;
+}
+
+.city-state {
+  font-family: "Sonoma";
 }
 
 .playing-with,
@@ -31,9 +30,9 @@
 
 .basic-show-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  margin-right: 32px;
+  /* margin-right: 32px; */
 }
 
 .ticket-info {
@@ -41,4 +40,32 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+@media only screen and (min-width: 1440px) {
+  .show-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 20px;
+    padding: 6px 0;
+  }
+
+  .basic-show-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 32px;
+  }
+
+  .city-state:before,
+  .playing-with:before {
+    color: var(--color-accent);
+    font-family: "Oaxaca";
+    content: "*";
+    padding: 0 18px;
+    position: relative;
+    top: 8px;
+    display: unset;
+  }
 }

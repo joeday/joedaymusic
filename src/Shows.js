@@ -9,8 +9,8 @@ const Shows = () => {
       <h1 className="article-title">Upcoming shows</h1>
       <section className="shows">
         <ul className="upcoming-shows-list">
-          <Show date={'Dec 18, 5:30pm'} location={'Woodinville, WA'} otherBands={"Tim Wilson"} onSale={true} onSaleStartDate={'12/9, 10am'} ticketLink={'https://www.eventbrite.com/e/221096113427'} />
-          <Show date={'Dec 18, 8:00pm'} location={'Woodinville, WA'} otherBands={"Tim Wilson"} onSale={true} onSaleStartDate={'12/9, 10am'} ticketLink={'https://www.eventbrite.com/e/224316064387'} />
+          <Show date={'Dec 18, 5:30pm'} location={'Chateau Lill, Woodinville, WA'} otherBands={"Tim Wilson"} onSale={true} onSaleStartDate={'12/9, 10am'} ticketLink={'https://www.eventbrite.com/e/221096113427'} />
+          <Show date={'Dec 18, 8:00pm'} location={'Chateau Lill, Woodinville, WA'} otherBands={"Tim Wilson"} onSale={true} onSaleStartDate={'12/9, 10am'} ticketLink={'https://www.eventbrite.com/e/224316064387'} />
           {/* <Show date={'Oct 03'} location={'Portland, OR'} otherBands={"Deep Sea Diver"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
           <Show date={'Oct 08'} location={'San Diego, CA'} otherBands={"Ivan & Alyosha"} onSale={true} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
           <Show date={'Oct 09'} location={'Ojai, CA'} otherBands={"RADIOHEAD"} onSale={false} onSaleStartDate={'8/12'} ticketLink={'https://npr.org'} />
