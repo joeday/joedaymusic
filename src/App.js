@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Routes, Link, NavLink } from 'react-router-dom';
+import { HashRouter, Route, Routes, Link, NavLink } from 'react-router-dom';
 import Home from './Home';
 import Shows from './Shows';
 import Bio from './Bio';
@@ -17,7 +17,7 @@ import siteLogo from './images/Joe Day.svg';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
           <main className="app-shell">
             
@@ -82,7 +82,7 @@ class App extends Component {
             </aside>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
