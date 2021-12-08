@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, NavLink, Outlet } from 'react-router-dom';
 import Home from './Home';
 import Shows from './Shows';
 import Bio from './Bio';
@@ -23,16 +23,13 @@ class App extends Component {
             
             <header className="site-header">
               <div className="site-logo">
-                {/* <Link to="/">Joe Day</Link> */}
                 <Link to="/"><img src={siteLogo} alt="Joe Day logo" /></Link>
               </div>
               
               <nav className="site-nav">
-                {/* <NavLink to="/music" activeClassName="active">Music</NavLink> */}
-                <NavLink to="/bio" activeClassName="active">Bio</NavLink>
-                <NavLink to="/shows" activeClassName="active">Shows</NavLink>
-                {/* <NavLink to="/store" activeClassName="active">Store</NavLink> */}
-                <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+                <NavLink to="/bio" className={({ isActive }) => (isActive ? " active" : "")}>Bio</NavLink>
+                <NavLink to="/shows" aclassName={({ isActive }) => (isActive ? " active" : "")}>Shows</NavLink>
+                <NavLink to="/contact" className={({ isActive }) => (isActive ? " active" : "")}>Contact</NavLink>
                 <a href="https://joeday.bandcamp.com/album/halflight" target="_blank" rel="noreferrer">Store</a>
               </nav>
             </header>
@@ -42,13 +39,13 @@ class App extends Component {
             </aside>
 
             <section className="site-content">
-              <Switch>
-                <Route exact path="/"         component={Home} />
-                <Route exact path="/shows"    component={Shows} />
-                <Route exact path="/bio"      component={Bio} />
-                {/* <Route exact path="/store"    component={Store} /> */}
-                <Route exact path="/contact"  component={Contact} />
-              </Switch>
+              <Routes>
+                <Route exact path="/"         element={<Home />} />
+                <Route exact path="/shows"    element={<Shows />} />
+                <Route exact path="/bio"      element={<Bio />} />
+                {/* <Route exact path="/store"    element={<Store />} /> */}
+                <Route exact path="/contact"  element={<Contact />} />
+              </Routes>
             </section>
             
             <aside className="sidebar-r">
@@ -85,6 +82,7 @@ class App extends Component {
             </aside>
           </main>
         </div>
+      <Outlet />
       </Router>
     );
   }
