@@ -15,18 +15,25 @@ html {
 
 h1 {
   font-size: var(--text-size-title-sm);
+  font-weight: 400;
+  text-transform: uppercase;
   margin: 0;
 }
 
-h2 {
-  margin: 0;
+h2,
+.subheading {
+  font-size: var(--text-size-title-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 24px;
 }
 
 .body-copy {
-  font-family: "Mojave";
-  letter-spacing: 2px;
-  line-height: 1.3333;
-  font-size: var(--text-size-small);
+  font-family: "VCTR Mono";
+  font-weight: 400;
+  letter-spacing: unset;
+  line-height: 1.333;
+  font-size: var(--text-size-main);
 }
 
 .tiny {

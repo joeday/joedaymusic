@@ -12,6 +12,7 @@ import bandcampLogo from './images/bc-logotype-black.svg';
 import fearAndLove from './images/fear_and_love.svg';
 import loveAndFear from './images/love_and_fear.svg';
 import siteLogo from './images/Joe Day.svg';
+import Mailchimp from 'react-mailchimp-form';
 
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
               
               <nav className="site-nav">
                 <NavLink to="/bio" className={({ isActive }) => (isActive ? " active" : "")}>Bio</NavLink>
-                <NavLink to="/shows" aclassName={({ isActive }) => (isActive ? " active" : "")}>Shows</NavLink>
+                <NavLink to="/shows" className={({ isActive }) => (isActive ? " active" : "")}>Shows</NavLink>
                 <NavLink to="/contact" className={({ isActive }) => (isActive ? " active" : "")}>Contact</NavLink>
                 <a href="https://joeday.bandcamp.com/album/halflight" target="_blank" rel="noreferrer">Store</a>
               </nav>
@@ -65,12 +66,28 @@ class App extends Component {
                   <img src={bandcampLogo} alt="Bandcamp logo" height="24" />
                 </a>
               </span>
-              <div id="revue-embed" className="revue-email-form">
-                <form action="https://www.getrevue.co/profile/joeday/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
-                  <input className="revue-form-field" placeholder="Email" type="email" name="member[email]" id="member_email" />
-                  <input className="button" type="submit" value="Join" name="member[subscribe]" id="member_submit" />
-                </form>
-              </div>
+              <Mailchimp
+                action={process.env.REACT_APP_MAILCHIMP_KEY}
+                fields={[
+                  {
+                    name: 'EMAIL',
+                    placeholder: 'Join my email list',
+                    type: 'email',
+                    required: true
+                  }
+                ]}
+                messages = {
+                  {
+                    sending: "Sending...",
+                    success: "Thank you for subscribing!",
+                    error: "An unexpected internal error has occurred.",
+                    empty: "You must write an e-mail.",
+                    duplicate: "Too many subscribe attempts for this email address",
+                    button: "Subscribe"
+                  }
+                }
+                className="simple-email-form"
+              />
             </footer>
 
             <aside className="footer-l">

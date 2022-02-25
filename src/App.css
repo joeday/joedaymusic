@@ -53,6 +53,7 @@
 }
 
 .site-nav {
+  font-family: "Oaxaca";
   font-size: 12px;
   margin: 12px 0 0;
 }
@@ -137,52 +138,64 @@
   height: 16px;
 }
 
-.revue-email-form input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.simple-email-form {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
-.revue-email-form input[type="submit"] {
-  font-family: "Oaxaca";
-  font-size: 10px;
-  padding: 7px;
-  border-radius: 2px;
-  border: unset;
-  background-color: #383838;
+.simple-email-form input {
+  -webkit-appearance: none;
+  font-family: "VCTR Mono";
+  font-size: 16px;
+  padding: 5px 8px 3px 8px;
+  border: 1px solid #333;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.simple-email-form input:focus {
+  outline: none;
+  border: 2px solid #333;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.simple-email-form button {
+  font-family: "VCTR Mono";
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px 8px 3px 8px;
+  background: #383838;
+  color: #fff;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  color: var(--color-true-white);
+  border: 0;
   cursor: pointer;
 }
 
-.revue-email-form {
-  flex-direction: row;
-  justify-content: flex-start;
-  order: -1;
+.simple-email-form .msg-alert {
+  position: absolute;
+  color: #333;
+  top: 32px;
+  left: 6px;
 }
 
-.revue-form-field {
-  font-family: "Mojave";
-  font-size: 10px;
-  /* width: 200px; */
-  border: 0;
-  padding: 6px;
-  border: 1px solid var(--color-primary-black);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.revue-form-field:focus {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.revue-form-footer {
-  font-size: 10px;
+.simple-email-form .msg-alert p {
+  margin: 0;
+  color: var(--color-accent) !important;
+  font-size: var(--text-size-small);
+  text-transform: uppercase;
 }
 
 .footer-l {
+  font-family: "Oaxaca";
   grid-area: footer-l;
   font-size: 24px;
   color: var(--color-accent);
@@ -192,6 +205,7 @@
 }
 
 .footer-r {
+  font-family: "Oaxaca";
   grid-area: footer-r;
   font-size: 24px;
   color: var(--color-accent);
@@ -230,34 +244,6 @@
 
   .streaming-icon img {
     height: 20px;
-  }
-
-  .revue-email-form {
-    order: unset;
-  }
-
-  .revue-email-form input[type="submit"] {
-    font-family: "Oaxaca";
-    font-size: 14px;
-    padding: 13px 24px 13px 24px;
-    border-radius: 2px;
-    border: unset;
-    background-color: #383838;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    color: var(--color-true-white);
-    cursor: pointer;
-  }
-
-  .revue-form-field {
-    font-family: "Mojave";
-    font-size: 14px;
-    width: 200px;
-    border: 0;
-    padding: 12px 0 12px 12px;
-    border: 1px solid var(--color-primary-black);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 }
 

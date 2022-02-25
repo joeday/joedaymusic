@@ -14,7 +14,7 @@ const Show = (props) => {
       </section>
 
       <section className="ticket-info">
-        { onSale ? <a className="ticket-link" href={ticketLink} target="_blank" rel="noreferrer">Tickets</a> : <div className="on-sale-date">On sale {onSaleStartDate}</div>}
+        { onSale ? <a className="ticket-link" href={ticketLink} target="_blank" rel="noreferrer">Tickets</a> : <div className="on-sale-date"></div>}
       </section>
     </li>
    );

@@ -25,14 +25,20 @@
 .booking {
   text-align: center;
   justify-content: center;
-  margin: 128px 0 72px;
+  margin: 128px 0;
+}
+
+.email-link {
+  text-transform: lowercase;
 }
 
 .booking-copy {
-  font-family: "Mojave";
+  font-size: var(--text-size-main);
+  text-transform: uppercase;
 }
 
 .divider {
+  font-family: "Oaxaca";
   font-size: 24px;
 }
 

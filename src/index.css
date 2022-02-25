@@ -6,9 +6,7 @@ body {
   margin: 0;
   height: 100%;
   background-color: #333;
-  font-family: "Oaxaca", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "VCTR Mono", "Courier", "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -47,4 +45,44 @@ code {
     url(./fonts/Sonoma.woff) format("woff"),
     url(./fonts/Sonoma.woff2) format("woff2"),
     url(./fonts/Sonoma.eot?#iefix) format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(./fonts/VCTR-Mono-v0.10-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(./fonts/VCTR-Mono-v0.10-RegularItalic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(./fonts/VCTR-Mono-v0.10-Light.woff2) format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(./fonts/VCTR-Mono-v0.10-Bold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(./fonts/VCTR-Mono-v0.10-Black.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
 }

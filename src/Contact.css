@@ -6,7 +6,7 @@
     "title title title title title title"
     "copy  copy  copy  copy  copy  copy"
     "creds creds creds creds creds creds";
-  grid-gap: 20px;
+  grid-gap: 6px;
 }
 
 .article-title {
@@ -20,12 +20,37 @@
   line-height: 1.2;
 }
 
-.email-link {
-  font-family: "Mojave";
+.email-form {
+  font-family: "VCTR Mono";
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-info {
+.email-form input {
+  font-family: "VCTR Mono";
+  font-size: 24px;
+  padding: 8px 12px 4px 12px;
+  margin: 6px 0;
+}
+
+.email-form button {
+  font-family: "VCTR Mono";
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 8px 12px 4px 12px;
+  background: #383838;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+}
+
+.other-emails {
   margin-top: 64px;
+}
+
+.other-emails .contact-info,
+.other-emails p {
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
