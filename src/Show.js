@@ -2,9 +2,9 @@ import React from 'react';
 import './Show.css';
 
 const Show = (props) => {
-  const { date, location, otherBands, onSale, onSaleStartDate, ticketLink} = props;
+  const { date, location, otherBands, onSale, ticketLink} = props;
+  // const { date, location, otherBands, onSale, onSaleStartDate, ticketLink} = props;
   // const todaysDate = new Date.now()
-  console.log(date)
   return ( 
     <li className="show-row">
       <section className="basic-show-info">

@@ -12,7 +12,7 @@ import bandcampLogo from './images/bc-logotype-black.svg';
 import fearAndLove from './images/fear_and_love.svg';
 import loveAndFear from './images/love_and_fear.svg';
 import siteLogo from './images/Joe Day.svg';
-import Mailchimp from 'react-mailchimp-form';
+import Mailchimp from './Mailchimp';
 
 
 class App extends Component {
@@ -67,6 +67,7 @@ class App extends Component {
                 </a>
               </span>
               <Mailchimp
+                type='simple'
                 action={process.env.REACT_APP_MAILCHIMP_KEY}
                 fields={[
                   {
