@@ -21,7 +21,6 @@ jobs:
           REACT_APP_MAILCHIMP_KEY: ${{ secrets.REACT_APP_MAILCHIMP_KEY }}
 
       - name: Deploy
-        uses: joeday/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
