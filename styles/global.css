@@ -1,0 +1,152 @@
+html {
+  height: 100%;
+  --color-primary-black: #35292b;
+  --color-primary-white: #fffffa;
+  --color-true-white: #fff;
+  --color-accent: #af2b38;
+
+  --text-size-title: 36px;
+  --text-size-title-sm: 24px;
+  --text-size-main: 18px;
+  --text-size-small: 12px;
+
+  --font-family-primary: "Oajaca";
+  --font-family-secondary: "Mojave";
+}
+
+h1 {
+  font-size: var(--text-size-title-sm);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2,
+.subheading {
+  font-size: var(--text-size-title-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+.body-copy {
+  font-family: "VCTR Mono";
+  font-weight: 400;
+  letter-spacing: unset;
+  line-height: 1.333;
+  font-size: var(--text-size-main);
+}
+
+.tiny {
+  font-size: var(--text-size-small);
+}
+
+a {
+  color: #af2b38;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: var(--text-size-title);
+  }
+
+  .body-copy {
+    font-size: var(--text-size-main);
+  }
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #333;
+  font-family: "VCTR Mono", "Courier", "Courier New", Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Oaxaca";
+  src: local("Oaxaca"), url(../public/fonts/Oaxaca.eot),
+    url(../public/fonts/Oaxaca.svg) format("svg"),
+    url(../public/fonts/Oaxaca.woff) format("woff"),
+    url(../public/fonts/Oaxaca.woff2) format("woff2"),
+    url(../public/fonts/Oaxaca.eot?#iefix) format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Mojave";
+  src: local("Mojave"), url(../public/fonts/Mojave.eot),
+    url(../public/fonts/Mojave.svg) format("svg"),
+    url(../public/fonts/Mojave.woff) format("woff"),
+    url(../public/fonts/Mojave.woff2) format("woff2"),
+    url(../public/fonts/Mojave.eot?#iefix) format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Sonoma";
+  src: local("Sonoma"), url(../public/fonts/Sonoma.eot),
+    url(../public/fonts/Sonoma.svg) format("svg"),
+    url(../public/fonts/Sonoma.woff) format("woff"),
+    url(../public/fonts/Sonoma.woff2) format("woff2"),
+    url(../public/fonts/Sonoma.eot?#iefix) format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(../public/fonts/VCTR-Mono-v0.10-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(../public/fonts/VCTR-Mono-v0.10-RegularItalic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(../public/fonts/VCTR-Mono-v0.10-Light.woff2) format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(../public/fonts/VCTR-Mono-v0.10-Bold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VCTR Mono";
+  src: local("VCTR Mono"),
+    url(../public/fonts/VCTR-Mono-v0.10-Black.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}

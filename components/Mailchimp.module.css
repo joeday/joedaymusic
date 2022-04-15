@@ -1,18 +1,18 @@
-.email-form,
-.email-form-group {
+.emailForm,
+.emailFormGroup {
   font-family: "VCTR Mono";
   display: flex;
   flex-direction: column;
 }
 
-.email-form-group input {
+.emailFormGroup input {
   font-family: "VCTR Mono";
   font-size: 24px;
   padding: 8px 12px 4px 12px;
   /* margin: 6px 0; */
 }
 
-.email-form button {
+.emailForm button {
   font-family: "VCTR Mono";
   font-size: 24px;
   text-transform: uppercase;
@@ -26,17 +26,17 @@
   cursor: pointer;
 }
 
-.email-form-label {
+.emailFormLabel {
   margin: 12px 0 0 0;
 }
 
-.simple-email-form {
+.simpleEmailForm {
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.simple-email-form input {
+.simpleEmailForm input {
   -webkit-appearance: none;
   font-family: "VCTR Mono";
   font-size: 16px;
@@ -48,7 +48,7 @@
   border-bottom-left-radius: 2px;
 }
 
-.simple-email-form input:focus {
+.simpleEmailForm input:focus {
   outline: none;
   border: 2px solid #333;
   border-top-right-radius: 0;
@@ -57,7 +57,7 @@
   border-bottom-left-radius: 2px;
 }
 
-.simple-email-form button {
+.simpleEmailForm button {
   font-family: "VCTR Mono";
   font-size: 16px;
   text-transform: uppercase;
@@ -72,14 +72,14 @@
   cursor: pointer;
 }
 
-.simple-email-form .msg-alert {
+.simpleEmailForm .msgAlert {
   position: absolute;
   color: #333;
   top: 32px;
   left: 6px;
 }
 
-.simple-email-form .msg-alert p {
+.simpleEmailForm .msgAlert p {
   margin: 0;
   color: var(--color-accent) !important;
   font-size: var(--text-size-small);

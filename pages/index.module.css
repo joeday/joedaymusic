@@ -1,28 +1,19 @@
-.home-grid {
+.homeGrid {
   margin: 0;
   display: flex;
 }
 
-.home-content {
+.homeContent {
   max-width: 100%;
 }
 
-.responsive-image {
+.responsiveImage {
   max-width: 100%;
   height: auto;
 }
 
-.headline-img {
+.headlineImg {
   margin-top: 24px;
-}
-
-a {
-  color: #af2b38;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .description {
@@ -31,53 +22,53 @@ a:hover {
   margin: 10px 0 0 10px;
 }
 
-.headline-blocks {
+.headlineBlocks {
   font-family: "Oaxaca";
   margin: 36px 0 0;
   line-height: 0.9;
 }
 
-.headline-blocks p {
+.headlineBlocks p {
   margin: 0;
   text-align: center;
 }
 
-.headline-block-1 {
+.headlineBlock1 {
   font-size: 13vw;
   letter-spacing: -1vw;
 }
 
-.headline-block-2 {
+.headlineBlock2 {
   font-size: 4.3vw;
   padding-bottom: 4px;
 }
 
-.headline-block-3 {
+.headlineBlock3 {
   font-size: 13.6vw;
   letter-spacing: -1vw;
 }
 
-.headline-block-4 {
+.headlineBlock4 {
   font-size: 2.8vw;
   line-height: 1;
 }
 
 @media only screen and (min-width: 1440px) {
-  .headline-block-1 {
+  .headlineBlock1 {
     font-size: 161px;
     letter-spacing: -8px;
   }
 
-  .headline-block-2 {
+  .headlineBlock2 {
     font-size: 51px;
   }
 
-  .headline-block-3 {
+  .headlineBlock3 {
     font-size: 155px;
     letter-spacing: -8px;
   }
 
-  .headline-block-4 {
+  .headlineBlock4 {
     font-size: 35px;
     line-height: unset;
     letter-spacing: -1px;

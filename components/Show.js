@@ -1,7 +1,6 @@
-import React from 'react';
-import './Show.css';
+import './Show.module.css';
 
-const Show = (props) => {
+export default function Show ({props}) {
   const { date, location, otherBands, onSale, ticketLink} = props;
   // const { date, location, otherBands, onSale, onSaleStartDate, ticketLink} = props;
   // const todaysDate = new Date.now()
@@ -19,5 +18,3 @@ const Show = (props) => {
     </li>
    );
 }
- 
-export default Show;
