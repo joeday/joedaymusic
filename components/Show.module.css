@@ -33,14 +33,14 @@
   margin-right: 3px;
 }
 
-.basic-show-info {
+.basicShowInfo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 @media only screen and (min-width: 768px) {
-  .show-row {
+  .showRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,15 +49,15 @@
     padding: 6px 0;
   }
 
-  .basic-show-info {
+  .basicShowInfo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-right: 32px;
   }
 
-  .city-state:before,
-  .playing-with:before {
+  .cityState:before,
+  .playingWith:before {
     color: var(--color-accent);
     font-family: "Oaxaca";
     content: "*";
@@ -69,12 +69,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .show-row {
+  .showRow {
     font-size: 20px;
   }
 
-  .city-state:before,
-  .playing-with:before {
+  .cityState:before,
+  .playingWith:before {
     top: 10px;
   }
 }

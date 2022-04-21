@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types';
-import './Show.module.css';
+import styles from './Show.module.css';
 
 export default function Show (props) {
   const { date, location, otherBands, onSale, onSaleStartDate, ticketLink} = props;
   
   const showDate = new Date(date);
   const now = new Date();
-  const inFuture = (Date.parse(showDate) < Date.parse(now)) ? false : true;
+  const inFuture = (Date.parse(onSaleStartDate) < Date.parse(now)) ? false : true;
+  console.log(inFuture);
 
   return ( 
-    <li className="show-row">
-      <section className="basic-show-info">
-        <div className="date">{date}</div>
-        <div className="city-state">{location}</div>
-        { otherBands ? <div className="playing-with"><span className="tiny">with</span>{otherBands}</div> : null }
+    <li className={styles.showRow}>
+      <section className={styles.basicShowInfo}>
+        <div className={styles.date}>{date}</div>
+        <div className={styles.cityState}>{location}</div>
+        { otherBands ? <div className={styles.playingWith}><span className={styles.tiny}>with</span>{otherBands}</div> : null }
       </section>
 
-      <section className="ticket-info">
-        { onSale ? <a className="ticket-link" href={ticketLink} target="_blank" rel="noreferrer">Tickets</a> : <div className="on-sale-date">On sale: {onSaleStartDate}</div>}
+      <section className={styles.ticketInfo}>
+        { onSale ? <a className={styles.ticketLink} href={ticketLink} target="_blank" rel="noreferrer">Tickets</a> : <div className={styles.onSaleDate}>On sale: {onSaleStartDate}</div>}
       </section>
     </li>
    );
