@@ -41,6 +41,7 @@
   font-family: "VCTR Mono";
   font-size: 16px;
   padding: 5px 8px 3px 8px;
+  margin: 0;
   border: 1px solid #333;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -61,7 +62,8 @@
   font-family: "VCTR Mono";
   font-size: 16px;
   text-transform: uppercase;
-  padding: 5px 8px 3px 8px;
+  padding: 6px 8px 4px 8px;
+  margin: 0;
   background: #383838;
   color: #fff;
   border-top-right-radius: 2px;

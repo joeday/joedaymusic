@@ -12,9 +12,9 @@ export default function Home() {
               priority
               src="/images/VinylMockup-transparent.png"
               className={styles.responsiveImage}
-              layout="responsive"
               width="1200"
               height="630"
+              layout="raw"
               alt="Album cover for Joe Day's full length album 'Halflight'"
             />
           </a>

@@ -18,7 +18,7 @@
   background-size: 100px;
   display: grid;
   grid-template-columns: 42px 1fr 42px;
-  grid-template-rows: 148px 1fr 148px;
+  grid-template-rows: 148px auto 148px;
   grid-template-areas:
     "header header header"
     "side-l content side-r"
@@ -39,9 +39,10 @@
   justify-content: center;
 }
 
-/* .siteLogo img {
+.siteLogo img {
   height: 56px;
-} */
+  width: auto;
+}
 
 .siteLogo a {
   color: var(--color-primary-black);
@@ -102,6 +103,7 @@
 .sidebarL img,
 .sidebarR img {
   width: 27%;
+  height: auto;
 }
 
 .siteContent {
@@ -164,9 +166,9 @@
     grid-template-rows: 212px auto 215px;
   }
 
-  /* .siteLogo img {
+  .siteLogo img {
     height: 64px;
-  } */
+  }
 
   .siteNav {
     font-size: 16px;
@@ -204,9 +206,9 @@
     grid-template-rows: 300px auto 215px;
   }
 
-  /* .siteLogo img {
+  .siteLogo img {
     height: 96px;
-  } */
+  }
 
   .siteNav {
     font-size: 18px;

@@ -1,31 +1,44 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 import styles from './layout.module.css'
 
-// import Mailchimp from './Mailchimp';
+import Mailchimp from '../components/Mailchimp';
 
 
 export default function Layout({ children }) {
+
+  const router = useRouter();
+
   return (
     <div className={styles.App}>
       <main className={styles.appShell}>
         
         <header className={styles.siteHeader}>
           <div className={styles.siteLogo}>
-            
-              <Image 
-                src="/images/JoeDay.svg"
-                alt="Joe Day Music Logo"
-                width="514"
-                height="94"
-              />
-
+            <Link href="/">
+              <a>
+                <Image 
+                  src="/images/JoeDay.svg"
+                  alt="Joe Day Music Logo"
+                  width="514"
+                  height="94"
+                  layout="raw"
+                />
+              </a>
+            </Link>
           </div>
           
           <nav className={styles.siteNav}>
-            <Link href="/bio" className={({ isActive }) => (isActive ? " active" : "")}>Bio</Link>
-            <Link href="/shows" className={({ isActive }) => (isActive ? " active" : "")}>Shows</Link>
-            <Link href="/contact" className={({ isActive }) => (isActive ? " active" : "")}>Contact</Link>
+            <Link href="/bio" activeClassName={styles.active}>
+              <a className={router.pathname == "/bio" ? styles.active : ""} >Bio</a>
+            </Link>
+            <Link href="/shows">
+              <a className={router.pathname == "/shows" ? styles.active : ""} >Shows</a>
+            </Link>
+            <Link href="/contact">
+            <a className={router.pathname == "/contact" ? styles.active : ""} >Contact</a>
+            </Link>
             <a href="https://joeday.bandcamp.com/album/halflight" target="_blank" rel="noreferrer">Store</a>
           </nav>
         </header>
@@ -37,6 +50,7 @@ export default function Layout({ children }) {
             alt="Fear and love"
             width="35"
             height="534"
+            layout="raw"
           />
         </aside>
 
@@ -51,6 +65,7 @@ export default function Layout({ children }) {
             alt="Love and fear"
             width="35"
             height="534"
+            layout="raw"
           />
         </aside>
 
@@ -62,8 +77,9 @@ export default function Layout({ children }) {
                 priority
                 src="/images/Spotify_logo_without_text_black.svg"
                 alt="Spotify"
-                height="24"
-                width="24"
+                height="16"
+                width="16"
+                layout="raw"
               />
             </a>
             <a className={styles.streamingIcon} href="https://music.apple.com/us/artist/joe-day/214945054" rel="noreferrer" target="_blank">
@@ -71,8 +87,9 @@ export default function Layout({ children }) {
                 priority
                 src="/images/Apple_Music_Icon_black_sm_.svg"
                 alt="Apple Music"
-                height="24"
-                width="24"
+                height="16"
+                width="16"
+                layout="raw"
               />
             </a>
             <a className={styles.streamingIcon} href="https://joeday.bandcamp.com/album/halflight" rel="noreferrer" target="_blank">
@@ -80,34 +97,13 @@ export default function Layout({ children }) {
                 priority
                 src="/images/bc-logotype-black.svg"
                 alt="Bandcamp"
-                height="24"
-                width="74"
+                height="16"
+                width="49"
+                layout="raw"
               />
             </a>
           </span>
-          {/* <Mailchimp
-            type='simple'
-            action={process.env.REACT_APP_MAILCHIMP_KEY}
-            fields={[
-              {
-                name: 'EMAIL',
-                placeholder: 'Join my email list',
-                type: 'email',
-                required: true
-              }
-            ]}
-            messages = {
-              {
-                sending: "Sending...",
-                success: "Thank you for subscribing!",
-                error: "An unexpected internal error has occurred.",
-                empty: "You must write an e-mail.",
-                duplicate: "Too many subscribe attempts for this email address",
-                button: "Subscribe"
-              }
-            }
-            className={styles.simpleEmailForm}
-          /> */}
+          <Mailchimp />
         </footer>
 
         <aside className={styles.footerL}>
