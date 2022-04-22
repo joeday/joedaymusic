@@ -12,17 +12,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Cache  💾
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
 
       - name: Build
-        run: |
-          npm install
-          npm run-script build
+        uses: actions/setup-node@v1
+      - run: npm install
+      - run: npm run build
         env:
           REACT_APP_MAILCHIMP_KEY: ${{ secrets.REACT_APP_MAILCHIMP_KEY }}
+          CI: true
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: build
+          FOLDER: out
+          CLEAN: true
