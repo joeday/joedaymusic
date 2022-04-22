@@ -1,18 +1,17 @@
-.emailForm,
-.emailFormGroup {
+.emailForm {
   font-family: "VCTR Mono";
   display: flex;
   flex-direction: column;
 }
 
-.emailFormGroup input {
+.emailForm input {
   font-family: "VCTR Mono";
   font-size: 24px;
   padding: 8px 12px 4px 12px;
   /* margin: 6px 0; */
 }
 
-.emailForm button {
+.emailForm input[type=submit] {
   font-family: "VCTR Mono";
   font-size: 24px;
   text-transform: uppercase;
@@ -86,4 +85,10 @@
   color: var(--color-accent) !important;
   font-size: var(--text-size-small);
   text-transform: uppercase;
+}
+
+.success {
+  font-size: var(--text-size-title-sm);
+  font-weight: bolder;
+  color: var(--color-success);
 }

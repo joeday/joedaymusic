@@ -1,11 +1,8 @@
-import { useState } from 'react';
-import jsonp from "jsonp";
-import PropTypes from 'prop-types';
 import styles from './Mailchimp.module.css'
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 
-export default function Mailchimp() {
+export default function MailchimpSimple() {
 
   const SimpleForm = () => <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_KEY} />
   

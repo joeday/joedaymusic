@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router';
 import styles from './layout.module.css'
 
-import Mailchimp from '../components/Mailchimp';
+import MailchimpSimple from '../components/Mailchimp';
 
 
 export default function Layout({ children }) {
@@ -103,7 +103,7 @@ export default function Layout({ children }) {
               />
             </a>
           </span>
-          <Mailchimp />
+          <MailchimpSimple />
         </footer>
 
         <aside className={styles.footerL}>

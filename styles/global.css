@@ -4,6 +4,7 @@ html {
   --color-primary-white: #fffffa;
   --color-true-white: #fff;
   --color-accent: #af2b38;
+  --color-success: #2BAF78;
 
   --text-size-title: 36px;
   --text-size-title-sm: 24px;
@@ -73,6 +74,8 @@ body {
   font-family: "VCTR Mono", "Courier", "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: var(--text-size-main);
+  line-height: 1.2;
 }
 
 #root {
