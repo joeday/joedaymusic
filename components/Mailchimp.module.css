@@ -1,18 +1,17 @@
-.email-form,
-.email-form-group {
+.emailForm {
   font-family: "VCTR Mono";
   display: flex;
   flex-direction: column;
 }
 
-.email-form-group input {
+.emailForm input {
   font-family: "VCTR Mono";
   font-size: 24px;
   padding: 8px 12px 4px 12px;
   /* margin: 6px 0; */
 }
 
-.email-form button {
+.emailForm input[type=submit] {
   font-family: "VCTR Mono";
   font-size: 24px;
   text-transform: uppercase;
@@ -26,21 +25,22 @@
   cursor: pointer;
 }
 
-.email-form-label {
+.emailFormLabel {
   margin: 12px 0 0 0;
 }
 
-.simple-email-form {
+.simpleEmailForm {
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.simple-email-form input {
+.simpleEmailForm input {
   -webkit-appearance: none;
   font-family: "VCTR Mono";
   font-size: 16px;
   padding: 5px 8px 3px 8px;
+  margin: 0;
   border: 1px solid #333;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -48,7 +48,7 @@
   border-bottom-left-radius: 2px;
 }
 
-.simple-email-form input:focus {
+.simpleEmailForm input:focus {
   outline: none;
   border: 2px solid #333;
   border-top-right-radius: 0;
@@ -57,11 +57,12 @@
   border-bottom-left-radius: 2px;
 }
 
-.simple-email-form button {
+.simpleEmailForm button {
   font-family: "VCTR Mono";
   font-size: 16px;
   text-transform: uppercase;
-  padding: 5px 8px 3px 8px;
+  padding: 6px 8px 4px 8px;
+  margin: 0;
   background: #383838;
   color: #fff;
   border-top-right-radius: 2px;
@@ -72,16 +73,22 @@
   cursor: pointer;
 }
 
-.simple-email-form .msg-alert {
+.simpleEmailForm .msgAlert {
   position: absolute;
   color: #333;
   top: 32px;
   left: 6px;
 }
 
-.simple-email-form .msg-alert p {
+.simpleEmailForm .msgAlert p {
   margin: 0;
   color: var(--color-accent) !important;
   font-size: var(--text-size-small);
   text-transform: uppercase;
+}
+
+.success {
+  font-size: var(--text-size-title-sm);
+  font-weight: bolder;
+  color: var(--color-success);
 }

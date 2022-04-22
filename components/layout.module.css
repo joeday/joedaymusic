@@ -13,12 +13,12 @@
   justify-content: center;
 }
 
-.app-shell {
-  background: url("./images/noisy-bg.jpg") top left repeat;
+.appShell {
+  background: url("../public/images/noisy-bg.jpg") top left repeat;
   background-size: 100px;
   display: grid;
   grid-template-columns: 42px 1fr 42px;
-  grid-template-rows: 148px 1fr 148px;
+  grid-template-rows: 148px auto 148px;
   grid-template-areas:
     "header header header"
     "side-l content side-r"
@@ -30,7 +30,7 @@
   margin: 0;
 }
 
-.site-header {
+.siteHeader {
   grid-area: header;
   font-size: 12px;
   display: flex;
@@ -39,78 +39,80 @@
   justify-content: center;
 }
 
-.site-logo img {
+.siteLogo img {
   height: 56px;
+  width: auto;
 }
 
-.site-logo a {
+.siteLogo a {
   color: var(--color-primary-black);
   text-decoration: none;
 }
 
-.site-logo a:hover {
+.siteLogo a:hover {
   text-decoration: none;
 }
 
-.site-nav {
+.siteNav {
   font-family: "Oaxaca";
   font-size: 12px;
   margin: 12px 0 0;
 }
 
-.site-nav a {
+.siteNav a {
   text-decoration: none;
   color: var(--color-primary-black);
   padding: 0 8px;
 }
 
-.site-nav a:hover {
+.siteNav a:hover {
   text-decoration: underline;
 }
 
-.site-nav .active {
+.siteNav .active {
   color: var(--color-accent);
 }
 
-.site-nav .active:before {
+.siteNav .active:before {
   content: "+ ";
 }
 
-.site-nav .active:after {
+.siteNav .active:after {
   content: " +";
 }
 
-.site-nav .active:before:hover,
-.site-nav .active:after:hover {
+.siteNav .active:before:hover,
+.siteNav .active:after:hover {
   text-decoration: none;
 }
 
-.sidebar-l {
+.sidebarL {
   grid-area: side-l;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sidebar-r {
+.sidebarR {
   grid-area: side-r;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sidebar-l img,
-.sidebar-r img {
+.sidebarL img,
+.sidebarR img {
   width: 27%;
+  height: auto;
 }
 
-.site-content {
+.siteContent {
   grid-area: content;
   /* display: flex;
   align-items: center; */
 }
 
-.site-footer {
+.siteFooter {
   grid-area: footer;
   display: flex;
   flex-direction: column;
@@ -119,13 +121,13 @@
   align-items: center;
 }
 
-.streaming-links {
+.streamingLinks {
   font-size: 12px;
   display: flex;
   align-items: center;
 }
 
-.streaming-icon {
+.streamingIcon {
   height: 16px;
   display: flex;
   align-items: center;
@@ -134,11 +136,11 @@
   color: var(--color-primary-black);
 }
 
-.streaming-icon img {
+.streamingIcon img {
   height: 16px;
 }
 
-.footer-l {
+.footerL {
   font-family: "Oaxaca";
   grid-area: footer-l;
   font-size: 24px;
@@ -148,7 +150,7 @@
   justify-content: center;
 }
 
-.footer-r {
+.footerR {
   font-family: "Oaxaca";
   grid-area: footer-r;
   font-size: 24px;
@@ -159,25 +161,25 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .app-shell {
+  .appShell {
     grid-template-columns: 98px 1fr 98px;
     grid-template-rows: 212px auto 215px;
   }
 
-  .site-logo img {
+  .siteLogo img {
     height: 64px;
   }
 
-  .site-nav {
+  .siteNav {
     font-size: 16px;
   }
 
-  .sidebar-l img,
-  .sidebar-r img {
+  .sidebarL img,
+  .sidebarR img {
     width: unset;
   }
 
-  .site-footer {
+  .siteFooter {
     grid-area: footer;
     display: flex;
     flex-direction: row;
@@ -186,38 +188,38 @@
     align-items: center;
   }
 
-  .streaming-icon img {
+  .streamingIcon img {
     height: 20px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .app-shell {
+  .appShell {
     grid-template-columns: 148px 1fr 148px;
     grid-template-rows: 212px auto 215px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .app-shell {
+  .appShell {
     grid-template-columns: 270px 1fr 270px;
     grid-template-rows: 300px auto 215px;
   }
 
-  .site-logo img {
+  .siteLogo img {
     height: 96px;
   }
 
-  .site-nav {
+  .siteNav {
     font-size: 18px;
     margin: 34px 0 0;
   }
 
-  .streaming-icon img {
+  .streamingIcon img {
     height: unset;
   }
 
-  .site-content {
+  .siteContent {
     min-width: 900px;
   }
 }

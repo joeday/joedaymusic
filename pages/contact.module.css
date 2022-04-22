@@ -1,4 +1,4 @@
-.contact-grid {
+.contactGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto 1fr auto;
@@ -9,7 +9,7 @@
   grid-gap: 6px;
 }
 
-.article-title {
+.articleTitle {
   grid-area: title;
 }
 
@@ -19,17 +19,17 @@
   line-height: 1.2;
 }
 
-.other-emails {
+.otherEmails {
   margin-top: 64px;
 }
 
-.other-emails .contact-info,
-.other-emails p {
+.otherEmails .contactInfo,
+.otherEmails p {
   margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .contact-grid {
+  .contactGrid {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto 1fr auto;
     grid-template-areas:

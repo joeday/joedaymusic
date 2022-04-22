@@ -1,4 +1,4 @@
-.shows-grid {
+.showsGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto 1fr auto;
@@ -8,7 +8,7 @@
     "creds creds creds creds creds creds";
 }
 
-.article-title {
+.articleTitle {
   grid-area: title;
 }
 
@@ -16,7 +16,7 @@
   grid-area: copy;
 }
 
-.upcoming-shows-list {
+.upcomingShowsList {
   list-style-type: none;
   margin: 32px 0;
   padding: 0;
@@ -28,11 +28,11 @@
   margin: 128px 0;
 }
 
-.email-link {
+.emailLink {
   text-transform: lowercase;
 }
 
-.booking-copy {
+.bookingCopy {
   font-size: var(--text-size-main);
   text-transform: uppercase;
 }
@@ -42,7 +42,7 @@
   font-size: 24px;
 }
 
-.past-shows-list {
+.pastShowsList {
   list-style-type: none;
   margin: 12px 0;
   padding: 0;
