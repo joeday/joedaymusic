@@ -1,5 +1,5 @@
 import Show from '../components/Show'
-import styles from './Shows.module.css'
+import styles from './shows.module.css'
 import Layout from '../components/layout'
 import shows from '../data/shows'
 

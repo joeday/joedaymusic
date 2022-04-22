@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Layout from '../components/layout'
-import styles from './Bio.module.css';
+import styles from './bio.module.css';
 
 const classNames = (...styles) => styles.join(' ');
 const leftImage = classNames(styles.imgL, styles.imgContainer);

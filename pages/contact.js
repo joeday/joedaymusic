@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 // import Mailchimp from '../components/Mailchimp'
-import styles from './Contact.module.css'
+import styles from './contact.module.css'
 import MailchimpCustom from '../components/MailchimpCustom';
 
 export default function Bio() {

@@ -2,11 +2,13 @@
   "name": "joedaymusic",
   "version": "0.1.0",
   "private": false,
+  "license": "MIT",
   "homepage": "https://joedaymusic.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.1.10",
+    "eslint": "^8.14.0",
     "install": "^0.13.0",
     "jsonp": "^0.2.1",
     "next": "^12.1.4",
