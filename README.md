@@ -6,4 +6,6 @@ Like many people who make music or some kind of art, I have a day job. My day jo
 
 Does this site represent the best of my design thinking and execution? Nope. I only have so much time and I'd rather put as much of that into the music as possible. But, I do care that it represents the art well enough, is accessible to everyone, and open to anyone who is curious. Hence this readme.
 
+If you find an error, or a bug, or if something is not accessible, feel free to create an issue. Heck, you can even put up a pull request if you're so inclined. That'd be amazing. Or, if you're not a technical person, just shoot me an email <joe@joedaymusic.com>.
+
 Enjoy. :)
