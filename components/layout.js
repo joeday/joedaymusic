@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 import { useRouter } from 'next/router';
 import styles from './layout.module.css'
 
@@ -12,6 +13,29 @@ export default function Layout({ children }) {
 
   return (
     <div className={styles.App}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+
+        <meta property="og:title" content="Get Halflight on Vinyl Today" />
+        <meta property="og:description" content="Available now" />
+        <meta property="og:image" content="/HalflightVinylMockup.jpg" />
+        <meta property="og:url" content="https://joedaymusic.com" />
+        <meta property="og:type" content="website" />
+
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+        <meta name="Joe Day Music" content="New album Halflight out now everywhere you stream music" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+
+        <title>Joe Day Music</title>
+      </Head>
+
       <main className={styles.appShell}>
         
         <header className={styles.siteHeader}>
