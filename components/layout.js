@@ -1,48 +1,59 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import Head from 'next/head'
-import { useRouter } from 'next/router';
-import styles from './layout.module.css'
+import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import styles from "./layout.module.css";
 
-import MailchimpSimple from '../components/Mailchimp';
-
+import MailchimpSimple from "../components/Mailchimp";
 
 export default function Layout({ children }) {
-
   const router = useRouter();
 
   return (
     <div className={styles.App}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0"
+        />
         <meta name="theme-color" content="#000000" />
-
-        <meta property="og:title" content="Get Halflight on Vinyl Today" />
-        <meta property="og:description" content="Available now" />
-        <meta property="og:image" content="/HalflightVinylMockup.jpg" />
-        <meta property="og:url" content="https://joedaymusic.com" />
-        <meta property="og:type" content="website" />
 
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-        <meta name="Joe Day Music" content="New album Halflight out now everywhere you stream music" />
+        <meta
+          name="Joe Day Music"
+          content="New album Halflight out now everywhere you stream music"
+        />
         <link rel="apple-touch-icon" href="/logo192.png" />
 
         <title>Joe Day Music</title>
       </Head>
 
       <main className={styles.appShell}>
-        
         <header className={styles.siteHeader}>
           <div className={styles.siteLogo}>
             <Link href="/">
               <a>
-                <Image 
+                <Image
                   src="/images/JoeDay.svg"
                   alt="Joe Day Music Logo"
                   width="514"
@@ -52,23 +63,35 @@ export default function Layout({ children }) {
               </a>
             </Link>
           </div>
-          
+
           <nav className={styles.siteNav}>
             <Link href="/bio" activeClassName={styles.active}>
-              <a className={router.pathname == "/bio" ? styles.active : ""} >Bio</a>
+              <a className={router.pathname == "/bio" ? styles.active : ""}>
+                Bio
+              </a>
             </Link>
             <Link href="/shows">
-              <a className={router.pathname == "/shows" ? styles.active : ""} >Shows</a>
+              <a className={router.pathname == "/shows" ? styles.active : ""}>
+                Shows
+              </a>
             </Link>
             <Link href="/contact">
-            <a className={router.pathname == "/contact" ? styles.active : ""} >Contact</a>
+              <a className={router.pathname == "/contact" ? styles.active : ""}>
+                Contact
+              </a>
             </Link>
-            <a href="https://joeday.bandcamp.com/album/halflight" target="_blank" rel="noreferrer">Store</a>
+            <a
+              href="https://joeday.bandcamp.com/album/halflight"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Store
+            </a>
           </nav>
         </header>
 
         <aside className={styles.sidebarL}>
-          <Image 
+          <Image
             priority
             src="/images/fear_and_love.svg"
             alt="Fear and love"
@@ -78,12 +101,10 @@ export default function Layout({ children }) {
           />
         </aside>
 
-        <section className={styles.siteContent}>
-          {children}
-        </section>
-        
+        <section className={styles.siteContent}>{children}</section>
+
         <aside className={styles.sidebarR}>
-          <Image 
+          <Image
             priority
             src="/images/love_and_fear.svg"
             alt="Love and fear"
@@ -96,8 +117,13 @@ export default function Layout({ children }) {
         <footer className={styles.siteFooter}>
           <span className={styles.streamingLinks}>
             Listen:
-            <a className={styles.streamingIcon} href="https://open.spotify.com/artist/7x1PLGWhJe9SsmZ8i4VGCE?si=yQl5fRWVS0G4I9uIUl1LRQ" rel="noreferrer" target="_blank">
-              <Image 
+            <a
+              className={styles.streamingIcon}
+              href="https://open.spotify.com/artist/7x1PLGWhJe9SsmZ8i4VGCE?si=yQl5fRWVS0G4I9uIUl1LRQ"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
                 priority
                 src="/images/Spotify_logo_without_text_black.svg"
                 alt="Spotify"
@@ -106,8 +132,13 @@ export default function Layout({ children }) {
                 layout="raw"
               />
             </a>
-            <a className={styles.streamingIcon} href="https://music.apple.com/us/artist/joe-day/214945054" rel="noreferrer" target="_blank">
-              <Image 
+            <a
+              className={styles.streamingIcon}
+              href="https://music.apple.com/us/artist/joe-day/214945054"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
                 priority
                 src="/images/Apple_Music_Icon_black_sm_.svg"
                 alt="Apple Music"
@@ -116,8 +147,13 @@ export default function Layout({ children }) {
                 layout="raw"
               />
             </a>
-            <a className={styles.streamingIcon} href="https://joeday.bandcamp.com/album/halflight" rel="noreferrer" target="_blank">
-              <Image 
+            <a
+              className={styles.streamingIcon}
+              href="https://joeday.bandcamp.com/album/halflight"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
                 priority
                 src="/images/bc-logotype-black.svg"
                 alt="Bandcamp"
