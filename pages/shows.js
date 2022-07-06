@@ -17,12 +17,12 @@ export default function Shows(props) {
     <>
       <Head>
         <title>Joe Day Shows</title>
-        <meta property="og:title" content="Joe Day &amp; John Van Deusen" />
         <meta
-          property="og:description"
-          content="Living room show on sale now"
+          property="og:title"
+          content="Joe Day &amp; John Van Deusen on tour"
         />
-        <meta property="og:image" content="/jvd_jd_tickets_2.jpg" />
+        <meta property="og:description" content="Northwest tour on sale now" />
+        <meta property="og:image" content="/jvd_jd_tour.jpg" />
         <meta property="og:url" content="https://joedaymusic.com/shows" />
         <meta property="og:type" content="website" />
       </Head>
