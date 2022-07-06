@@ -1,18 +1,18 @@
-.show-row {
-  letter-spacing: -1px;
+.showRow {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  font-size: 16px;
+  font-size: var(--text-size-md);
   padding: 6px 0;
+  margin: 12px 0;
 }
 
-.city-state:before,
+.cityState:before,
 .playing-with:before {
   display: none;
 }
 
-.city-state,
+.cityState,
 .date {
   text-transform: uppercase;
 }
@@ -21,7 +21,7 @@
   font-weight: 600;
 }
 
-.playing-with,
+.playingWith,
 .tiny {
   max-width: 32ch;
   overflow: hidden;
@@ -29,7 +29,7 @@
 }
 
 .tiny {
-  font-size: 12px;
+  font-size: var(--text-size-sm);
   margin-right: 3px;
 }
 
@@ -45,8 +45,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 16px;
+    font-size: var(--text-size-md);
     padding: 6px 0;
+    margin: unset;
   }
 
   .basicShowInfo {
@@ -70,7 +71,7 @@
 
 @media only screen and (min-width: 1200px) {
   .showRow {
-    font-size: 20px;
+    font-size: var(--text-size-lg);
   }
 
   .cityState:before,

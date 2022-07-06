@@ -4,12 +4,15 @@ html {
   --color-primary-white: #fffffa;
   --color-true-white: #fff;
   --color-accent: #af2b38;
-  --color-success: #2BAF78;
+  --color-success: #2baf78;
 
   --text-size-title: 36px;
   --text-size-title-sm: 24px;
+  --text-size-lg: 20px;
   --text-size-main: 18px;
-  --text-size-small: 12px;
+  --text-size-md: 16px;
+  --text-size-sm: 12px;
+  --text-size-xs: 10px;
 
   --font-family-primary: "Oajaca";
   --font-family-secondary: "Mojave";
@@ -39,7 +42,7 @@ h2,
 }
 
 .tiny {
-  font-size: var(--text-size-small);
+  font-size: var(--text-size-sm);
 }
 
 a {
