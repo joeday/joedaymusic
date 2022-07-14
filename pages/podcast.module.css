@@ -1,0 +1,30 @@
+.podcastGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "title  title title title title title"
+    "copy copy  copy  copy  copy  copy"
+    "creds  creds creds creds creds creds";
+  grid-gap: 6px;
+}
+
+.articleTitle {
+  grid-area: title;
+  letter-spacing: -1px;
+}
+
+.overview {
+  grid-area: copy;
+}
+
+/* @media only screen and (min-width: 768px) {
+  .podcastGrid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "title-l  title title title title title-r"
+      "gutter-l copy  copy  copy  copy  gutter-r"
+      "creds    creds creds creds creds creds";
+  }
+} */

@@ -1,0 +1,39 @@
+.episode {
+  margin: 48px 0;
+  padding: 0 0 0 280px;
+  position: relative;
+  min-height: 256px;
+}
+
+.episodeTitle {
+  font-size: var(--text-size-lg);
+  font-weight: 600;
+  margin: 0;
+}
+
+.episodeMetadata {
+  color: var(--color-gray-600);
+  font-size: var(--text-size-sm);
+  margin: 0 0 6px 0;
+}
+
+.episodeDescription {
+  margin: 0;
+}
+
+.episodeLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 24px 0;
+}
+
+.episodeLinks * {
+  margin-right: 12px;
+}
+
+.episodeImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

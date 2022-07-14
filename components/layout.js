@@ -65,6 +65,11 @@ export default function Layout({ children }) {
           </div>
 
           <nav className={styles.siteNav}>
+            <Link href="/podcast" activeClassName={styles.active}>
+              <a className={router.pathname == "/podcast" ? styles.active : ""}>
+                Podcast
+              </a>
+            </Link>
             <Link href="/bio" activeClassName={styles.active}>
               <a className={router.pathname == "/bio" ? styles.active : ""}>
                 Bio
