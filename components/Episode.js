@@ -6,8 +6,17 @@ export default function Episode(props) {
   const { title, guest, releaseDate, description, image, id, links } = props;
   return (
     <div className={styles.episode}>
+      <Image
+        src={image}
+        height="400"
+        width="400"
+        layout="raw"
+        className={styles.episodeImage}
+      />
       <h2 className={styles.episodeTitle}>
-        {title} - {guest}
+        {title}
+        <small className={styles.tiny}>with</small>
+        {guest}
       </h2>
       <pre className={styles.episodeMetadata}>
         Episode {id} - {releaseDate}
@@ -23,13 +32,6 @@ export default function Episode(props) {
             ))
           : "No episodes"}
       </div>
-      <Image
-        src={image}
-        height="256"
-        width="256"
-        layout="raw"
-        className={styles.episodeImage}
-      />
     </div>
   );
 }

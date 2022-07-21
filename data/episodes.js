@@ -38,7 +38,7 @@ export default [
   },
   {
     id: "02",
-    published: false,
+    published: true,
     title: "Halflight",
     guest: "Levi the Poet",
     releaseDate: new Date("08/13/2022 7:00:00 PM").toLocaleDateString(

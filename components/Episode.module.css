@@ -1,8 +1,12 @@
 .episode {
   margin: 48px 0;
-  padding: 0 0 0 280px;
+  padding: 0;
   position: relative;
   min-height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 auto;
 }
 
 .episodeTitle {
@@ -23,9 +27,9 @@
 
 .episodeLinks {
   display: flex;
-  flex-direction: row;
+  flex-flow: wrap;
   justify-content: flex-start;
-  margin: 24px 0;
+  margin: 24px 0 0;
 }
 
 .episodeLinks * {
@@ -33,7 +37,29 @@
 }
 
 .episodeImage {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  flex: 1 auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 12px 0;
+}
+
+.tiny {
+  font-size: var(--text-size-xs);
+  padding: 0 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .episode {
+    padding: 0 0 0 280px;
+    justify-content: center;
+  }
+  .episodeImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 256px;
+    width: 256px;
+    margin: unset;
+  }
 }
