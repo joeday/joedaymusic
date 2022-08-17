@@ -36,7 +36,7 @@ export default function Shows(props) {
                 ? props.shows.map((showInfo) => (
                     <Show {...showInfo} key={showInfo.id} />
                   ))
-                : "Nothing scheduled at the moment"}
+                : "Nothing scheduled at the moment. Looking for touring support? Want to host a living room or backyard show? Shoot us an email at the address below."}
             </ul>
 
             <section className={styles.booking}>
