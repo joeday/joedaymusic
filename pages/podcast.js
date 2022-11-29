@@ -25,6 +25,10 @@ export default function Podcast(props) {
             where it goes. Join me on this 12 week journey going deeper into the
             story of Halflight.
           </p>
+          <p>
+            The Halflight Podcast is available everywhere you listen to
+            podcasts.
+          </p>
           {props.episodes.length != 0
             ? props.episodes.map((episode) =>
                 episode.published ? (
