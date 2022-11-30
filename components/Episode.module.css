@@ -1,6 +1,4 @@
-.episodeCard {
-  margin: 0;
-  padding: 0;
+.episodeCardWrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,6 +6,37 @@
   flex: 0 0 auto;
   border-radius: 8px;
   background: var(--color-true-black);
+}
+
+.episodeCard {
+  /* position: relative; */
+  width: 100%;
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.episodeCard:hover {
+  opacity: 0.8;
+}
+
+.episodeCard:hover > .cardFront > .episodeTitle {
+  text-decoration: underline;
+}
+
+.cardFront,
+.cardBack {
+  /* position: absolute; */
+  width: 100%;
+  /* height: 100%; */
+  backface-visibility: hidden;
+}
+
+.cardBack {
+  display: none;
 }
 
 .episodeTitle {
@@ -58,13 +87,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .episodeCard {
+  .episodeCardWrapper {
     width: calc(100% / 2 - 12px);
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .episodeCard {
+  .episodeCardWrapper {
     width: calc(100% / 3 - 16px);
   }
 }
