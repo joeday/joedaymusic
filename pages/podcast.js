@@ -18,12 +18,11 @@ export default function Podcast(props) {
         <h1 className={styles.articleTitle}>The Halflight Podcast</h1>
         <section className={styles.overview}>
           <p>
-            The Halflight Podcast is the audio liner notes for the album. I
-            wanted a way to share more of the story of the album through the
-            lens of the lyrics and through the eyes of others. In each episode,
-            me and my guest talk through a song and follow the conversation
-            where it goes. Join me on this 12 week journey going deeper into the
-            story of Halflight.
+            A podcast about loneliness, hope, losing faith, relationships,
+            writer’s block, finding faith, evangelicalism, mars hill church,
+            certainty, doubt, church trauma, healing, wonder, surprise,
+            creativity, disappointment, prayer, longing; about making the album
+            Halflight.
           </p>
           <p>
             The Halflight Podcast is available everywhere you listen to

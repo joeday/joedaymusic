@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import Layout from "../components/layout";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,34 +17,30 @@ export default function Home() {
       <Layout home>
         <div className={styles.homeGrid}>
           <section className={styles.homeContent}>
-            <a
-              href="https://joeday.bandcamp.com/album/halflight"
-              rel="noreferrer"
-              target="_blank"
-              className={styles.link}
-            >
-              <Image
-                priority
-                src="/images/VinylMockup-transparent.png"
-                className={styles.responsiveImage}
-                width="1200"
-                height="630"
-                layout="raw"
-                alt="Album cover for Joe Day's full length album 'Halflight'"
-              />
-            </a>
+            <Link href="/podcast">
+              <a className={styles.headlineImg}>
+                <Image
+                  priority
+                  src="/images/podcast/the-halflight-podcast-handwriting.png"
+                  className={styles.responsiveImage}
+                  width="625"
+                  height="570"
+                  layout="raw"
+                  alt="Album cover for Joe Day's full length album 'Halflight'"
+                />
+              </a>
+            </Link>
             <div className={styles.headlineBlocks}>
-              <p className={styles.headlineBlock2}>The new full-length album</p>
-              <p className={styles.headlineBlock3}>Halflight</p>
-              <p className={styles.headlineBlock4}>
-                <a
-                  href="https://joeday.bandcamp.com/album/halflight"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Now at Bandcamp
-                </a>
-                &nbsp;+ Streaming everywhere
+              <p className={styles.headlineBlock2}>
+                Coming January 01, 2023. Subscribe wherever you get your
+                podcasts today!
+              </p>
+              <p className={styles.headlineBlock2}>
+                A podcast about loneliness, hope, losing faith, relationships,
+                writer’s block, finding faith, evangelicalism, Mars Hill Church,
+                certainty, doubt, church trauma, healing, wonder, surprise,
+                creativity, disappointment, prayer, longing; about making the
+                album Halflight.
               </p>
             </div>
           </section>

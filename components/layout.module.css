@@ -8,14 +8,12 @@
 }
 
 .App {
-  color: var(--color-primary-black);
+  color: var(--color-primary-white);
   display: flex;
   justify-content: center;
 }
 
 .appShell {
-  background: url("../public/images/noisy-bg.jpg") top left repeat;
-  background-size: 100px;
   display: grid;
   grid-template-columns: 42px 1fr 42px;
   grid-template-rows: 148px auto 148px;
@@ -45,7 +43,7 @@
 }
 
 .siteLogo a {
-  color: var(--color-primary-black);
+  color: var(--color-primary-white);
   text-decoration: none;
 }
 
@@ -61,7 +59,7 @@
 
 .siteNav a {
   text-decoration: none;
-  color: var(--color-primary-black);
+  color: var(--color-primary-white);
   padding: 0 8px;
 }
 
@@ -133,7 +131,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 8px;
-  color: var(--color-primary-black);
+  color: var(--color-primary-white);
 }
 
 .streamingIcon img {

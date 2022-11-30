@@ -3,6 +3,7 @@ html {
   --color-primary-black: #35292b;
   --color-primary-white: #fffffa;
   --color-true-white: #fff;
+  --color-true-black: #111;
   --color-gray-600: #777;
   --color-gray-300: #ccc;
   --color-accent: #af2b38;
@@ -75,7 +76,9 @@ a:hover {
 body {
   margin: 0;
   height: 100%;
-  background-color: #333;
+  background: url("../public/images/bg_silhouette_gradient.jpg") top no-repeat
+    var(--color-true-black);
+  background-size: cover;
   font-family: "VCTR Mono", "Courier", "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
