@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Episode(props) {
   const { title, guest, releaseDate, description, image, id, links } = props;
   return (
-    <div className={styles.episode}>
+    <div className={styles.episodeCard}>
       <Image
         src={image}
         height="400"
@@ -13,16 +13,18 @@ export default function Episode(props) {
         layout="raw"
         className={styles.episodeImage}
       />
-      <h2 className={styles.episodeTitle}>
-        {title}
-        <small className={styles.tiny}>with</small>
-        {guest}
-      </h2>
       <pre className={styles.episodeMetadata}>
         Episode {id} - {releaseDate}
       </pre>
-      <p className={styles.episodeDescription}>{description}</p>
-      <div className={styles.episodeLinks}>
+      <h2 className={styles.episodeTitle}>
+        {title}
+        <br />
+        <small className={styles.tiny}>with</small>
+        {guest}
+      </h2>
+
+      {/* <p className={styles.episodeDescription}>{description}</p> */}
+      {/* <div className={styles.episodeLinks}>
         Episode links: &nbsp;
         {links.length != 0
           ? links.map((link) => (
@@ -31,7 +33,7 @@ export default function Episode(props) {
               </a>
             ))
           : "No episodes"}
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default [
     published: true,
     title: "Blue Skies",
     guest: "Joce Aucoin",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("12/26/2022 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -40,7 +40,7 @@ export default [
     published: true,
     title: "Halflight",
     guest: "Levi the Poet",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("12/26/2022 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -75,7 +75,7 @@ export default [
     published: true,
     title: "Fear and Love",
     guest: "Brent James Driscoll",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("12/26/2022 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -110,7 +110,7 @@ export default [
     published: true,
     title: "All I Want is Home",
     guest: "Sara Billups",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("01/02/2023 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -145,7 +145,7 @@ export default [
     published: true,
     title: "The Prayer of Saint Francis",
     guest: "Jeremiah Webster",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("01/09/2023 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -180,7 +180,7 @@ export default [
     published: true,
     title: "When Will My Day Come?",
     guest: "Tim Wilson",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("01/16/2023 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -215,7 +215,7 @@ export default [
     published: true,
     title: "Don't Let The Fear Capture Your Heart",
     guest: "Sandra McCracken",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("01/23/2023 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -250,7 +250,7 @@ export default [
     published: true,
     title: "A Better Love",
     guest: "John Van Deusen",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("02/06/2023 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -284,7 +284,7 @@ export default [
     published: true,
     title: "Return My Heart To My Chest",
     guest: "Mike Cosper",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("02/13/2023 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),
@@ -319,7 +319,7 @@ export default [
     published: true,
     title: "Benediction For The Broken",
     guest: "Alex Early",
-    releaseDate: new Date("01/01/2023 12:00:00 AM").toLocaleDateString(
+    releaseDate: new Date("02/20/2023 12:00:00 AM").toLocaleDateString(
       "en-US",
       options
     ),

@@ -1,24 +1,31 @@
-.episode {
-  margin: 48px 0;
+.episodeCard {
+  margin: 0;
   padding: 0;
-  position: relative;
-  min-height: 256px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 0 auto;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: var(--color-true-black);
 }
 
 .episodeTitle {
   font-size: var(--text-size-lg);
-  font-weight: 600;
-  margin: 0;
+  font-weight: 500;
+  padding: 0 12px 12px;
+  margin: unset;
+  word-spacing: -5px;
+  letter-spacing: -1px;
 }
 
 .episodeMetadata {
   color: var(--color-gray-600);
   font-size: var(--text-size-sm);
-  margin: 0 0 6px 0;
+  margin: unset;
+  padding: 0 12px 6px;
+  word-spacing: -3px;
+  letter-spacing: -1px;
 }
 
 .episodeDescription {
@@ -37,11 +44,12 @@
 }
 
 .episodeImage {
-  position: relative;
-  flex: 1 auto;
-  max-width: 100%;
+  /* flex: 1 auto; */
+  width: 100%;
   height: auto;
   margin: 0 0 12px 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .tiny {
@@ -50,16 +58,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .episode {
-    padding: 0 0 0 280px;
-    justify-content: center;
+  .episodeCard {
+    width: calc(100% / 2 - 12px);
   }
-  .episodeImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 256px;
-    width: 256px;
-    margin: unset;
+}
+
+@media only screen and (min-width: 1024px) {
+  .episodeCard {
+    width: calc(100% / 3 - 16px);
   }
 }

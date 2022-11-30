@@ -19,22 +19,24 @@ export default function Podcast(props) {
         <section className={styles.overview}>
           <p>
             A podcast about loneliness, hope, losing faith, relationships,
-            writer’s block, finding faith, evangelicalism, mars hill church,
-            certainty, doubt, church trauma, healing, wonder, surprise,
-            creativity, disappointment, prayer, longing; about making the album
-            Halflight.
+            writer’s block, finding faith, evangelicalism, Mars Hill Church,
+            certainty, redemption, doubt, church trauma, healing, fear, wonder,
+            surprise, love, creativity, disappointment, prayer, and longing.
+            It's a podcast about how the album&nbsp;<em>Halflight</em> was made.
           </p>
           <p>
             The Halflight Podcast is available everywhere you listen to
             podcasts.
           </p>
-          {props.episodes.length != 0
-            ? props.episodes.map((episode) =>
-                episode.published ? (
-                  <Episode {...episode} key={episode.id} />
-                ) : null
-              )
-            : "Nothing scheduled at the moment"}
+          <div className={styles.episodeGrid}>
+            {props.episodes.length != 0
+              ? props.episodes.map((episode) =>
+                  episode.published ? (
+                    <Episode {...episode} key={episode.id} />
+                  ) : null
+                )
+              : "Nothing scheduled at the moment"}
+          </div>
         </section>
       </article>
     </Layout>

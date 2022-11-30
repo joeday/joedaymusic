@@ -22,6 +22,13 @@
   width: 100%;
 }
 
+.episodeGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 /* @media only screen and (min-width: 768px) {
   .podcastGrid {
     grid-template-columns: repeat(6, 1fr);
