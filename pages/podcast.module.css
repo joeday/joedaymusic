@@ -29,6 +29,44 @@
   gap: 24px;
 }
 
+.podcastLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  /* margin: 36px 0 0; */
+}
+
+.podcastLink {
+  color: var(--color-primary-white);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+}
+
+.podcastLink img {
+  height: 64px;
+}
+
+.podcastLink:hover {
+  background: var(--color-accent);
+}
+
+.subscribeNow {
+  text-align: center;
+  font-size: var(--text-size-lg);
+  text-transform: uppercase;
+  margin: 36px 0 12px;
+}
+.podcastLinksText {
+  text-align: center;
+  font-size: var(--text-size-sm);
+  margin: 16px 0 64px;
+}
+
 /* @media only screen and (min-width: 768px) {
   .podcastGrid {
     grid-template-columns: repeat(6, 1fr);

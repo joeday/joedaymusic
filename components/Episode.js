@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Episode(props) {
-  const { title, guest, releaseDate, description, image, id, links } = props;
+  const { title, guest, releaseDate, image, id, num } = props;
   const link = "/podcast/" + id;
   return (
     <Link href={link}>
@@ -16,7 +16,9 @@ export default function Episode(props) {
           layout="raw"
           className={styles.episodeImage}
         />
-        <pre className={styles.episodeMetadata}>{releaseDate}</pre>
+        <pre className={styles.episodeMetadata}>
+          Episode {num} - {releaseDate}
+        </pre>
         <h2 className={styles.episodeTitle}>
           {title}
           <br />

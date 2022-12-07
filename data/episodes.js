@@ -3,6 +3,7 @@ const options = { month: "long", day: "2-digit", year: "numeric" };
 export default [
   {
     id: "blue-skies",
+    number: "01",
     title: "Blue Skies",
     data: {
       published: true,
@@ -31,6 +32,7 @@ export default [
   },
   {
     id: "halflight",
+    number: "02",
     title: "Halflight",
     data: {
       published: true,
@@ -60,6 +62,7 @@ export default [
   },
   {
     id: "fear-and-love",
+    number: "03",
     title: "Fear and Love",
     data: {
       published: true,
@@ -89,6 +92,7 @@ export default [
   },
   {
     id: "all-i-want-is-home",
+    number: "04",
     title: "All I Want is Home",
     data: {
       published: true,
@@ -118,6 +122,7 @@ export default [
   },
   {
     id: "the-prayer-of-saint-francis",
+    number: "05",
     title: "The Prayer of Saint Francis",
     data: {
       published: true,
@@ -147,6 +152,7 @@ export default [
   },
   {
     id: "when-will-my-day-come",
+    number: "06",
     title: "When Will My Day Come?",
     data: {
       published: true,
@@ -176,6 +182,7 @@ export default [
   },
   {
     id: "dont-let-the-fear-capture-your-heart",
+    number: "07",
     title: "Don't Let The Fear Capture Your Heart",
     data: {
       published: true,
@@ -205,6 +212,7 @@ export default [
   },
   {
     id: "a-better-love",
+    number: "08",
     title: "A Better Love",
     data: {
       published: true,
@@ -234,6 +242,7 @@ export default [
   },
   {
     id: "return-my-heart-to-my-chest",
+    number: "09",
     title: "Return My Heart To My Chest",
     data: {
       published: true,
@@ -263,6 +272,7 @@ export default [
   },
   {
     id: "benediction-for-the-broken",
+    number: "10",
     title: "Benediction For The Broken",
     data: {
       published: true,

@@ -1,21 +1,22 @@
-import { useRouter } from "next/router";
+import Layout from "../../components/layout";
 import episodes from "../../data/episodes";
+import styles from "./episode.module.css";
 
 export async function getStaticPaths() {
   return {
     paths: [
       {
         params: { episode: "blue-skies" },
-        params: { episode: "halflight" },
-        params: { episode: "fear-and-love" },
-        params: { episode: "all-i-want-is-home" },
-        params: { episode: "the-prayer-of-saint-francis" },
-        params: { episode: "when-will-my-day-come" },
-        params: { episode: "dont-let-the-fear-capture-your-heart" },
-        params: { episode: "a-better-love" },
-        params: { episode: "return-my-heart-to-my-chest" },
-        params: { episode: "benediction-for-the-broken" },
       },
+      { params: { episode: "halflight" } },
+      { params: { episode: "fear-and-love" } },
+      { params: { episode: "all-i-want-is-home" } },
+      { params: { episode: "the-prayer-of-saint-francis" } },
+      { params: { episode: "when-will-my-day-come" } },
+      { params: { episode: "dont-let-the-fear-capture-your-heart" } },
+      { params: { episode: "a-better-love" } },
+      { params: { episode: "return-my-heart-to-my-chest" } },
+      { params: { episode: "benediction-for-the-broken" } },
     ],
     fallback: false,
   };
@@ -32,13 +33,12 @@ export async function getStaticProps({ params }) {
 }
 
 export default function EpisodePage({ title, data }) {
-  const router = useRouter();
-  const { episode } = router.query;
-
   return (
-    <>
-      <p>Episode {title}</p>
-      <p>Data {data}</p>
-    </>
+    <Layout>
+      <section className={styles.episodePageWrapper}>
+        <h1>{title}</h1>
+        <p>{data.description}</p>
+      </section>
+    </Layout>
   );
 }

@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import styles from "./podcast.module.css";
 import episodes from "../data/episodes";
 import Episode from "../components/Episode";
+import Image from "next/image";
 import { getByTitle } from "@testing-library/react";
 
 export const getStaticProps = async () => {
@@ -25,9 +26,56 @@ export default function Podcast(props) {
             surprise, love, creativity, disappointment, prayer, and longing.
             It's a podcast about how the album&nbsp;<em>Halflight</em> was made.
           </p>
-          <p>
-            The Halflight Podcast is available everywhere you listen to
-            podcasts.
+          <p className={styles.subscribeNow}>Subscribe now</p>
+          <div className={styles.podcastLinks}>
+            <a
+              className={styles.podcastLink}
+              href="https://open.spotify.com/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
+                priority
+                src="/images/Spotify_logo_without_text_white.svg"
+                alt="Spotify"
+                height="64"
+                width="64"
+                layout="raw"
+              />
+            </a>
+            <a
+              className={styles.podcastLink}
+              href="https://music.apple.com/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
+                priority
+                src="/images/ApplePodcastsWhite.svg"
+                alt="Apple Music"
+                height="64"
+                width="64"
+                layout="raw"
+              />
+            </a>
+            <a
+              className={styles.podcastLink}
+              href="https://podcasts.google.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
+                priority
+                src="/images/Google_Podcasts_White.svg"
+                alt="Google"
+                height="64"
+                width="64"
+                layout="raw"
+              />
+            </a>
+          </div>
+          <p className={styles.podcastLinksText}>
+            ...wherever you listen to podcasts
           </p>
           <div className={styles.episodeGrid}>
             {props.episodes.length != 0
@@ -36,6 +84,7 @@ export default function Podcast(props) {
                     <Episode
                       title={episode.title}
                       id={episode.id}
+                      num={episode.number}
                       {...episode.data}
                       key={episode.id}
                     />
