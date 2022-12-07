@@ -1,4 +1,47 @@
 .episodePageWrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 164px;
+}
+
+.episodeContent {
+  display: flex;
+  flex-direction: column;
+  /* gap: 24px; */
+}
+
+.episodeText {
+  white-space: pre-line;
+  flex-grow: 2;
+}
+
+.episodeLinksHeader {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.episodeLinks {
+  list-style-type: none;
+  padding: unset;
+  margin: unset;
+}
+
+.episodeImage {
+  max-width: 100%;
+  height: auto;
+  margin: 24px 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .episodeContent {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .episodeImage {
+    max-width: 33.333%;
+    height: auto;
+  }
 }

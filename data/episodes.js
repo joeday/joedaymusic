@@ -14,9 +14,10 @@ export default [
       ),
       description: "Joce is...",
       image: "/images/podcast/BlueSkies-Joce.jpg",
+      imageTall: "/images/podcast/tall/BlueSkies-Joce.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -24,7 +25,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -44,9 +45,10 @@ export default [
       description:
         "Levi the Poet is one of a kind. You won't find someone else doing what he does. Joe & Levi talk through faith crisis, fighting the urge for certainty by embracing mystery, and wolves howling in the wilderness.",
       image: "/images/podcast/Halflight-Levi.jpg",
+      imageTall: "/images/podcast/tall/Halflight-Levi.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -54,7 +56,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -72,11 +74,12 @@ export default [
         options
       ),
       description:
-        "Brent James Driscoll (no relation to Mark Driscoll, and yes he gets asked that all the time) is one of the creators of the Emmy winning Sessions in Place",
+        "Brent James Driscoll is filmmaker and part of the team that creates and produces the Emmy-winning web series Sessions in Place. His story of how he grew up in a myriad of differing Christian expressions, and the events that pushed him out of the church, are important to hear - especially in light of his continued faith in Christ.\n\nIn this episode, you also get a glimpse into the evolution of the song itself. How it began as an angsty, post-punk/new wave song drawing on Dramarama and The Catherine Wheel and morphed into the more textural and imaginative song it became on the album.\n\nAs a bonus, we’ve released the Fear & Love EP with all the demos and a brand new version that puts them all together. Go give it a listen today! ",
       image: "/images/podcast/FearAndLove-Brent.jpg",
+      imageTall: "/images/podcast/tall/FearAndLove-Brent.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -84,7 +87,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -104,9 +107,10 @@ export default [
       description:
         "Sara Billups is the author of the book Orphaned Believers, coming out soon.",
       image: "/images/podcast/AllIWant-Sara.jpg",
+      imageTall: "/images/podcast/tall/AllIWant-Sara.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -114,7 +118,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -134,9 +138,10 @@ export default [
       description:
         "Jeremiah Webster is the professor of english at Northwest University, a poet, an ordained Anglican deacon, and one of my favorite people.",
       image: "/images/podcast/St.Francis-Jeremiah.jpg",
+      imageTall: "/images/podcast/tall/St.Francis-Jeremiah.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -144,7 +149,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -164,9 +169,10 @@ export default [
       description:
         "Tim Wilson is the lead singer and songwriter of Seattle indie band Ivan & Alyosha.",
       image: "/images/podcast/MyDay-TWilz.jpg",
+      imageTall: "/images/podcast/tall/MyDay-TWilz.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -174,7 +180,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -194,9 +200,10 @@ export default [
       description:
         "Sandra McCracken is a singer/songwriter out of Nashville, TN.",
       image: "/images/podcast/DontLetTheFear-Sandra.jpg",
+      imageTall: "/images/podcast/tall/DontLetTheFear-Sandra.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -204,7 +211,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -224,9 +231,10 @@ export default [
       description:
         "John Van Deusen is a singer-songwriter out of Anacortes, WA.",
       image: "/images/podcast/BetterLove-JVD.jpg",
+      imageTall: "/images/podcast/tall/BetterLove-JVD.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -234,7 +242,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -254,9 +262,10 @@ export default [
       description:
         "Mike Cosper is an old friend and is the creator and host of the Rise and Fall of Mars Hill podcast. Mike & Joe talk through how Mike chose to use Return My Heart To My Chest for episode V of the podcast.",
       image: "/images/podcast/ReturnMyHeart-Cosper.jpg",
+      imageTall: "/images/podcast/tall/ReturnMyHeart-Cosper.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -264,7 +273,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
@@ -283,9 +292,10 @@ export default [
       ),
       description: "Alex Early is the pastor of Redemption Church in Seattle.",
       image: "/images/podcast/Benediction-Early.jpg",
+      imageTall: "/images/podcast/tall/Benediction-Early.jpg",
       links: [
         {
-          name: "Apple",
+          name: "Apple Podcasts",
           url: "https://foo.bar",
         },
         {
@@ -293,7 +303,7 @@ export default [
           url: "https://foo.bar",
         },
         {
-          name: "Google",
+          name: "Google Podcasts",
           url: "https://foo.bar",
         },
       ],
