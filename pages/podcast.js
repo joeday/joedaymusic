@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import styles from "./podcast.module.css";
 import episodes from "../data/episodes";
 import Episode from "../components/Episode";
+import { getByTitle } from "@testing-library/react";
 
 export const getStaticProps = async () => {
   return {
@@ -31,8 +32,13 @@ export default function Podcast(props) {
           <div className={styles.episodeGrid}>
             {props.episodes.length != 0
               ? props.episodes.map((episode) =>
-                  episode.published ? (
-                    <Episode {...episode} key={episode.id} />
+                  episode.data.published ? (
+                    <Episode
+                      title={episode.title}
+                      id={episode.id}
+                      {...episode.data}
+                      key={episode.id}
+                    />
                   ) : null
                 )
               : "Nothing scheduled at the moment"}
