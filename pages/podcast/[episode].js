@@ -2,23 +2,16 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import episodes from "../../data/episodes";
 import styles from "./episode.module.css";
+import { createDynamicRoutesFromStrings } from "../../utilities/routes";
 
 export async function getStaticPaths() {
+  const episideIDs = episodes.map((episode) => {
+    return episode.id;
+  });
+  const episodePaths = createDynamicRoutesFromStrings(episideIDs);
+
   return {
-    paths: [
-      {
-        params: { episode: "blue-skies" },
-      },
-      { params: { episode: "halflight" } },
-      { params: { episode: "fear-and-love" } },
-      { params: { episode: "all-i-want-is-home" } },
-      { params: { episode: "the-prayer-of-saint-francis" } },
-      { params: { episode: "when-will-my-day-come" } },
-      { params: { episode: "dont-let-the-fear-capture-your-heart" } },
-      { params: { episode: "a-better-love" } },
-      { params: { episode: "return-my-heart-to-my-chest" } },
-      { params: { episode: "benediction-for-the-broken" } },
-    ],
+    paths: episodePaths,
     fallback: false,
   };
 }
