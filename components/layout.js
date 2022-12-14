@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "./layout.module.css";
 
-import MailchimpSimple from "../components/Mailchimp";
+import Buttondown from "./Buttondown";
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -168,7 +168,7 @@ export default function Layout({ children }) {
               />
             </a>
           </span>
-          <MailchimpSimple />
+          <Buttondown />
         </footer>
 
         <aside className={styles.footerL}>

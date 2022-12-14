@@ -25,7 +25,7 @@ h1 {
   font-size: var(--text-size-title-sm);
   font-weight: 400;
   text-transform: uppercase;
-  word-spacing: -8px;
+  word-spacing: -5px;
   letter-spacing: -1px;
   margin: 0;
 }

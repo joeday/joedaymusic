@@ -1,0 +1,43 @@
+.simpleEmailForm {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.simpleEmailForm input {
+  -webkit-appearance: none;
+  font-family: "VCTR Mono";
+  font-size: 16px;
+  padding: 5px 8px 3px 8px;
+  margin: 0;
+  border: 1px solid #333;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.simpleEmailForm input:focus {
+  outline: none;
+  border: 2px solid #333;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.simpleEmailForm [type=submit] {
+  font-family: "VCTR Mono";
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 6px 8px 4px 8px;
+  margin: 0;
+  background: #383838;
+  color: #fff;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 0;
+  cursor: pointer;
+}
