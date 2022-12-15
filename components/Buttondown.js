@@ -6,7 +6,7 @@ export default function Buttondown() {
       action="https://buttondown.email/api/emails/embed-subscribe/joeday"
       method="post"
       target="popupwindow"
-      onsubmit="window.open('https://buttondown.email/joeday', 'popupwindow')"
+      onSubmit="window.open('https://buttondown.email/joeday', 'popupwindow')"
       className={styles.simpleEmailForm}
     >
       <input type="email" name="email" id="bd-email" placeholder="Enter your email" />
