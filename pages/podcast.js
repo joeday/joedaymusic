@@ -19,13 +19,8 @@ export default function Podcast(props) {
       <article className={styles.podcastGrid}>
         <h1 className={styles.articleTitle}>The Halflight Podcast</h1>
         <section className={styles.overview}>
-          <p>
-            A podcast about loneliness, hope, losing faith, relationships,
-            writer’s block, finding faith, evangelicalism, Mars Hill Church,
-            certainty, redemption, doubt, church trauma, healing, fear, wonder,
-            surprise, love, creativity, disappointment, prayer, and longing.
-            It's a podcast about how the album&nbsp;<em>Halflight</em> was made.
-          </p>
+          <p><em>Halflight</em> has been a deeply meaningful album for those who have discovered it. While it's captured the imagination of folks from all over the faith spectrum, including folks who claim no faith, it is a story of looking for Christ outside of the confines of evangelicalism. I love that it's spoken to people in that way and I've always hoped this album would reach all the ears that need it. Thus <em>The Halflight Podcast</em> was born.</p>
+          <p>Each episode a different guest joins me to talk about one song from the album. It’s the audio liner notes to <em>Halflight</em>, yet it’s way more than that. It’s a podcast about creativity, loneliness, hope, losing faith, relationships, writer’s block, finding faith, evangelicalism, Mars Hill Church, certainty, doubt, church trauma, healing, wonder, surprise, disappointment, prayer, longing; it's the story of making the album <em>Halflight</em>.</p>
           <p className={styles.subscribeNow}>Subscribe now</p>
           <div className={styles.podcastLinks}>
             <a

@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta property="og:title" content="Get Halflight on Vinyl Today" />
-        <meta property="og:description" content="Available now" />
-        <meta property="og:image" content="/HalflightVinylMockup.jpg" />
-        <meta property="og:url" content="https://joedaymusic.com" />
+        <meta property="og:title" content="The Halflight Podcast" />
+        <meta property="og:description" content="First episodes drop January 10th. Subscribe now wherever you get your podcasts" />
+        <meta property="og:image" content="/halflight_podcast.png" />
+        <meta property="og:url" content="https://joedaymusic.com/podcast" />
         <meta property="og:type" content="website" />
       </Head>
       <Layout home>
