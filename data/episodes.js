@@ -8,7 +8,7 @@ export default [
     data: {
       published: true,
       guest: "Joce Aucoin",
-      releaseDate: new Date("01/10/2022 12:00:00 AM").toLocaleDateString(
+      releaseDate: new Date("01/10/2023 12:00:00 AM").toLocaleDateString(
         "en-US",
         options
       ),
@@ -39,7 +39,7 @@ export default [
     data: {
       published: true,
       guest: "Levi the Poet",
-      releaseDate: new Date("01/10/2022 12:00:00 AM").toLocaleDateString(
+      releaseDate: new Date("01/10/2023 12:00:00 AM").toLocaleDateString(
         "en-US",
         options
       ),
@@ -71,7 +71,7 @@ export default [
     data: {
       published: true,
       guest: "Brent James Driscoll",
-      releaseDate: new Date("01/10/2022 12:00:00 AM").toLocaleDateString(
+      releaseDate: new Date("01/10/2023 12:00:00 AM").toLocaleDateString(
         "en-US",
         options
       ),

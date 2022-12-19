@@ -91,12 +91,8 @@ a.episodeCard:hover > .episodeTitle {
   height: auto;
   border-radius: 8px;
   background-color: var(--color-true-black);
-  transition: opacity 0.3s;
 }
 
-.placeholderImage:hover {
-  opacity: .2;
-}
 
 .placeholderTitle,
 .placeholderSubtitle {

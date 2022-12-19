@@ -9,6 +9,7 @@ html {
   --color-accent: #e14050;
   --color-success: #2baf78;
 
+  --text-size-headline: 48px;
   --text-size-title: 36px;
   --text-size-title-sm: 24px;
   --text-size-lg: 20px;
@@ -62,6 +63,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.noBreak {
+  white-space: nowrap;
 }
 
 @media only screen and (min-width: 768px) {

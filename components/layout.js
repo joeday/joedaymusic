@@ -4,8 +4,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "./layout.module.css";
 
-import Buttondown from "./Buttondown";
-
 export default function Layout({ children }) {
   const router = useRouter();
 
@@ -168,7 +166,6 @@ export default function Layout({ children }) {
               />
             </a>
           </span>
-          <Buttondown />
         </footer>
 
         <aside className={styles.footerL}>
