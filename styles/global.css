@@ -3,9 +3,13 @@ html {
   --color-primary-black: #35292b;
   --color-primary-white: #fffffa;
   --color-true-white: #fff;
-  --color-accent: #af2b38;
+  --color-true-black: #111;
+  --color-gray-600: #777;
+  --color-gray-300: #ccc;
+  --color-accent: #e14050;
   --color-success: #2baf78;
 
+  --text-size-headline: 48px;
   --text-size-title: 36px;
   --text-size-title-sm: 24px;
   --text-size-lg: 20px;
@@ -22,6 +26,8 @@ h1 {
   font-size: var(--text-size-title-sm);
   font-weight: 400;
   text-transform: uppercase;
+  word-spacing: -5px;
+  letter-spacing: -1px;
   margin: 0;
 }
 
@@ -31,6 +37,11 @@ h2,
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 24px;
+  word-spacing: -3px;
+}
+
+p {
+  word-spacing: -3px;
 }
 
 .body-copy {
@@ -46,12 +57,16 @@ h2,
 }
 
 a {
-  color: #af2b38;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.noBreak {
+  white-space: nowrap;
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,7 +88,9 @@ a:hover {
 body {
   margin: 0;
   height: 100%;
-  background-color: #333;
+  background: url("../public/images/bg_silhouette_gradient.jpg") top no-repeat
+    var(--color-true-black);
+  background-size: cover;
   font-family: "VCTR Mono", "Courier", "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

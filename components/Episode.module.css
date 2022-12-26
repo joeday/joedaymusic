@@ -1,0 +1,132 @@
+.episodeCard {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: var(--color-true-black);
+  color: var(--color-primary-white);
+}
+
+.episodeCard:hover {
+  opacity: 0.8;
+  text-decoration: unset;
+}
+
+a.episodeCard:hover > .episodeTitle {
+  text-decoration: underline;
+}
+
+.episodeCard:hover > .episodeMetadata {
+  text-decoration: none;
+}
+
+.episodeTitle {
+  font-size: var(--text-size-lg);
+  font-weight: 500;
+  padding: 0 12px 12px;
+  margin: unset;
+  word-spacing: -5px;
+  letter-spacing: -1px;
+}
+
+.episodeMetadata {
+  color: var(--color-gray-600);
+  font-size: var(--text-size-sm);
+  margin: unset;
+  padding: 0 12px 6px;
+  word-spacing: -3px;
+  letter-spacing: -1px;
+}
+
+.episodeDescription {
+  margin: 0;
+}
+
+.episodeLinks {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  margin: 24px 0 0;
+}
+
+.episodeLinks * {
+  margin-right: 12px;
+}
+
+.episodeImage {
+  width: 100%;
+  height: auto;
+  margin: 0 0 12px 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.placeholderCard {
+  position: relative;
+  aspect-ratio: 287/360;
+  width: 100%;
+  min-height: 360px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: var(--color-true-black);
+  color: var(--color-primary-white);
+}
+
+.placeholderImage {
+  width: 100%;
+  opacity: .5;
+  height: auto;
+  border-radius: 8px;
+  background-color: var(--color-true-black);
+}
+
+
+.placeholderTitle,
+.placeholderSubtitle {
+  z-index: 100;
+  text-align: center;
+  text-shadow: 0 0 30px var(--color-true-black);
+  /* background-color: rgba(0, 0, 0, .8); */
+  /* padding: 3px 3px 0 3px; */
+}
+
+.placeholderTitle {
+  margin: 0 0 6px;
+  font-size: var(--text-size-title-sm);
+}
+
+.placeholderSubtitle {
+  margin: unset;
+}
+
+.tiny {
+  font-size: var(--text-size-xs);
+  padding: 0 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .episodeCard,
+  .placeholderCard {
+    width: calc(100% / 2 - 12px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .episodeCard,
+  .placeholderCard{
+    width: calc(100% / 3 - 16px);
+  }
+}

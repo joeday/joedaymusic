@@ -4,8 +4,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "./layout.module.css";
 
-import MailchimpSimple from "../components/Mailchimp";
-
 export default function Layout({ children }) {
   const router = useRouter();
 
@@ -54,7 +52,7 @@ export default function Layout({ children }) {
             <Link href="/">
               <a>
                 <Image
-                  src="/images/JoeDay.svg"
+                  src="/images/JoeDay-DarkTheme.svg"
                   alt="Joe Day Music Logo"
                   width="514"
                   height="94"
@@ -65,6 +63,11 @@ export default function Layout({ children }) {
           </div>
 
           <nav className={styles.siteNav}>
+            <Link href="/podcast" activeClassName={styles.active}>
+              <a className={router.pathname == "/podcast" ? styles.active : ""}>
+                Podcast
+              </a>
+            </Link>
             <Link href="/bio" activeClassName={styles.active}>
               <a className={router.pathname == "/bio" ? styles.active : ""}>
                 Bio
@@ -93,7 +96,7 @@ export default function Layout({ children }) {
         <aside className={styles.sidebarL}>
           <Image
             priority
-            src="/images/fear_and_love.svg"
+            src="/images/fear_and_love-DarkTheme.svg"
             alt="Fear and love"
             width="35"
             height="534"
@@ -106,7 +109,7 @@ export default function Layout({ children }) {
         <aside className={styles.sidebarR}>
           <Image
             priority
-            src="/images/love_and_fear.svg"
+            src="/images/love_and_fear-DarkTheme.svg"
             alt="Love and fear"
             width="35"
             height="534"
@@ -125,7 +128,7 @@ export default function Layout({ children }) {
             >
               <Image
                 priority
-                src="/images/Spotify_logo_without_text_black.svg"
+                src="/images/Spotify_logo_without_text_white.svg"
                 alt="Spotify"
                 height="16"
                 width="16"
@@ -140,7 +143,7 @@ export default function Layout({ children }) {
             >
               <Image
                 priority
-                src="/images/Apple_Music_Icon_black_sm_.svg"
+                src="/images/Apple_Music_Icon_wht_sm_073120.svg"
                 alt="Apple Music"
                 height="16"
                 width="16"
@@ -155,7 +158,7 @@ export default function Layout({ children }) {
             >
               <Image
                 priority
-                src="/images/bc-logotype-black.svg"
+                src="/images/bc-logotype-light.svg"
                 alt="Bandcamp"
                 height="16"
                 width="49"
@@ -163,7 +166,6 @@ export default function Layout({ children }) {
               />
             </a>
           </span>
-          <MailchimpSimple />
         </footer>
 
         <aside className={styles.footerL}>

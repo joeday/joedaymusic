@@ -2,50 +2,64 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import Layout from "../components/layout";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <meta property="og:title" content="Get Halflight on Vinyl Today" />
-        <meta property="og:description" content="Available now" />
-        <meta property="og:image" content="/HalflightVinylMockup.jpg" />
-        <meta property="og:url" content="https://joedaymusic.com" />
+        <meta property="og:title" content="The Halflight Podcast" />
+        <meta property="og:description" content="First episodes drop January 10th. Subscribe now wherever you get your podcasts" />
+        <meta property="og:image" content="/halflight_podcast.png" />
+        <meta property="og:url" content="https://joedaymusic.com/podcast" />
         <meta property="og:type" content="website" />
       </Head>
       <Layout home>
         <div className={styles.homeGrid}>
-          <section className={styles.homeContent}>
-            <a
-              href="https://joeday.bandcamp.com/album/halflight"
-              rel="noreferrer"
-              target="_blank"
-              className={styles.link}
-            >
-              <Image
-                priority
-                src="/images/VinylMockup-transparent.png"
-                className={styles.responsiveImage}
-                width="1200"
-                height="630"
-                layout="raw"
-                alt="Album cover for Joe Day's full length album 'Halflight'"
-              />
-            </a>
-            <div className={styles.headlineBlocks}>
-              <p className={styles.headlineBlock2}>The new full-length album</p>
-              <p className={styles.headlineBlock3}>Halflight</p>
-              <p className={styles.headlineBlock4}>
-                <a
-                  href="https://joeday.bandcamp.com/album/halflight"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Now at Bandcamp
+          <h1 className={styles.headline}>Streaming everywhere <span className="noBreak">January 10</span></h1>
+          <section className={styles.homeContent}>            
+            <div className={styles.homePageColumn}>
+              <Link href="/podcast">
+                <a className={styles.headlineImg}>
+                  <Image
+                    priority
+                    src="/images/podcast/CoverLarge.png"
+                    className={styles.responsiveImage}
+                    width="852"
+                    height="852"
+                    layout="raw"
+                    alt="Cover art for The Halflight Podcast"
+                  />
                 </a>
-                &nbsp;+ Streaming everywhere
+              </Link>
+              <h2 className="subHeading">The Halflight Podcast</h2>
+              <p className={styles.description}>
+                Each episode a different guest joins Joe to talk about one song from the album. It’s the audio liner notes to <em>Halflight</em>, and it’s way more than that. It’s a podcast about creativity, loneliness, hope, losing faith, relationships, writer’s block, finding faith, evangelicalism, Mars Hill Church, certainty, doubt, church trauma, healing, wonder, surprise, disappointment, prayer, longing; about making the album <em>Halflight</em>.
+                <br />
+                <br />
+                Subscribe now wherever you listen to podcasts. 
               </p>
             </div>
+            <div className={styles.homePageColumn}>
+              <Image
+                priority
+                src="/images/podcast/FearAndLoveEPLarge.png"
+                className={styles.responsiveImage}
+                width="852"
+                height="852"
+                layout="raw"
+                alt="Album cover for Joe Day's Fear and Love EP"
+              />
+              <h2 className="subHeading">The Fear and Love EP</h2>
+              <p className={styles.description}>
+                Fear and Love (alternate version) is a brand new version of the song we made to commemorate the release of <em>The Halflight Podcast</em>. In the Fear and Love episode, Brent James Driscoll (creator & producer of the Emmy winning <a href="https://sessionsinplace.com/" target="_blank">Sessions In Place</a>) talk about the original demo from 2017 and how different it is from the album version. The Fear and Love EP chronicles the evolution of one of the most important songs on <em>Halflight</em>. If you were jonesing for some 90s angst, you’re going to be really, really happy. 
+                <br />
+                <br />
+                Streaming everywhere January 10th.
+              </p>
+              
+            </div>
+           
           </section>
         </div>
       </Layout>

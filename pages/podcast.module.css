@@ -1,0 +1,81 @@
+.podcastGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "title  title title title title title"
+    "copy copy  copy  copy  copy  copy"
+    "creds  creds creds creds creds creds";
+  grid-gap: 6px;
+}
+
+.articleTitle {
+  grid-area: title;
+  letter-spacing: -1px;
+}
+
+.overview {
+  grid-area: copy;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.episodeGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.podcastLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.podcastLink {
+  color: var(--color-primary-white);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+}
+
+.podcastLink img {
+  height: 36px;
+}
+
+.podcastLink:hover {
+  background: var(--color-accent);
+}
+
+.subscribeNow {
+  text-align: center;
+  font-size: var(--text-size-lg);
+  text-transform: uppercase;
+  margin: 36px 0 12px;
+}
+.podcastLinksText {
+  text-align: center;
+  font-size: var(--text-size-sm);
+  margin: 16px 0 64px;
+}
+
+@media only screen and (min-width: 768px) {
+  .podcastLinks {
+    gap: 48px;
+  }
+
+  .podcastLink {
+    height: 64px;
+  }
+
+  .podcastLink img {
+    height: 64px;
+  }
+}
