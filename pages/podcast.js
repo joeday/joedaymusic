@@ -69,9 +69,9 @@ export default function Podcast(props) {
                 layout="raw"
               />
             </a>
-            {/* <a
+            <a
               className={styles.podcastLink}
-              href="https://podcasts.google.com"
+              href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9hZDIzMmYyOC9wb2RjYXN0L3Jzcw"
               rel="noreferrer"
               target="_blank"
             >
@@ -83,7 +83,7 @@ export default function Podcast(props) {
                 width="64"
                 layout="raw"
               />
-            </a> */}
+            </a>
             <a
               className={styles.podcastLink}
               href="https://anchor.fm/s/ad232f28/podcast/rss"

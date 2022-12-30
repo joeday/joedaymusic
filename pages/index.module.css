@@ -18,9 +18,9 @@
 
 .headline {
   font-size: var(--text-size-headline);
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
-  line-height: .9;
+  line-height: 0.9;
   letter-spacing: -2px;
   word-spacing: -8px;
   margin: 24px 0 48px;
