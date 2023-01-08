@@ -1,62 +1,58 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import episodes from "../../data/episodes";
 import styles from "./episode.module.css";
-import { createDynamicRoutesFromStrings } from "../../utilities/routes";
-import { getAllPostIds } from "../../utilities/posts";
+import { getAllPostIds, getPostData } from "../../utilities/episodes";
 
 export async function getStaticPaths() {
-  // const episodes = getAllPostIds();
-  // console.log(episodes);
-  const episideIDs = episodes.map((episode) => {
-    return episode.id;
-  });
-  const episodePaths = createDynamicRoutesFromStrings(episideIDs);
+  const episodes = getAllPostIds();
 
   return {
-    paths: episodePaths,
+    paths: episodes,
     fallback: false,
   };
+  // const episideIDs = episodes.map((episode) => {
+  //   return episode.id;
+  // });
+  // const episodePaths = createDynamicRoutesFromStrings(episideIDs);
+
+  // return {
+  //   paths: episodePaths,
+  //   fallback: false,
+  // };
 }
 
 export async function getStaticProps({ params }) {
-  const episodeData = episodes.find((episode) => episode.id === params.episode);
+  const episodeData = await getPostData(params.episode);
   return {
     props: {
-      title: episodeData ? episodeData.title : null,
-      data: episodeData ? episodeData.data : null,
+      episodeData,
     },
   };
+  // const episodeData = episodes.find((episode) => episode.id === params.episode);
+  // return {
+  //   props: {
+  //     title: episodeData ? episodeData.title : null,
+  //     data: episodeData ? episodeData.data : null,
+  //   },
+  // };
 }
 
-export default function EpisodePage({ title, data }) {
+export default function EpisodePage({ episodeData }) {
   return (
     <Layout>
       <section className={styles.episodePageWrapper}>
-        <h1>{title}</h1>
+        <h1>{episodeData.title}</h1>
         <div className={styles.episodeContent}>
-          <div className={styles.episodeText}>
-            <p>{data.description}</p>
-            <h4 className={styles.episodeLinksHeader}>Episode links</h4>
-            <ul className={styles.episodeLinks}>
-              {data.links.length != 0
-                ? data.links.map((link) => (
-                    <li>
-                      {link.name}{" "}
-                      <a href={link.url} target="_blank">
-                        {link.url}
-                      </a>
-                    </li>
-                  ))
-                : "Blah"}
-            </ul>
-          </div>
+          <div
+            className={styles.episodeText}
+            dangerouslySetInnerHTML={{ __html: episodeData.contentHtml }}
+          />
           <Image
-            src={data.imageTall}
+            src={episodeData.imageTall}
             className={styles.episodeImage}
             height="1920"
             width="1080"
-            alt={data.guest}
+            alt={episodeData.guest}
           />
         </div>
       </section>

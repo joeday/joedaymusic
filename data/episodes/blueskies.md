@@ -1,6 +1,6 @@
 ---
 title: "Blue Skies"
-slug: "blue-skies"
+slug: "blueskies"
 date: "2023-01-04"
 id: "01"
 published: "true"

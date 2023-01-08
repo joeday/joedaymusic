@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import styles from "./podcast.module.css";
 import Episode from "../components/Episode";
 import Image from "next/image";
-import { getSortedPostsData } from "../utilities/posts";
+import { getSortedPostsData } from "../utilities/episodes";
 
 export async function getStaticProps() {
   const episodesData = getSortedPostsData();
