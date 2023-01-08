@@ -1,10 +1,8 @@
 module.exports = {
-  experimental: {
-    images: {
-      layoutRaw: true,
-    },
+  reactStrictMode: false,
+  webpack5: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
   },
-  env: {
-    REACT_APP_MAILCHIMP_KEY: '//joedaymusic.us7.list-manage.com/subscribe/post?u=589025a72c5787cb1bc1b7b16&amp;id=c7bc1f5c37'
-  }
-}
+};

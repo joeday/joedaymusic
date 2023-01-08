@@ -24,18 +24,15 @@ export default function Home() {
           </h1>
           <section className={styles.homeContent}>
             <div className={styles.homePageColumn}>
-              <Link href="/podcast">
-                <a className={styles.headlineImg}>
-                  <Image
-                    priority
-                    src="/images/podcast/CoverLarge.png"
-                    className={styles.responsiveImage}
-                    width="852"
-                    height="852"
-                    layout="raw"
-                    alt="Cover art for The Halflight Podcast - out January 10th"
-                  />
-                </a>
+              <Link href="/podcast" className={styles.headlineImg}>
+                <Image
+                  priority
+                  src="/images/podcast/CoverLarge.png"
+                  className={styles.responsiveImage}
+                  width="852"
+                  height="852"
+                  alt="Cover art for The Halflight Podcast - out January 10th"
+                />
               </Link>
               <h2 className="subHeading">The Halflight Podcast</h2>
               <p className={styles.description}>
@@ -58,7 +55,6 @@ export default function Home() {
                 className={styles.responsiveImage}
                 width="852"
                 height="852"
-                layout="raw"
                 alt="Album cover for Joe Day's Fear and Love EP"
               />
               <h2 className="subHeading">The Fear and Love EP</h2>

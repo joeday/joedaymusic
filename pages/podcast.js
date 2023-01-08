@@ -1,19 +1,19 @@
 import Layout from "../components/layout";
 import styles from "./podcast.module.css";
-import episodes from "../data/episodes";
 import Episode from "../components/Episode";
 import Image from "next/image";
-import { getByTitle } from "@testing-library/react";
+import { getSortedPostsData } from "../utilities/posts";
 
-export const getStaticProps = async () => {
+export async function getStaticProps() {
+  const episodesData = getSortedPostsData();
   return {
     props: {
-      episodes,
+      episodesData,
     },
   };
-};
+}
 
-export default function Podcast(props) {
+export default function Podcast({ episodesData }) {
   return (
     <Layout home>
       <article className={styles.podcastGrid}>
@@ -51,7 +51,6 @@ export default function Podcast(props) {
                 alt="Spotify"
                 height="64"
                 width="64"
-                layout="raw"
               />
             </a>
             <a
@@ -66,7 +65,6 @@ export default function Podcast(props) {
                 alt="Apple Music"
                 height="64"
                 width="64"
-                layout="raw"
               />
             </a>
             <a
@@ -81,7 +79,6 @@ export default function Podcast(props) {
                 alt="Google"
                 height="64"
                 width="64"
-                layout="raw"
               />
             </a>
             <a
@@ -96,7 +93,6 @@ export default function Podcast(props) {
                 alt="RSS feed link"
                 height="64"
                 width="64"
-                layout="raw"
               />
             </a>
           </div>
@@ -104,19 +100,30 @@ export default function Podcast(props) {
             ...wherever you listen to podcasts
           </p>
           <div className={styles.episodeGrid}>
-            {props.episodes.length != 0
-              ? props.episodes.map((episode) =>
-                  episode.data.published ? (
-                    <Episode
-                      title={episode.title}
-                      id={episode.id}
-                      num={episode.number}
-                      {...episode.data}
-                      key={episode.id}
-                    />
-                  ) : null
-                )
-              : "Nothing scheduled at the moment"}
+            {episodesData.map(
+              ({
+                title,
+                date,
+                slug,
+                guest,
+                image,
+                imageTall,
+                placeholder,
+                id,
+              }) => (
+                <Episode
+                  key={id}
+                  title={title}
+                  slug={slug}
+                  num={id}
+                  guest={guest}
+                  releaseDate={date}
+                  image={image}
+                  imageTall={imageTall}
+                  placeholder={placeholder}
+                />
+              )
+            )}
           </div>
         </section>
       </article>

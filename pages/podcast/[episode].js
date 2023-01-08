@@ -3,8 +3,11 @@ import Image from "next/image";
 import episodes from "../../data/episodes";
 import styles from "./episode.module.css";
 import { createDynamicRoutesFromStrings } from "../../utilities/routes";
+import { getAllPostIds } from "../../utilities/posts";
 
 export async function getStaticPaths() {
+  // const episodes = getAllPostIds();
+  // console.log(episodes);
   const episideIDs = episodes.map((episode) => {
     return episode.id;
   });
@@ -53,7 +56,6 @@ export default function EpisodePage({ title, data }) {
             className={styles.episodeImage}
             height="1920"
             width="1080"
-            layout="raw"
             alt={data.guest}
           />
         </div>

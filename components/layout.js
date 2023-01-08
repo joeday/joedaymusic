@@ -50,39 +50,24 @@ export default function Layout({ children }) {
         <header className={styles.siteHeader}>
           <div className={styles.siteLogo}>
             <Link href="/">
-              <a>
-                <Image
-                  src="/images/JoeDay-DarkTheme.svg"
-                  alt="Joe Day Music Logo"
-                  width="514"
-                  height="94"
-                  layout="raw"
-                />
-              </a>
+              <Image
+                src="/images/JoeDay-DarkTheme.svg"
+                alt="Joe Day Music Logo"
+                width="514"
+                height="94"
+              />
             </Link>
           </div>
 
           <nav className={styles.siteNav}>
             <Link href="/podcast" activeClassName={styles.active}>
-              <a className={router.pathname == "/podcast" ? styles.active : ""}>
-                Podcast
-              </a>
+              Podcast
             </Link>
             <Link href="/bio" activeClassName={styles.active}>
-              <a className={router.pathname == "/bio" ? styles.active : ""}>
-                Bio
-              </a>
+              Bio
             </Link>
-            <Link href="/shows">
-              <a className={router.pathname == "/shows" ? styles.active : ""}>
-                Shows
-              </a>
-            </Link>
-            <Link href="/contact">
-              <a className={router.pathname == "/contact" ? styles.active : ""}>
-                Contact
-              </a>
-            </Link>
+            <Link href="/shows">Shows</Link>
+            <Link href="/contact">Contact</Link>
             <a
               href="https://joeday.bandcamp.com/album/halflight"
               target="_blank"
@@ -100,7 +85,6 @@ export default function Layout({ children }) {
             alt="Fear and love"
             width="35"
             height="534"
-            layout="raw"
           />
         </aside>
 
@@ -113,7 +97,6 @@ export default function Layout({ children }) {
             alt="Love and fear"
             width="35"
             height="534"
-            layout="raw"
           />
         </aside>
 
@@ -132,7 +115,6 @@ export default function Layout({ children }) {
                 alt="Spotify"
                 height="16"
                 width="16"
-                layout="raw"
               />
             </a>
             <a
@@ -147,7 +129,6 @@ export default function Layout({ children }) {
                 alt="Apple Music"
                 height="16"
                 width="16"
-                layout="raw"
               />
             </a>
             <a
@@ -162,7 +143,6 @@ export default function Layout({ children }) {
                 alt="Bandcamp"
                 height="16"
                 width="49"
-                layout="raw"
               />
             </a>
           </span>
