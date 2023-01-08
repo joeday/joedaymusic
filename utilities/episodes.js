@@ -7,9 +7,9 @@ import html from "remark-html";
 const episodesDirectory = path.join(process.cwd(), "data/episodes");
 
 export function getSortedPostsData() {
-  // Get file names under /posts
+  // Get file names under /data/episodes
   const fileNames = fs.readdirSync(episodesDirectory);
-  const allPostsData = fileNames.map((fileName) => {
+  const allEpisodesData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
 
@@ -26,17 +26,18 @@ export function getSortedPostsData() {
       ...matterResult.data,
     };
   });
+
   // Sort posts by date
-  // return allPostsData.sort((a, b) => {
-  //   if (a.date < b.date) {
-  //     return 1;
-  //   } else {
-  //     return -1;
-  //   }
-  // });
+  return allEpisodesData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
 
   // Don't sort by date since we're using placeholder images
-  return allPostsData;
+  // return allEpisodesData;
 }
 
 export function getAllPostIds() {

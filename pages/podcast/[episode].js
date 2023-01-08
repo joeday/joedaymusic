@@ -10,15 +10,6 @@ export async function getStaticPaths() {
     paths: episodes,
     fallback: false,
   };
-  // const episideIDs = episodes.map((episode) => {
-  //   return episode.id;
-  // });
-  // const episodePaths = createDynamicRoutesFromStrings(episideIDs);
-
-  // return {
-  //   paths: episodePaths,
-  //   fallback: false,
-  // };
 }
 
 export async function getStaticProps({ params }) {
@@ -28,13 +19,6 @@ export async function getStaticProps({ params }) {
       episodeData,
     },
   };
-  // const episodeData = episodes.find((episode) => episode.id === params.episode);
-  // return {
-  //   props: {
-  //     title: episodeData ? episodeData.title : null,
-  //     data: episodeData ? episodeData.data : null,
-  //   },
-  // };
 }
 
 export default function EpisodePage({ episodeData }) {
@@ -50,8 +34,8 @@ export default function EpisodePage({ episodeData }) {
           <Image
             src={episodeData.imageTall}
             className={styles.episodeImage}
-            height="1920"
-            width="1080"
+            height={1920}
+            width={1080}
             alt={episodeData.guest}
           />
         </div>

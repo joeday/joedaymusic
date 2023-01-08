@@ -7,6 +7,7 @@
 .episodeContent {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   /* gap: 24px; */
 }
 
@@ -28,6 +29,7 @@
 }
 
 .episodeImage {
+  position: relative;
   max-width: 100%;
   height: auto;
   margin: 24px 0 0 0;

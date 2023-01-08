@@ -86,13 +86,13 @@ a.episodeCard:hover > .episodeTitle {
 }
 
 .placeholderImage {
+  position: absolute;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
   height: auto;
   border-radius: 8px;
   background-color: var(--color-true-black);
 }
-
 
 .placeholderTitle,
 .placeholderSubtitle {
@@ -126,7 +126,7 @@ a.episodeCard:hover > .episodeTitle {
 
 @media only screen and (min-width: 1024px) {
   .episodeCard,
-  .placeholderCard{
+  .placeholderCard {
     width: calc(100% / 3 - 16px);
   }
 }

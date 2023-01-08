@@ -42,6 +42,8 @@ export default function Episode(props) {
             src={placeholder}
             className={styles.placeholderImage}
             quality={100}
+            width="400"
+            height="400"
           />
         </div>
       )}
