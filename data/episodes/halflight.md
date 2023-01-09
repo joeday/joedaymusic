@@ -1,7 +1,7 @@
 ---
 title: "Halflight"
 slug: "halflight"
-date: "2023-01-10"
+date: "2023-01-10T00:00:00.00-08:00"
 id: "02"
 guest: "Levi the Poet"
 image: "/images/podcast/Halflight-Levi.jpg"

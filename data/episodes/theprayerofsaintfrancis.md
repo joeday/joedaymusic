@@ -1,7 +1,7 @@
 ---
 title: "The Prayer of Saint Francis"
 slug: "theprayerofstfrancis"
-date: "2023-01-24"
+date: "2023-01-24T00:00:00.00-08:00"
 id: "05"
 guest: "Jeremiah Webster"
 image: "/images/podcast/St.Francis-Jeremiah.jpg"

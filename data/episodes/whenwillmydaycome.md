@@ -1,7 +1,7 @@
 ---
 title: "When Will My Day Come?"
 slug: "whenwillmydaycome"
-date: "2023-01-31"
+date: "2023-01-31T00:00:00.00-08:00"
 id: "06"
 guest: "Tim Wilson"
 image: "/images/podcast/MyDay-TWilz.jpg"

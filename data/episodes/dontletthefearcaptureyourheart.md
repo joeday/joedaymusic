@@ -1,7 +1,7 @@
 ---
 title: "Don't Let the Fear Capture Your Heart"
 slug: "dontletthefearcaptureyourheart"
-date: "2023-02-07"
+date: "2023-02-07T00:00:00.00-08:00"
 id: "07"
 guest: "Sandra McCracken"
 image: "/images/podcast/DontLetTheFear-Sandra.jpg"

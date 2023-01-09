@@ -1,7 +1,7 @@
 ---
 title: "Fear and Love"
 slug: "fearandlove"
-date: "2023-01-10"
+date: "2023-01-10T00:00:00.00-08:00"
 id: "03"
 guest: "Brent James Driscoll"
 image: "/images/podcast/FearAndLove-Brent.jpg"

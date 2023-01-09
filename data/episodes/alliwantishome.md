@@ -1,7 +1,7 @@
 ---
 title: "All I Want is Home"
 slug: "alliwantishome"
-date: "2023-01-17"
+date: "2023-01-17T00:00:00.00-08:00"
 id: "04"
 guest: "Sara Billups"
 image: "/images/podcast/AllIWant-Sara.jpg"

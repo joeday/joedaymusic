@@ -1,7 +1,7 @@
 ---
 title: "Benediction for the Broken"
 slug: "benedictionforthebroken"
-date: "2023-02-28"
+date: "2023-02-28T00:00:00.00-08:00"
 id: "10"
 guest: "Alex Early"
 image: "/images/podcast/Benediction-Early.jpg"

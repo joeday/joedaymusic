@@ -1,7 +1,7 @@
 ---
 title: "A Better Love"
 slug: "abetterlove"
-date: "2023-02-14"
+date: "2023-02-14T00:00:00.00-08:00"
 id: "08"
 guest: "John Van Deusen"
 image: "/images/podcast/BetterLove-JVD.jpg"

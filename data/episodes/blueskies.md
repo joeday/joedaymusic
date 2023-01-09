@@ -1,7 +1,7 @@
 ---
 title: "Blue Skies"
 slug: "blueskies"
-date: "2023-01-10"
+date: "2023-01-10T00:00:00.00-08:00"
 id: "01"
 guest: "Joce Aucoin"
 image: "/images/podcast/BlueSkies-Joce.jpg"
