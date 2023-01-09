@@ -3,16 +3,17 @@ title: "Fear and Love"
 slug: "fearandlove"
 date: "2023-01-10"
 id: "03"
-published: "true"
 guest: "Brent James Driscoll"
 image: "/images/podcast/FearAndLove-Brent.jpg"
 imageTall: "/images/podcast/tall/FearAndLove-Brent.jpg"
 placeholder: "/images/podcast/Unreleased08.jpg"
 ---
 
-**Joce Aucoin lives for creativity.** Whether through her visual art, her writing (if you are interested in creativity at all, her newsletter [jump + pray](https://jumpandpray.substack.com/) is essential), or her support of creative life of other artists. We met on Twitter over a shared love of [Nada Surf's Blizzard of '77](https://open.spotify.com/track/3ghULzyl9OXKlCiwQFitx2?si=c280c107dd074948) (which is one of my all time favorite opening tracks) and soon found out that we have many mutual friends. Through that connection, Joce became a mentor to me as I was navigating how to release music after a decade-long hiatus. Yes, her expertise from her years of running [Lujo records](https://lujorecords.com/) came into play, but it was more her deep interest in the health and vitality of my creativity that made her mentorship so meaningful to me.
+**Brent James Driscoll (no relation to that other Driscoll) drove into my life in a teal green Prius.** It was a borrowed teal green Prius. John Van Deusen & I were on day 1 of our northwest tour and had ran out of gas on Dead Man's Pass on our way to Boise, ID. Brent stepped out of the Prius and instantly jumped into tour manager mode, asked everybody parked at the rest stop if they had gas to spare, and then hopped in the Prius to drive back to Pendleton to fill a gas can. He returned with fuel, offered me a Topo Chico, and we were on our way. He's that kind of person whose kindness has a certain intensity to it. Stripped of pretense, open to anyone, and ready to move. He made an instant impression. Mostly, I was just glad he was with us. We followed that teal green Prius back onto I-84 and made it to the show.
 
-We talk about the creative process, overcoming creative block, the story behind the lyric _The heart doesn't care if there's dust on the pen_, and why Blue Skies is the first track of Halflight.
+We talk about how the lyric _fear and love why can't I tell you apart?_ struck him, how we often get fear and love mixed up, how we long for more humility and less tribal posturing, and how he's managed to hold onto faith after his own church trauma.
+
+Brent is one of the creators/producers of the Emmy-winning [Sessions in Place](https://sessionsinplace.com/).
 
 #### Episode links
 

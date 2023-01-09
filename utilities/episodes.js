@@ -27,17 +27,14 @@ export function getSortedPostsData() {
     };
   });
 
-  // Sort posts by date
+  // Sort posts by song order
   return allEpisodesData.sort((a, b) => {
-    if (a.date < b.date) {
+    if (a.id > b.id) {
       return 1;
     } else {
       return -1;
     }
   });
-
-  // Don't sort by date since we're using placeholder images
-  // return allEpisodesData;
 }
 
 export function getAllPostIds() {

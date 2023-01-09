@@ -3,19 +3,20 @@ title: "Halflight"
 slug: "halflight"
 date: "2023-01-10"
 id: "02"
-published: "true"
 guest: "Levi the Poet"
 image: "/images/podcast/Halflight-Levi.jpg"
 imageTall: "/images/podcast/tall/Halflight-Levi.jpg"
 placeholder: "/images/podcast/Unreleased01.jpg"
 ---
 
-**Joce Aucoin lives for creativity.** Whether through her visual art, her writing (if you are interested in creativity at all, her newsletter [jump + pray](https://jumpandpray.substack.com/) is essential), or her support of creative life of other artists. We met on Twitter over a shared love of [Nada Surf's Blizzard of '77](https://open.spotify.com/track/3ghULzyl9OXKlCiwQFitx2?si=c280c107dd074948) (which is one of my all time favorite opening tracks) and soon found out that we have many mutual friends. Through that connection, Joce became a mentor to me as I was navigating how to release music after a decade-long hiatus. Yes, her expertise from her years of running [Lujo records](https://lujorecords.com/) came into play, but it was more her deep interest in the health and vitality of my creativity that made her mentorship so meaningful to me.
+**Levi MacAllister (AKA Levi the Poet) has one of the most distinct voices I can think of.** A certain presence and force, like gravity turned up a notch, like a voice crying out in the desert to any ear it might reach. The world isn't what it should be, he knows you see it, and he's telling you he see's it too. He also wants you to look with him, through the wreckage, to squint through the dim light and see a God who truly is love.
 
-We talk about the creative process, overcoming creative block, the story behind the lyric _The heart doesn't care if there's dust on the pen_, and why Blue Skies is the first track of Halflight.
+We talk about the moment the song Halflight left him in tears while he was weeding his zero-scaped desert yard, about the appeal of certainty and why it's important to not hold onto it too tightly, about the ways fear masquerades as love. We wonder who I am singing to when I sing _let the light in, let me see who you really are._
+
+Levi just launched [The Fraction Club](https://www.levithepoet.net/fraction), which is a way to get exclusive access to his unreleased stuff, while supporting his important work. Join today! You can also find him on [Instagram](https://www.instagram.com/levithepoet/) and [Twitter](https://twitter.com/levithepoet).
 
 #### Episode links
 
-- Apple podcasts
-- Spotify
-- Google podcasts
+- [Apple podcasts]()
+- [Spotify]()
+- [Google podcasts]()

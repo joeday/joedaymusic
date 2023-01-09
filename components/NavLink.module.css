@@ -1,0 +1,26 @@
+.navLink {
+  text-decoration: none;
+  color: var(--color-primary-white);
+  padding: 0 8px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: var(--color-accent) !important;
+}
+
+.active:before {
+  content: "+ ";
+}
+
+.active:after {
+  content: " +";
+}
+
+.active:before:hover,
+.active:after:hover {
+  text-decoration: none;
+}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import NavLink from "./NavLink";
 import { useRouter } from "next/router";
 import styles from "./layout.module.css";
 
@@ -60,14 +61,10 @@ export default function Layout({ children }) {
           </div>
 
           <nav className={styles.siteNav}>
-            <Link href="/podcast" activeClassName={styles.active}>
-              Podcast
-            </Link>
-            <Link href="/bio" activeClassName={styles.active}>
-              Bio
-            </Link>
-            <Link href="/shows">Shows</Link>
-            <Link href="/contact">Contact</Link>
+            <NavLink href="/podcast">Podcast</NavLink>
+            <NavLink href="/bio">Bio</NavLink>
+            <NavLink href="/shows">Shows</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
             <a
               href="https://joeday.bandcamp.com/album/halflight"
               target="_blank"
@@ -113,8 +110,8 @@ export default function Layout({ children }) {
                 priority
                 src="/images/Spotify_logo_without_text_white.svg"
                 alt="Spotify"
-                height="16"
-                width="16"
+                height={16}
+                width={16}
               />
             </a>
             <a
@@ -127,8 +124,8 @@ export default function Layout({ children }) {
                 priority
                 src="/images/Apple_Music_Icon_wht_sm_073120.svg"
                 alt="Apple Music"
-                height="16"
-                width="16"
+                height={16}
+                width={16}
               />
             </a>
             <a
@@ -141,8 +138,8 @@ export default function Layout({ children }) {
                 priority
                 src="/images/bc-logotype-light.svg"
                 alt="Bandcamp"
-                height="16"
-                width="49"
+                height={16}
+                width={49}
               />
             </a>
           </span>

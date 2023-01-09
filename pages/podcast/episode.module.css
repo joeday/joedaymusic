@@ -8,12 +8,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 24px; */
 }
 
-.episodeText {
-  white-space: pre-line;
-  flex-grow: 2;
+.episodeContent h4 {
+  margin: 16px 0 0;
+}
+
+.episodeContent ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: unset;
+  margin: unset;
 }
 
 .episodeLinksHeader {
@@ -29,7 +35,6 @@
 }
 
 .episodeImage {
-  position: relative;
   max-width: 100%;
   height: auto;
   margin: 24px 0 0 0;

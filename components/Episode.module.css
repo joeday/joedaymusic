@@ -99,8 +99,6 @@ a.episodeCard:hover > .episodeTitle {
   z-index: 100;
   text-align: center;
   text-shadow: 0 0 30px var(--color-true-black);
-  /* background-color: rgba(0, 0, 0, .8); */
-  /* padding: 3px 3px 0 3px; */
 }
 
 .placeholderTitle {
@@ -110,6 +108,7 @@ a.episodeCard:hover > .episodeTitle {
 
 .placeholderSubtitle {
   margin: unset;
+  padding: 0 3px;
 }
 
 .tiny {

@@ -23,9 +23,10 @@ export default function Episode(props) {
             height="400"
             width="400"
             className={styles.episodeImage}
+            alt={title}
           />
           <pre className={styles.episodeMetadata}>
-            Episode {num} - {releaseDate}
+            Episode {num} - {dateString}
           </pre>
           <h2 className={styles.episodeTitle}>
             {title}
@@ -44,6 +45,7 @@ export default function Episode(props) {
             quality={100}
             width="400"
             height="400"
+            alt={title}
           />
         </div>
       )}
