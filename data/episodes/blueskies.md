@@ -15,6 +15,6 @@ We talk about the creative process, overcoming creative block, the story behind 
 
 #### Episode links
 
-- Apple podcasts
-- Spotify
-- Google podcasts
+- [Apple podcasts](https://podcasts.apple.com/us/podcast/blue-skies-with-joce-aucoin/id1661551029?i=1000593403528)
+- [Spotify](https://open.spotify.com/episode/47anifNw9Mr10xmsUo5A3K?si=d4b872ee1a4c49de)
+- [Everywhere else](https://anchor.fm/joeday)

@@ -17,6 +17,6 @@ Brent is one of the creators/producers of the Emmy-winning [Sessions in Place](h
 
 #### Episode links
 
-- Apple podcasts
-- Spotify
-- Google podcasts
+- [Apple podcasts](https://podcasts.apple.com/us/podcast/fear-and-love-with-brent-james-driscoll/id1661551029?i=1000593403557)
+- [Spotify](https://open.spotify.com/episode/3IFmytTHiU331zYVKpbtHY?si=eab8f889ddd24fd4)
+- [Everywhere else](https://anchor.fm/joeday)
