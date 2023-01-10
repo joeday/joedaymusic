@@ -71,10 +71,31 @@ export default function Home() {
                 evolution of one of the most important songs on{" "}
                 <em>Halflight</em>. If you were jonesing for some 90s angst,
                 you’re going to be really, really happy.
-                <br />
-                <br />
-                Streaming everywhere January 10th.
               </p>
+              <h4 className={styles.listenLinksHeader}>Listen now</h4>
+              <ul className={styles.listenLinks}>
+                <li>
+                  <a href="https://joeday.bandcamp.com" target="_blank">
+                    Bandcamp
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://open.spotify.com/album/1dsQeSvxSr9KQ5jL4zwRHy?si=HIi2hkuaRlq1EBbCveoI_w"
+                    target="_blank"
+                  >
+                    Spotify
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://music.apple.com/us/album/fear-and-love-ep/1661922586"
+                    target="_blank"
+                  >
+                    Apple Music
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
         </div>
