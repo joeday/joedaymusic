@@ -1,7 +1,7 @@
 ---
 title: "All I Want is Home"
 slug: "alliwantishome"
-date: "2023-01-17T00:00:00.00-08:00"
+date: "2023-01-16T00:21:00.00-08:00"
 id: "04"
 guest: "Sara Billups"
 image: "/images/podcast/AllIWant-Sara.jpg"
@@ -9,12 +9,12 @@ imageTall: "/images/podcast/tall/AllIWant-Sara.jpg"
 placeholder: "/images/podcast/Unreleased07.jpg"
 ---
 
-**Joce Aucoin lives for creativity.** Whether through her visual art, her writing (if you are interested in creativity at all, her newsletter [jump + pray](https://jumpandpray.substack.com/) is essential), or her support of creative life of other artists. We met on Twitter over a shared love of [Nada Surf's Blizzard of '77](https://open.spotify.com/track/3ghULzyl9OXKlCiwQFitx2?si=c280c107dd074948) (which is one of my all time favorite opening tracks) and soon found out that we have many mutual friends. Through that connection, Joce became a mentor to me as I was navigating how to release music after a decade-long hiatus. Yes, her expertise from her years of running [Lujo records](https://lujorecords.com/) came into play, but it was more her deep interest in the health and vitality of my creativity that made her mentorship so meaningful to me.
+**Sara Billups new book _Orphaned Believers_ is coming out soon, but it has been in the works her entire life.** Growing up in an evangelical family the 90s in Indiana didn't quite prepare her for living in Seattle. It took time for her to figure out how to own her faith and be able to talk about it freely. That happened in 2016 as she watched fringe, nationalistic beliefs become mainstream in Trumpy evangelicalism. Since 2018 she's been writing about Orphaned Believers, creating space for Christians who feel increasingly estranged from their churches and pastors who either outright put on the red hat, or did nothing at all.
 
-We talk about the creative process, overcoming creative block, the story behind the lyric _The heart doesn't care if there's dust on the pen_, and why Blue Skies is the first track of Halflight.
+We talk about how she found her voice, how a simple faith might be the medicine for our inflamed moment, and how finding other orphaned believers can be so hopeful and refreshing.
 
 #### Episode links
 
-- Apple podcasts
-- Spotify
-- Google podcasts
+- [Apple podcasts](https://podcasts.apple.com/us/podcast/the-halflight-podcast/id1661551029)
+- [Spotify](https://open.spotify.com/show/2K2vKoRk511U3okd970NkD)
+- [Everywhere else](https://anchor.fm/joeday/episodes/04---All-I-Want-is-Home-with-Sara-Billups-e1tjcrh)
