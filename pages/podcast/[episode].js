@@ -23,7 +23,7 @@ export async function getStaticProps({ params }) {
 
 export default function EpisodePage({ episodeData }) {
   return (
-    <Layout>
+    <Layout home>
       <section className={styles.episodePageWrapper}>
         <h1>{episodeData.title}</h1>
         <div className={styles.episodeContent}>
