@@ -1,7 +1,7 @@
 ---
 title: "Return My Heart To My Chest"
 slug: "returnmyhearttomychest"
-date: "2023-02-21T00:00:00.00-08:00"
+date: "2023-02-20T00:00:00.00-08:00"
 id: "09"
 guest: "Mike Cosper"
 image: "/images/podcast/ReturnMyHeart-Cosper.jpg"
@@ -9,12 +9,14 @@ imageTall: "/images/podcast/tall/ReturnMyHeart-Cosper.jpg"
 placeholder: "/images/podcast/Unreleased02.jpg"
 ---
 
-**Joce Aucoin lives for creativity.** Whether through her visual art, her writing (if you are interested in creativity at all, her newsletter [jump + pray](https://jumpandpray.substack.com/) is essential), or her support of creative life of other artists. We met on Twitter over a shared love of [Nada Surf's Blizzard of '77](https://open.spotify.com/track/3ghULzyl9OXKlCiwQFitx2?si=c280c107dd074948) (which is one of my all time favorite opening tracks) and soon found out that we have many mutual friends. Through that connection, Joce became a mentor to me as I was navigating how to release music after a decade-long hiatus. Yes, her expertise from her years of running [Lujo records](https://lujorecords.com/) came into play, but it was more her deep interest in the health and vitality of my creativity that made her mentorship so meaningful to me.
+When my faith began to unravel, **Mike Cosper was one of the people I reached out to**. We'd known each other from afar for long enough that I knew he'd have both context and perspective that few people would have. And he did. What I didn't know at the time was that as I shared my story with him, it was during that conversation he begun to think "this story needs to be told" and started thinking about making a podcast about Mars Hill. Specifically the human impacts and effects on the lives of the people who were there. Crazy!
 
-We talk about the creative process, overcoming creative block, the story behind the lyric _The heart doesn't care if there's dust on the pen_, and why Blue Skies is the first track of Halflight.
+We chat about how I ditched church to write _Return My Heart to my Chest_, what he saw in the song that made him want to use it in the podcast, and Bruce Springsteen's writing process.
+
+You can listen to the Rise and Fall of Mars Hill anywhere you get your podcasts.
 
 #### Episode links
 
-- Apple podcasts
-- Spotify
-- Google podcasts
+- [Apple podcasts](https://podcasts.apple.com/us/podcast/the-halflight-podcast/id1661551029)
+- [Spotify](https://open.spotify.com/show/2K2vKoRk511U3okd970NkD)
+- [Everywhere else](https://anchor.fm/joeday/episodes/09---Return-My-Heart-to-my-Chest-with-Mike-Cosper-e1v9l70)
