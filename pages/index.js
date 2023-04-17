@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <Layout home>
       <div className={styles.homeGrid}>
-        <h1 className={styles.headline}>
-          Streaming everywhere <span className="noBreak">January 10</span>
-        </h1>
+        <h1 className={styles.headline}>Streaming everywhere now</h1>
         <section className={styles.homeContent}>
           <div className={styles.homePageColumn}>
             <Link href="/podcast" className={styles.headlineImg}>
@@ -26,12 +24,12 @@ export default function Home() {
             <h2 className="subHeading">The Halflight Podcast</h2>
             <p className={styles.description}>
               Each episode a different guest joins Joe to talk about one song
-              from the album. It’s the audio liner notes to <em>Halflight</em>
-              , and it’s way more than that. It’s a podcast about creativity,
+              from the album. It’s the audio liner notes to <em>Halflight</em>,
+              and it’s way more than that. It’s a podcast about creativity,
               loneliness, hope, losing faith, relationships, writer’s block,
-              finding faith, evangelicalism, Mars Hill Church, certainty,
-              doubt, church trauma, healing, wonder, surprise, disappointment,
-              prayer, longing; about making the album <em>Halflight</em>.
+              finding faith, evangelicalism, Mars Hill Church, certainty, doubt,
+              church trauma, healing, wonder, surprise, disappointment, prayer,
+              longing; about making the album <em>Halflight</em>.
               <br />
               <br />
               Subscribe now wherever you listen to podcasts.
@@ -57,9 +55,9 @@ export default function Home() {
               </a>
               ) talk about the original demo from 2017 and how different it is
               from the album version. The Fear and Love EP chronicles the
-              evolution of one of the most important songs on{" "}
-              <em>Halflight</em>. If you were jonesing for some 90s angst,
-              you’re going to be really, really happy.
+              evolution of one of the most important songs on <em>Halflight</em>
+              . If you were jonesing for some 90s angst, you’re going to be
+              really, really happy.
             </p>
             <h4 className={styles.listenLinksHeader}>Listen now</h4>
             <ul className={styles.listenLinks}>
