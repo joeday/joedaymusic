@@ -11,6 +11,48 @@ export default function Home() {
         <h1 className={styles.headline}>Streaming everywhere now</h1>
         <section className={styles.homeContent}>
           <div className={styles.homePageColumn}>
+            <Image
+              priority
+              src="/images/joeday-halflight-final-digital-xs.jpg"
+              className={styles.responsiveImage}
+              width="852"
+              height="852"
+              alt="Album cover for Joe Day's album Halflight"
+            />
+            <h2 className="subHeading">Halflight</h2>
+            <p className={styles.description}>
+              Joe Day's 2021 album <em>Halflight</em> is a soundtrack for people
+              living in the dissonance of being ushered into a post-fact world
+              by the very people and institutions that told them truth matters.
+              These songs seek to let people know they’re not alone, they’re
+              seen. That it's possible to move towards wholeness and hope.
+            </p>
+            <h4 className={styles.listenLinksHeader}>Listen now</h4>
+            <ul className={styles.listenLinks}>
+              <li>
+                <a href="https://joeday.bandcamp.com" target="_blank">
+                  Bandcamp
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/album/4s1HcvF8Dp5WLVnb1D2lFk?si=Cemb0J1-Qb-X0eTi3gW1uQ"
+                  target="_blank"
+                >
+                  Spotify
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/us/album/halflight/1567350278"
+                  target="_blank"
+                >
+                  Apple Music
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.homePageColumn}>
             <Link href="/podcast" className={styles.headlineImg}>
               <Image
                 priority
@@ -27,62 +69,13 @@ export default function Home() {
               from the album. It’s the audio liner notes to <em>Halflight</em>,
               and it’s way more than that. It’s a podcast about creativity,
               loneliness, hope, losing faith, relationships, writer’s block,
-              finding faith, evangelicalism, Mars Hill Church, certainty, doubt,
-              church trauma, healing, wonder, surprise, disappointment, prayer,
-              longing; about making the album <em>Halflight</em>.
+              finding faith, evangelicalism, certainty, doubt, church trauma,
+              healing, wonder, surprise, disappointment, prayer, longing; about
+              making the album <em>Halflight</em>.
               <br />
               <br />
               Subscribe now wherever you listen to podcasts.
             </p>
-          </div>
-          <div className={styles.homePageColumn}>
-            <Image
-              priority
-              src="/images/podcast/FearAndLoveEPLarge.png"
-              className={styles.responsiveImage}
-              width="852"
-              height="852"
-              alt="Album cover for Joe Day's Fear and Love EP"
-            />
-            <h2 className="subHeading">The Fear and Love EP</h2>
-            <p className={styles.description}>
-              Fear and Love (alternate version) is a brand new version of the
-              song we made to commemorate the release of{" "}
-              <em>The Halflight Podcast</em>. In the Fear and Love episode,
-              Brent James Driscoll (creator & producer of the Emmy winning{" "}
-              <a href="https://sessionsinplace.com/" target="_blank">
-                Sessions In Place
-              </a>
-              ) talk about the original demo from 2017 and how different it is
-              from the album version. The Fear and Love EP chronicles the
-              evolution of one of the most important songs on <em>Halflight</em>
-              . If you were jonesing for some 90s angst, you’re going to be
-              really, really happy.
-            </p>
-            <h4 className={styles.listenLinksHeader}>Listen now</h4>
-            <ul className={styles.listenLinks}>
-              <li>
-                <a href="https://joeday.bandcamp.com" target="_blank">
-                  Bandcamp
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://open.spotify.com/album/1dsQeSvxSr9KQ5jL4zwRHy?si=HIi2hkuaRlq1EBbCveoI_w"
-                  target="_blank"
-                >
-                  Spotify
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://music.apple.com/us/album/fear-and-love-ep/1661922586"
-                  target="_blank"
-                >
-                  Apple Music
-                </a>
-              </li>
-            </ul>
           </div>
         </section>
       </div>
