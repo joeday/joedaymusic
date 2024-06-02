@@ -15,6 +15,29 @@ export const getStaticProps = async () => {
 export default function Shows(props) {
   return (
     <Layout home>
+      <Head>
+        <meta
+          property="og:title"
+          content="Halflight full band shows - Fall 2024"
+          key="ogtitle"
+        />
+        <meta
+          property="og:description"
+          content="Get tickets while they last"
+          key="ogdescription"
+        />
+        <meta
+          property="og:image"
+          content="/halflight_darksun.png"
+          key="ogimage"
+        />
+        <meta
+          property="og:url"
+          content="https://joedaymusic.com/shows"
+          key="ogurl"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
       <div className={styles.showsGrid}>
         <h1 className={styles.articleTitle}>Upcoming shows</h1>
         <h1>{props.greeting}</h1>

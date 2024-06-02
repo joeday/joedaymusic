@@ -17,7 +17,7 @@ export default function Bio() {
             experience and self-expression. In the aftermath of trauma, change,
             and reimagination, Halflight touches both on pain and healing, the
             difficulty of letting old things go, and the hope and possibility
-            that comes from building something new from the ashes.
+            that comes from building something new from the ashes.&nbsp;
             <Image
               priority
               src="/images/JoeDay-7535.jpg"
@@ -28,13 +28,13 @@ export default function Bio() {
               width="880"
               height="538"
             />
-            While personal and vulnerable, sharing out of his experience within
-            the toxic culture of Mars Hill, Halflight has themes that feel
-            bigger and reach wider than one man’s experience. Harmonizing
-            between the grief and pain associated with loss and the hope of
-            discovering new rhythms and relationships with a benediction for the
-            broken, it encourages listeners to find their way forward—wherever
-            they’re coming from.
+            While personal and vulnerable, sharing out of his experience from
+            within a toxic church culture, Halflight has themes that feel bigger
+            and reach wider than one man’s experience. Harmonizing between the
+            grief and pain associated with loss and the hope of discovering new
+            rhythms and relationships with a benediction for the broken, it
+            encourages listeners to find their way forward—wherever they’re
+            coming from.
           </p>
           <p className={styles.articleCopy}>
             Growing up near Lake Tahoe, Joe was always drawn to music. But that

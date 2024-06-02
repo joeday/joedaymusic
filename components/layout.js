@@ -44,13 +44,26 @@ export default function Layout({ children }) {
         />
         <link rel="apple-touch-icon" href="/logo192.png" />
 
-        <meta property="og:title" content="The Halflight Podcast" />
+        <meta
+          property="og:title"
+          content="The Halflight Podcast"
+          key="ogtitle"
+        />
         <meta
           property="og:description"
           content="Subscribe now wherever you get your podcasts"
+          key="ogdescription"
         />
-        <meta property="og:image" content="/halflight_podcast.png" />
-        <meta property="og:url" content="https://joedaymusic.com/podcast" />
+        <meta
+          property="og:image"
+          content="/halflight_podcast.png"
+          key="ogimage"
+        />
+        <meta
+          property="og:url"
+          content="https://joedaymusic.com/podcast"
+          key="ogurl"
+        />
         <meta property="og:type" content="website" />
 
         <title>Joe Day Music</title>
