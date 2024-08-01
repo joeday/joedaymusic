@@ -9,27 +9,12 @@ const onSaleOptions = {
 export default [
   {
     id: 0,
-    date: new Date("07/14/2024 3:00:00 PM").toLocaleDateString(
-      "en-US",
-      options
-    ),
-    location: "Victoria, BC",
-    otherBands: "",
-    onSale: true,
-    onSaleStartDate: new Date("04/03/2024 10:00:00 AM").toLocaleDateString(
-      "en-US",
-      onSaleOptions
-    ),
-    ticketLink: "https://sidedoor.link/l/tkxROLXa27TRpPInJIHT",
-  },
-  {
-    id: 1,
     date: new Date("08/23/2024 7:00:00 PM").toLocaleDateString(
       "en-US",
       options
     ),
-    location: "Conway, WA",
-    otherBands: "Golden Hart",
+    location: "The Conway Muse, Conway, WA",
+    otherBands: "Golden Hart, Gabe Archer",
     onSale: true,
     onSaleStartDate: new Date("04/03/2022 10:00:00 AM").toLocaleDateString(
       "en-US",
@@ -38,34 +23,35 @@ export default [
     ticketLink:
       "https://conwaymuse.com/event/joe-day-fri-aug-23-2024-8-pm-conway-muse/",
   },
+  {
+    id: 1,
+    date: new Date("09/05/2024 7:00:00 PM").toLocaleDateString(
+      "en-US",
+      options
+    ),
+    location: "Miller's, Carnation, WA",
+    otherBands: "Debbie Miller",
+    onSale: true,
+    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
+      "en-US",
+      onSaleOptions
+    ),
+    ticketLink:
+      "https://millerscarnation.com/event/joe-day-and-the-coyotes-with-debbie-miller/",
+  },
   // {
   //   id: 2,
-  //   date: new Date("08/11/2022 7:00:00 PM").toLocaleDateString(
+  //   date: new Date("10/12/2024 6:00:00 PM").toLocaleDateString(
   //     "en-US",
   //     options
   //   ),
-  //   location: "Vancouver, WA",
-  //   otherBands: "John Van Deusen",
+  //   location: "Chop Suey, Seattle, WA",
+  //   otherBands: "Joseph Pennell",
   //   onSale: true,
   //   onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
   //     "en-US",
   //     onSaleOptions
   //   ),
-  //   ticketLink: "https://sidedooraccess.com/shows/UdEylLEXv1AxPkIHy5zW",
-  // },
-  // {
-  //   id: 3,
-  //   date: new Date("08/12/2022 7:00:00 PM").toLocaleDateString(
-  //     "en-US",
-  //     options
-  //   ),
-  //   location: "Redmond, WA",
-  //   otherBands: "John Van Deusen",
-  //   onSale: true,
-  //   onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
-  //     "en-US",
-  //     onSaleOptions
-  //   ),
-  //   ticketLink: "https://sidedooraccess.com/shows/yzMNl0jve1Y6fa0q94wc",
+  //   ticketLink: "foo",
   // },
 ];
