@@ -152,6 +152,20 @@ export default function Layout({ children }) {
             </a>
             <a
               className={styles.streamingIcon}
+              href="https://tidal.com/browse/artist/3824342?u"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
+                priority
+                src="/images/Tidal_Logo_30.svg"
+                alt="Tidal"
+                height={16}
+                width={24}
+              />
+            </a>
+            <a
+              className={styles.streamingIcon}
               href="https://joeday.bandcamp.com/album/halflight"
               rel="noreferrer"
               target="_blank"
