@@ -30,8 +30,11 @@ export default function Home() {
             <h4 className={styles.listenLinksHeader}>Listen now</h4>
             <ul className={styles.listenLinks}>
               <li>
-                <a href="https://joeday.bandcamp.com" target="_blank">
-                  Bandcamp
+                <a
+                  href="https://tidal.com/browse/album/184054030?u"
+                  target="_blank"
+                >
+                  Tidal
                 </a>
               </li>
               <li>
@@ -48,6 +51,11 @@ export default function Home() {
                   target="_blank"
                 >
                   Apple Music
+                </a>
+              </li>
+              <li>
+                <a href="https://joeday.bandcamp.com" target="_blank">
+                  Bandcamp
                 </a>
               </li>
             </ul>
