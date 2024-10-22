@@ -83,6 +83,7 @@ export default function Layout({ children }) {
           </div>
 
           <nav className={styles.siteNav}>
+            <NavLink href="/music">Music</NavLink>
             <NavLink href="/podcast">Podcast</NavLink>
             <NavLink href="/bio">Bio</NavLink>
             <NavLink href="/shows">Shows</NavLink>

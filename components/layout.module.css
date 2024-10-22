@@ -52,15 +52,20 @@
 }
 
 .siteNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   font-family: "Oaxaca";
   font-size: 12px;
   margin: 12px 0 0;
+  padding: 0 48px;
 }
 
 .siteNav a {
   text-decoration: none;
   color: var(--color-primary-white);
-  padding: 0 8px;
+  padding: 0 8px 6px 8px;
 }
 
 .siteNav a:hover {
