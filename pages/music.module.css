@@ -1,39 +1,54 @@
 .musicGrid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-      "title title title title title title"
-      "copy   copy  copy  copy  copy  copy"
-      "creds creds creds creds creds creds";
-  }
-  
-  .musicTitle {
-    grid-area: title;
-  }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "title title title title title title"
+    "copy   copy  copy  copy  copy  copy"
+    "creds creds creds creds creds creds";
+}
 
-  .musicBody {
-    grid-area: copy;
-    display: flex;
-    flex-direction: column;
-  }
+.musicTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: title;
+  margin-bottom: 16px;
+}
 
-  .album {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 128px;
-  }
+.yearTag {
+  font-size: var(--text-size-md);
+  margin-left: 8px;
+  color: var(--color-gray-300);
+}
 
-  .albumDescription {
-    display: flex;
-    flex-direction: column;
-    max-width: 540px;
-    font-size: var(--text-size-title-sm);
-  }
+.musicBody {
+  grid-area: copy;
+  display: flex;
+  flex-direction: column;
+}
 
-  .albumTitle {
-    font-size: var(--text-size-title);
-    font-weight: unset;
-    margin-bottom: 0;
-  }
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 128px;
+}
+
+.albumDescription {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  font-size: var(--text-size-title-sm);
+}
+
+.albumTitle {
+  font-size: var(--text-size-title);
+  font-weight: unset;
+  margin-bottom: 0;
+}
+
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
+}
