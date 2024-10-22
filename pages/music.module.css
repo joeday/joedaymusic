@@ -1,0 +1,39 @@
+.musicGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "title title title title title title"
+      "copy   copy  copy  copy  copy  copy"
+      "creds creds creds creds creds creds";
+  }
+  
+  .musicTitle {
+    grid-area: title;
+  }
+
+  .musicBody {
+    grid-area: copy;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 128px;
+  }
+
+  .albumDescription {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    font-size: var(--text-size-title-sm);
+  }
+
+  .albumTitle {
+    font-size: var(--text-size-title);
+    font-weight: unset;
+    margin-bottom: 0;
+  }
