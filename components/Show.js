@@ -29,7 +29,8 @@ export default function Show(props) {
             Tickets
           </a>
         ) : (
-          <div className={styles.onSaleDate}>On sale {onSaleStartDate}</div>
+          // <div className={styles.onSaleDate}>On sale {onSaleStartDate}</div>
+          <div className={styles.onSaleDate}>On sale soon</div>
         )}
       </section>
     </li>
