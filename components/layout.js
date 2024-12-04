@@ -84,6 +84,13 @@ export default function Layout({ children }) {
 
           <nav className={styles.siteNav}>
             <NavLink href="/music">Music</NavLink>
+            <a
+              href="https://newsletter.joedaymusic.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              The Halflight Dispatch
+            </a>
             <NavLink href="/podcast">Podcast</NavLink>
             <NavLink href="/bio">Bio</NavLink>
             <NavLink href="/shows">Shows</NavLink>
