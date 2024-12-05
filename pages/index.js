@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./index.module.css";
 import Layout from "../components/layout";
+import SubscribeForm from "../components/SubscribeForm";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -86,6 +87,22 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <div className={styles.formModal}>
+          <h3>Subscribe to the Halflight Dispatch</h3>
+          <ul>
+            <li>Exclusive merch</li>
+            <li>Monthly updates on the new album</li>
+            <li>Song stories</li>
+            <li>Playlists</li>
+          </ul>
+          <p>
+            The Halflight Dispatch is my monthly newsletter. Why a newsletter?
+            Well, today social media companies make it very difficult for
+            artists to reach the people who follow them. Good old fashioned
+            email is the best way to stay in the loop. And I make it fun too.
+          </p>
+          <SubscribeForm />
+        </div>
       </div>
     </Layout>
   );
