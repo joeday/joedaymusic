@@ -28,6 +28,11 @@
   margin: 0;
 }
 
+.formContainer {
+  padding: 12px;
+  background: rgba(30,30,30,.8);
+}
+
 @media only screen and (min-width: 768px) {
   .contactGrid {
     grid-template-columns: repeat(6, 1fr);
@@ -36,5 +41,9 @@
       "title-l  title title title title title-r"
       "gutter-l copy  copy  copy  copy  gutter-r"
       "creds    creds creds creds creds creds";
+  }
+
+  .formContainer {
+    padding: 48px;
   }
 }

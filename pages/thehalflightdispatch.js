@@ -13,7 +13,9 @@ export default function TheHalflightDispatch() {
             way to stay in the loop. Show & tour announcements, exclusive merch,
             song stories, and more delivered directly to your inbox.
           </p>
-          <SubscribeForm />
+          <div className={styles.formContainer}>
+            <SubscribeForm />
+          </div>
         </section>
       </article>
     </Layout>

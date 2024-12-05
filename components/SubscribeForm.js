@@ -13,26 +13,28 @@ export default function SubscribeForm() {
         <input type="hidden" value="1" name="embed" />
       </div>
 
-      <div className={styles.formRow}>
-        <label for="first-name">First name</label>
-        <input
-          id="first-name"
-          type="text"
-          name="metadata__first-name"
-          required
-          placeholder="Neil"
-        />
-      </div>
+      <div className={styles.formRowGroup}>
+        <div className={styles.formRow}>
+          <label for="first-name">First name</label>
+          <input
+            id="first-name"
+            type="text"
+            name="metadata__first-name"
+            required
+            placeholder="Neil"
+          />
+        </div>
 
-      <div className={styles.formRow}>
-        <label for="last-name">Last name</label>
-        <input
-          id="last-name"
-          type="text"
-          name="metadata__last-name"
-          required
-          placeholder="Young"
-        />
+        <div className={styles.formRow}>
+          <label for="last-name">Last name</label>
+          <input
+            id="last-name"
+            type="text"
+            name="metadata__last-name"
+            required
+            placeholder="Young"
+          />
+        </div>
       </div>
       <input type="submit" value="Subscribe" />
     </form>
