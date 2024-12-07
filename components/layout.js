@@ -29,14 +29,14 @@ export default function Layout({ children }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0"
         />
         <meta name="theme-color" content="#000000" />
 
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
 
         <meta
           name="Joe Day Music"
@@ -46,22 +46,22 @@ export default function Layout({ children }) {
 
         <meta
           property="og:title"
-          content="The Halflight Podcast"
+          content="The Halflight Dispatch"
           key="ogtitle"
         />
         <meta
           property="og:description"
-          content="Subscribe now wherever you get your podcasts"
+          content="Subscribe for tour announcements, album updates, and more..."
           key="ogdescription"
         />
         <meta
           property="og:image"
-          content="/halflight_podcast.png"
+          content="/halflight_dispatch.png"
           key="ogimage"
         />
         <meta
           property="og:url"
-          content="https://joedaymusic.com/podcast"
+          content="https://joedaymusic.com/thehalflightdispatch"
           key="ogurl"
         />
         <meta property="og:type" content="website" />
@@ -84,13 +84,9 @@ export default function Layout({ children }) {
 
           <nav className={styles.siteNav}>
             <NavLink href="/music">Music</NavLink>
-            <a
-              href="https://newsletter.joedaymusic.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <NavLink href="/thehalflightdispatch">
               The Halflight Dispatch
-            </a>
+            </NavLink>
             <NavLink href="/podcast">Podcast</NavLink>
             <NavLink href="/bio">Bio</NavLink>
             <NavLink href="/shows">Shows</NavLink>
