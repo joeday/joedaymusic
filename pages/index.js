@@ -4,8 +4,37 @@ import Layout from "../components/layout";
 import SubscribeForm from "../components/SubscribeForm";
 import Head from "next/head";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      const val = localStorage.getItem("hide-subscription-modal");
+      if (localStorage.getItem("hide-subscription-modal") !== "true") {
+        setShowModal(true);
+      }
+    }, 1_000 * 3);
+  }, []);
+
+  useEffect(() => {
+    const bindKey = ({ key }) => {
+      if (key === "Escape") {
+        dismissFormModal();
+      }
+    };
+    window.addEventListener("keyup", bindKey);
+    return () => {
+      window.removeEventListener("keyup", bindKey);
+    };
+  }, []);
+
+  function dismissFormModal() {
+    setShowModal(false);
+    localStorage.setItem("hide-subscription-modal", "true");
+  }
+
   return (
     <Layout home>
       <div className={styles.homeGrid}>
@@ -87,22 +116,26 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <div className={styles.formModal}>
-          <h3>Subscribe to the Halflight Dispatch</h3>
-          <ul>
-            <li>Exclusive merch</li>
-            <li>Monthly updates on the new album</li>
-            <li>Song stories</li>
-            <li>Playlists</li>
-          </ul>
-          <p>
-            The Halflight Dispatch is my monthly newsletter. Why a newsletter?
-            Well, today social media companies make it very difficult for
-            artists to reach the people who follow them. Good old fashioned
-            email is the best way to stay in the loop. And I make it fun too.
-          </p>
-          <SubscribeForm />
-        </div>
+        {showModal && (
+          <div className={styles.formModal}>
+            <button className={styles.dismissButton} onClick={dismissFormModal}>
+              X
+            </button>
+            <h3>Subscribe to the Halflight Dispatch</h3>
+            <ul>
+              <li>Exclusive merch</li>
+              <li>Monthly updates on the new album</li>
+              <li>Song stories</li>
+              <li>Playlists</li>
+            </ul>
+            <p>
+              The Halflight Dispatch is Joe Day's email newsletter and the best
+              way to stay in the loop. Show & tour announcements, exclusive
+              merch, song stories, and more delivered directly to your inbox.
+            </p>
+            <SubscribeForm afterSubmit={dismissFormModal} />
+          </div>
+        )}
       </div>
     </Layout>
   );

@@ -39,8 +39,9 @@
     font-family: "VCTR Mono", "Courier", "Courier New", Courier, monospace;
     font-size: 16px;
     border-radius: 4px;
-    border: none;
+    border: 1px solid var(--color-gray-600);
     width: calc(100% - 24px);
+    background-color: var(--color-primary-white);
   }
   
   .subscribeForm input[type="submit"] {

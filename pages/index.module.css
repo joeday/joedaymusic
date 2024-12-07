@@ -60,7 +60,7 @@
   background: #eee;
   box-shadow: 8px 8px #4A4A4A;
   height: fit-content;
-  width: 320px;
+  width: 334px;
   padding: 48px 64px;
   color: var(--color-primary-black);
 }
@@ -85,6 +85,18 @@
 .formModal p {
   font-size: var(--text-size-sm);
   margin: 0 0 24px;
+}
+
+.dismissButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+  border: 1px solid var(--color-gray-600);
+  cursor: pointer;
+  background-color: var(--color-primary-white);
 }
 
 @media only screen and (min-width: 768px) {

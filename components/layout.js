@@ -29,14 +29,14 @@ export default function Layout({ children }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0"
         />
         <meta name="theme-color" content="#000000" />
 
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
 
         <meta
           name="Joe Day Music"

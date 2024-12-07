@@ -1,14 +1,17 @@
 import styles from "./SubscribeForm.module.css";
 
-export default function SubscribeForm() {
+export default function SubscribeForm(props) {
+  const { afterSubmit } = props;
+
   return (
     <form
       action="https://buttondown.com/api/emails/embed-subscribe/joeday"
       method="post"
       className={styles.subscribeForm}
+      onSubmit={afterSubmit}
     >
       <div className={styles.firstName}>
-        <label for="first-name">First name</label>
+        <label htmlFor="first-name">First name</label>
         <input
           id="first-name"
           type="text"
@@ -19,7 +22,7 @@ export default function SubscribeForm() {
       </div>
 
       <div className={styles.lastName}>
-        <label for="last-name">Last name</label>
+        <label htmlFor="last-name">Last name</label>
         <input
           id="last-name"
           type="text"
@@ -30,13 +33,13 @@ export default function SubscribeForm() {
       </div>
 
       <div className={styles.email}>
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input type="email" name="email" placeholder="you@example.com" />
         <input type="hidden" value="1" name="embed" />
       </div>
 
       <div className={styles.zip}>
-        <label for="zipcode">Zipcode</label>
+        <label htmlFor="zipcode">Zipcode</label>
         <input type="zipcode" name="zipcode" placeholder="96120" />
         <input type="hidden" value="1" name="embed" />
       </div>
