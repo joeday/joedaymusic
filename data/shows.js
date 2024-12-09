@@ -13,12 +13,15 @@ export default [
       "en-US",
       options
     ),
-    location: "Chop Suey, Seattle, WA",
-    otherBands: "Joseph Pennell",
-    onSale: false,
-    onSaleStartDate: "tbd",
+    location: "Seattle, WA",
+    otherBands: "Joseph Pennell, Shay Carlucci",
+    onSale: true,
+    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
+      "en-US",
+      onSaleOptions
+    ),
     ticketLink:
-      "https://chopsuey.com/calendar/",
+      "https://www.ticketweb.com/event/joseph-pennell-joe-day-shay-chop-suey-tickets/14057693?REFID=ARTIST",
   },
   // {
   //   id: 1,
