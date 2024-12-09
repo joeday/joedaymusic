@@ -44,7 +44,7 @@ export default function SubscribeForm(props) {
         <input type="hidden" value="1" name="embed" />
       </div>
 
-      <input type="submit" value="Subscribe" />
+      <button type="submit">Subscribe</button>
     </form>
   );
 }
