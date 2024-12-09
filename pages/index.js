@@ -2,17 +2,20 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import Layout from "../components/layout";
 import SubscribeForm from "../components/SubscribeForm";
-import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+const HIDE_SUBSCRIBER_MODAL_KEY = "hide-subscription-modal";
+
+const getIsModalHidden = () => localStorage.getItem(HIDE_SUBSCRIBER_MODAL_KEY) === "true";
+const hideModal = () => localStorage.setItem(HIDE_SUBSCRIBER_MODAL_KEY, "true");
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      const val = localStorage.getItem("hide-subscription-modal");
-      if (localStorage.getItem("hide-subscription-modal") !== "true") {
+      if (getIsModalHidden()) {
         setShowModal(true);
       }
     }, 1_000 * 3);
@@ -32,7 +35,7 @@ export default function Home() {
 
   function dismissFormModal() {
     setShowModal(false);
-    localStorage.setItem("hide-subscription-modal", "true");
+    hideModal()
   }
 
   return (
@@ -116,26 +119,24 @@ export default function Home() {
             </p>
           </div>
         </section>
-        {showModal && (
-          <div className={styles.formModal}>
-            <button className={styles.dismissButton} onClick={dismissFormModal}>
-              X
-            </button>
-            <h3>Subscribe to the Halflight Dispatch</h3>
-            <ul>
-              <li>Exclusive merch</li>
-              <li>Monthly updates on the new album</li>
-              <li>Song stories</li>
-              <li>Playlists</li>
-            </ul>
-            <p>
-              The Halflight Dispatch is Joe Day's email newsletter and the best
-              way to stay in the loop. Show & tour announcements, exclusive
-              merch, song stories, and more delivered directly to your inbox.
-            </p>
-            <SubscribeForm afterSubmit={dismissFormModal} />
-          </div>
-        )}
+        <div className={styles.formModal} style={showModal ? {} : {display: 'none'}}> 
+          <button className={styles.dismissButton} onClick={dismissFormModal}>
+            X
+          </button>
+          <h3>Subscribe to the Halflight Dispatch</h3>
+          <ul>
+            <li>Exclusive merch</li>
+            <li>Monthly updates on the new album</li>
+            <li>Song stories</li>
+            <li>Playlists</li>
+          </ul>
+          <p>
+            The Halflight Dispatch is Joe Day's email newsletter and the best
+            way to stay in the loop. Show & tour announcements, exclusive
+            merch, song stories, and more delivered directly to your inbox.
+          </p>
+          <SubscribeForm afterSubmit={dismissFormModal} />
+        </div>
       </div>
     </Layout>
   );
