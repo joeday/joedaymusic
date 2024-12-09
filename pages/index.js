@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     setTimeout(() => {
-      if (getIsModalHidden()) {
+      if (!getIsModalHidden()) {
         setShowModal(true);
       }
     }, 1_000 * 3);
