@@ -34,7 +34,8 @@
     flex-direction: column;
   }
 
-  .subscribeForm input {
+  .subscribeForm input,
+  .subscribeForm button {
     padding: 12px;
     font-family: "VCTR Mono", "Courier", "Courier New", Courier, monospace;
     font-size: 16px;
@@ -44,7 +45,7 @@
     background-color: var(--color-primary-white);
   }
   
-  .subscribeForm input[type="submit"] {
+  .subscribeForm button {
     display: inline;
     width: fit-content;
     margin-top: 12px;
