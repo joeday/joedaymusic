@@ -10,6 +10,10 @@
     grid-gap: 12px;
   }
 
+  .label {
+    display: flex;
+  }
+
   .firstName {
     grid-area: first;
     display: flex;
@@ -32,6 +36,11 @@
     grid-area: zip;
     display: flex;
     flex-direction: column;
+  }
+  
+  .required {
+    color: var(--color-accent);
+    font-size: small;
   }
 
   .subscribeForm input,
