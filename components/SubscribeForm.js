@@ -1,50 +1,132 @@
 import styles from "./SubscribeForm.module.css";
+import { useState } from "react";
+
+const subscribe = async (formData) => {
+  const response = await fetch("/api/subscribe", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+  });
+  return await response.json();
+};
+
+const FormControl = ({
+  label,
+  value,
+  onChange,
+  id,
+  name,
+  type,
+  isRequired,
+  placeholder,
+  className,
+}) => {
+  return (
+    <div className={className}>
+      <label className={styles.label} htmlFor={id}>
+        {label} {isRequired && <span className={styles.required}>*</span>}
+      </label>
+      <input
+        id={id}
+        type={type}
+        name={name}
+        required={isRequired}
+        placeholder={placeholder}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+      />
+    </div>
+  );
+};
 
 export default function SubscribeForm(props) {
-  const { afterSubmit } = props;
+  const { handleSubscribe } = props;
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    zipcode: "",
+  });
+
+  const setFormField = (field, value) => {
+    setFormData({ ...formData, [field]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      await subscribe(formData);
+      handleSubscribe(true);
+    } catch (error) {
+      console.error(error);
+      handleSubscribe(false);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
-    <form
-      action="https://buttondown.com/api/emails/embed-subscribe/joeday"
-      method="post"
-      className={styles.subscribeForm}
-      onSubmit={afterSubmit}
-    >
-      <div className={styles.firstName}>
-        <label htmlFor="first-name">First name</label>
-        <input
-          id="first-name"
-          type="text"
-          name="metadata__first-name"
-          required
-          placeholder="Neil"
-        />
-      </div>
+    <form className={styles.subscribeForm} onSubmit={handleSubmit}>
+      {isSubmitting ? (
+        <p>Submitting...</p>
+      ) : (
+        <>
+          <FormControl
+            className={styles.firstName}
+            label="First name"
+            value={formData.firstName}
+            onChange={(value) => setFormField("firstName", value)}
+            id="first-name"
+            name="metadata__first-name"
+            type="text"
+            isRequired
+            placeholder="Neil"
+          />
 
-      <div className={styles.lastName}>
-        <label htmlFor="last-name">Last name</label>
-        <input
-          id="last-name"
-          type="text"
-          name="metadata__last-name"
-          required
-          placeholder="Young"
-        />
-      </div>
+          <FormControl
+            className={styles.lastName}
+            label="Last name"
+            value={formData.lastName}
+            onChange={(value) => setFormField("lastName", value)}
+            id="last-name"
+            name="metadata__last-name"
+            type="text"
+            isRequired
+            placeholder="Young"
+          />
 
-      <div className={styles.email}>
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" placeholder="you@example.com" />
-        <input type="hidden" value="1" name="embed" />
-      </div>
+          <FormControl
+            className={styles.email}
+            label="Email"
+            value={formData.email.value}
+            onChange={(value) => setFormField("email", value)}
+            id="email"
+            name="email"
+            type="email"
+            isRequired
+            placeholder="you@example.com"
+          />
 
-      <div className={styles.zip}>
-        <label htmlFor="zipcode">Zipcode</label>
-        <input type="zipcode" name="zipcode" placeholder="96120" />
-        <input type="hidden" value="1" name="embed" />
-      </div>
+          <FormControl
+            className={styles.zip}
+            label="Zipcode"
+            value={formData.zipcode.value}
+            onChange={(value) => setFormField("zipcode", value)}
+            id="zipcode"
+            name="zipcode"
+            type="text"
+            placeholder="96120"
+          />
 
-      <button type="submit">Subscribe</button>
+          <button type="submit">Subscribe</button>
+        </>
+      )}
     </form>
   );
 }
