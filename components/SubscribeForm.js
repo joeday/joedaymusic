@@ -52,7 +52,7 @@ export default function SubscribeForm(props) {
     email: "",
     zipcode: "",
   });
-  
+
   const setFormField = (field, value) => {
     setFormData({ ...formData, [field]: value });
   };
@@ -67,7 +67,7 @@ export default function SubscribeForm(props) {
       console.error(error);
       handleSubscribe(false);
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   };
 
@@ -77,55 +77,56 @@ export default function SubscribeForm(props) {
         <p>Submitting...</p>
       ) : (
         <>
-      <FormControl
-        className={styles.firstName}
-        label="First name"
-        value={formData.firstName}
-        onChange={(value) => setFormField("firstName", value)}
-        id="first-name"
-        name="metadata__first-name"
-        type="text"
-        isRequired
-        placeholder="Neil"
-      />
+          <FormControl
+            className={styles.firstName}
+            label="First name"
+            value={formData.firstName}
+            onChange={(value) => setFormField("firstName", value)}
+            id="first-name"
+            name="metadata__first-name"
+            type="text"
+            isRequired
+            placeholder="Neil"
+          />
 
-      <FormControl
-        className={styles.lastName}
-        label="Last name"
-        value={formData.lastName}
-        onChange={(value) => setFormField("lastName", value)}
-        id="last-name"
-        name="metadata__last-name"
-        type="text"
-        isRequired
-        placeholder="Young"
-      />
+          <FormControl
+            className={styles.lastName}
+            label="Last name"
+            value={formData.lastName}
+            onChange={(value) => setFormField("lastName", value)}
+            id="last-name"
+            name="metadata__last-name"
+            type="text"
+            isRequired
+            placeholder="Young"
+          />
 
-      <FormControl
-        className={styles.email}
-        label="Email"
-        value={formData.email.value}
-        onChange={(value) => setFormField("email", value)}
-        id="email"
-        name="email"
-        type="email"
-        isRequired
-        placeholder="you@example.com"
-      />
+          <FormControl
+            className={styles.email}
+            label="Email"
+            value={formData.email.value}
+            onChange={(value) => setFormField("email", value)}
+            id="email"
+            name="email"
+            type="email"
+            isRequired
+            placeholder="you@example.com"
+          />
 
-      <FormControl
-        className={styles.zip}
-        label="Zipcode"
-        value={formData.zipcode.value}
-        onChange={(value) => setFormField("zipcode", value)}
-        id="zipcode"
-        name="zipcode"
-        type="text"
-        placeholder="96120"
-      />
+          <FormControl
+            className={styles.zip}
+            label="Zipcode"
+            value={formData.zipcode.value}
+            onChange={(value) => setFormField("zipcode", value)}
+            id="zipcode"
+            name="zipcode"
+            type="text"
+            placeholder="96120"
+          />
 
-      <button type="submit">Subscribe</button>
-      </>)}
+          <button type="submit">Subscribe</button>
+        </>
+      )}
     </form>
   );
 }
