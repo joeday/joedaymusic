@@ -15,16 +15,15 @@
 .cityState,
 .date {
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .date {
   font-weight: 600;
 }
 
-.playingWith,
-.tiny {
-  max-width: 32ch;
-  overflow: hidden;
+.playingWith {
+  flex: 1;
   white-space: nowrap;
 }
 

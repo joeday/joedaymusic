@@ -3,6 +3,14 @@ import styles from "./shows.module.css";
 import Layout from "../components/layout";
 import shows from "../data/shows";
 import Head from "next/head";
+import SubscribeForm from "../components/SubscribeForm";
+import { useEffect, useState } from "react";
+
+const HIDE_SUBSCRIBER_MODAL_KEY = "hide-subscription-modal";
+
+const getIsModalHidden = () =>
+  localStorage.getItem(HIDE_SUBSCRIBER_MODAL_KEY) === "true";
+const hideModal = () => localStorage.setItem(HIDE_SUBSCRIBER_MODAL_KEY, "true");
 
 export const getStaticProps = async () => {
   return {
@@ -13,6 +21,33 @@ export const getStaticProps = async () => {
 };
 
 export default function Shows(props) {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (!getIsModalHidden()) {
+        setShowModal(true);
+      }
+    }, 1_000 * 3);
+  }, []);
+
+  useEffect(() => {
+    const bindKey = ({ key }) => {
+      if (key === "Escape") {
+        dismissFormModal();
+      }
+    };
+    window.addEventListener("keyup", bindKey);
+    return () => {
+      window.removeEventListener("keyup", bindKey);
+    };
+  }, []);
+
+  function dismissFormModal() {
+    setShowModal(false);
+    hideModal();
+  }
+
   return (
     <Layout home>
       <Head>
@@ -64,6 +99,27 @@ export default function Shows(props) {
             <p className={styles.divider}>+ + +</p>
           </section>
         </section>
+        <div
+          className={styles.formModal}
+          style={showModal ? {} : { display: "none" }}
+        >
+          <button className={styles.dismissButton} onClick={dismissFormModal}>
+            X
+          </button>
+          <h3>Never miss a show. Join the Halflight Dispatch.</h3>
+          <ul>
+            <li>Exclusive merch</li>
+            <li>Monthly updates on the new album</li>
+            <li>Song stories</li>
+            <li>Playlists</li>
+          </ul>
+          <p>
+            The Halflight Dispatch is Joe Day's email newsletter and the best
+            way to stay in the loop. Show & tour announcements, exclusive merch,
+            song stories, and more delivered directly to your inbox.
+          </p>
+          <SubscribeForm afterSubmit={dismissFormModal} />
+        </div>
       </div>
     </Layout>
   );
