@@ -23,35 +23,34 @@ export default [
     ticketLink:
       "https://www.ticketweb.com/event/joseph-pennell-joe-day-shay-chop-suey-tickets/14057693?REFID=ARTIST",
   },
-  // {
-  //   id: 1,
-  //   date: new Date("09/05/2024 7:00:00 PM").toLocaleDateString(
-  //     "en-US",
-  //     options
-  //   ),
-  //   location: "Miller's, Carnation, WA",
-  //   otherBands: "Debbie Miller",
-  //   onSale: true,
-  //   onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
-  //     "en-US",
-  //     onSaleOptions
-  //   ),
-  //   ticketLink:
-  //     "https://millerscarnation.com/event/joe-day-and-the-coyotes-with-debbie-miller/",
-  // },
-  // {
-  //   id: 2,
-  //   date: new Date("10/12/2024 6:00:00 PM").toLocaleDateString(
-  //     "en-US",
-  //     options
-  //   ),
-  //   location: "Chop Suey, Seattle, WA",
-  //   otherBands: "Joseph Pennell",
-  //   onSale: true,
-  //   onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
-  //     "en-US",
-  //     onSaleOptions
-  //   ),
-  //   ticketLink: "foo",
-  // },
+  {
+    id: 1,
+    date: new Date("03/28/2025 7:00:00 PM").toLocaleDateString(
+      "en-US",
+      options
+    ),
+    location: "Carnation, WA",
+    otherBands: "Mike Antone",
+    onSale: false,
+    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
+      "en-US",
+      onSaleOptions
+    ),
+    ticketLink: "",
+  },
+  {
+    id: 2,
+    date: new Date("07/11/2025 6:00:00 PM").toLocaleDateString(
+      "en-US",
+      options
+    ),
+    location: "Conway, WA",
+    otherBands: "TBD",
+    onSale: false,
+    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
+      "en-US",
+      onSaleOptions
+    ),
+    ticketLink: "foo",
+  },
 ];

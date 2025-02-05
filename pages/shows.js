@@ -53,7 +53,7 @@ export default function Shows(props) {
       <Head>
         <meta
           property="og:title"
-          content="Halflight full band shows - Fall 2024"
+          content="Joe Day & the Coyotes Live"
           key="ogtitle"
         />
         <meta
@@ -61,11 +61,7 @@ export default function Shows(props) {
           content="Get tickets while they last"
           key="ogdescription"
         />
-        <meta
-          property="og:image"
-          content="/halflight_darksun.png"
-          key="ogimage"
-        />
+        <meta property="og:image" content="/JD+CoyotesLive.jpg" key="ogimage" />
         <meta
           property="og:url"
           content="https://joedaymusic.com/shows"
