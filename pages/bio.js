@@ -13,37 +13,33 @@ export default function Bio() {
         <h1 className={styles.articleTitle}>Dreaming up blue skies again</h1>
         <section className={styles.articleBody}>
           <p className={styles.articleCopy}>
-            Joe Day’s newest album, Halflight, represents a broadening of
-            experience and self-expression. In the aftermath of trauma, change,
-            and reimagination, Halflight touches both on pain and healing, the
-            difficulty of letting old things go, and the hope and possibility
-            that comes from building something new from the ashes.&nbsp;
-            <Image
-              priority
-              src="/images/JoeDay-7535.jpg"
-              className={leftImage}
-              alt={
-                "A portrait of Joe Day sitting in front of an old motel in the Washington desert."
-              }
-              width="880"
-              height="538"
-            />
-            While personal and vulnerable, sharing out of his experience from
-            within a toxic church culture, Halflight has themes that feel bigger
-            and reach wider than one man’s experience. Harmonizing between the
-            grief and pain associated with loss and the hope of discovering new
-            rhythms and relationships with a benediction for the broken, it
-            encourages listeners to find their way forward—wherever they’re
-            coming from.
+            Joe Day is a Seattle-based singer-songwriter whose music is rooted
+            in deep introspection, personal reckoning, and spiritual unrest. As
+            the frontman of the band Mindhead (1999–2006), he spent years
+            navigating the tension between rock venues and Sunday morning
+            worship, embodying the push and pull between faith and the broader
+            cultural landscape.
           </p>
+          <Image
+            priority
+            src="/images/JoeDay-7535.jpg"
+            className={leftImage}
+            alt={
+              "A portrait of Joe Day sitting in front of an old motel in the Washington desert."
+            }
+            width="880"
+            height="538"
+          />
           <p className={styles.articleCopy}>
-            Growing up near Lake Tahoe, Joe was always drawn to music. But that
-            draw shifted gears when he discovered his family's old Gibson
-            acoustic guitar. Before long, he was playing along to the songs on
-            the radio. At the height of 90s grunge, Joe cut his musical teeth
-            pounding out chords along with Nirvana, playing drums in a christian
-            metal band, and like so many churched kids, playing worship songs at
-            youth group.
+            His solo work has taken an even more personal turn, exploring themes
+            of doubt, disillusionment, and the struggle to hold onto something
+            true in an era where the evangelical church has traded integrity for
+            influence. In his album <i>Halflight</i>, Joe gives voice to those
+            who feel abandoned by a faith they once called home—those watching
+            as institutions built on hope and love contort themselves for power
+            and money. His songwriting is raw, unflinching, and deeply human,
+            offering both lament and possibility for those searching for meaning
+            beyond broken systems.
           </p>
           <Image
             priority
@@ -55,20 +51,20 @@ export default function Bio() {
             width="880"
             height="538"
           />
+          <p className={styles.articleCopy}>
+            In late 2023, Joe assembled The Coyotes to explore new material that
+            picks up where <i>Halflight</i> left off. Consisting of Erin Spiegel
+            on violin, Brian Ward on guitar, Jordan Peifer on bass, and Dan
+            Folgado on drums, together The Coyotes bring a dynamic energy to
+            Joe’s evolving sound, pushing deeper into themes of loss, hope, and
+            the search for something real in a fractured world.
+          </p>
 
           <p className={styles.articleCopy}>
-            From playing in bands to eventually fronting Seattle indie band
-            Mindhead to going solo, Joe’s relationship with music has shifted,
-            grown, and changed over the years. He’s moved through seasons of
-            feeling stuck as a songwriter, into this new season of creative
-            hunger leading to shared enjoyment and significance for others.
-          </p>
-          <p className={styles.articleCopy}>
-            Halflight is a soundtrack for people living in the dissonance of
-            being ushered into a post-fact world by the very people and
-            institutions that told them truth matters. These songs seek to let
-            people know they’re not alone, they’re seen. That we can move
-            towards wholeness and hope.
+            Through haunting melodies and honest lyricism, Joe Day continues to
+            carve out space for the spiritual outsiders—the ones who refuse to
+            settle for easy answers and instead embrace the complexities of
+            belief, doubt, and everything in between.
           </p>
         </section>
       </article>
