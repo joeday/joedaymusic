@@ -31,12 +31,13 @@ export default [
     ),
     location: "Carnation, WA",
     otherBands: "Mike Antone",
-    onSale: false,
+    onSale: true,
     onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
       "en-US",
       onSaleOptions
     ),
-    ticketLink: "",
+    ticketLink:
+      "https://millerscarnation.com/event/joe-day-and-the-coyotes-with-mike-antone/",
   },
   {
     id: 2,
