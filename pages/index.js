@@ -7,11 +7,13 @@ import { useEffect, useState } from "react";
 
 const HIDE_SUBSCRIBER_MODAL_KEY = "hide-subscription-modal";
 
-const getIsModalHidden = () => localStorage.getItem(HIDE_SUBSCRIBER_MODAL_KEY) === "true";
+const getIsModalHidden = () =>
+  localStorage.getItem(HIDE_SUBSCRIBER_MODAL_KEY) === "true";
 const hideModal = () => localStorage.setItem(HIDE_SUBSCRIBER_MODAL_KEY, "true");
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
+  const [subscribeFormStatus, setSubscribeFormStatus] = useState("idle");
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,9 +35,17 @@ export default function Home() {
     };
   }, []);
 
-  function dismissFormModal() {
+  function dismissFormModal(success) {
     setShowModal(false);
-    hideModal()
+    hideModal();
+  }
+
+  function handleSubscribeFormSubmit(success) {
+    if (success) {
+      setSubscribeFormStatus("success");
+    } else {
+      setSubscribeFormStatus("error");
+    }
   }
 
   return (
@@ -119,7 +129,10 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <div className={styles.formModal} style={showModal ? {} : {display: 'none'}}> 
+        <div
+          className={styles.formModal}
+          style={showModal ? {} : { display: "none" }}
+        >
           <button className={styles.dismissButton} onClick={dismissFormModal}>
             X
           </button>
@@ -132,10 +145,16 @@ export default function Home() {
           </ul>
           <p>
             The Halflight Dispatch is Joe Day's email newsletter and the best
-            way to stay in the loop. Show & tour announcements, exclusive
-            merch, song stories, and more delivered directly to your inbox.
+            way to stay in the loop. Show & tour announcements, exclusive merch,
+            song stories, and more delivered directly to your inbox.
           </p>
-          <SubscribeForm afterSubmit={dismissFormModal} />
+          {subscribeFormStatus === "idle" ? (
+            <SubscribeForm handleSubscribe={handleSubscribeFormSubmit} />
+          ) : subscribeFormStatus === "error" ? (
+            "Oops, something went wrong"
+          ) : (
+            "Got it!"
+          )}
         </div>
       </div>
     </Layout>
