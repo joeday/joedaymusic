@@ -1,0 +1,45 @@
+.supportWildernessGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "title title title title title title"
+      "gutter-l   copy  copy  copy  copy  gutter-r"
+      "creds creds creds creds creds creds";
+}
+
+.caption {
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: var(--color-gray-600);
+    margin: 12px 0
+}
+
+.supportWildernessTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: title;
+    margin-bottom: 16px;
+  }
+
+.supportWildernessBody {
+    grid-area: copy;
+    display: flex;
+    flex-direction: column;
+}
+
+.supportWildernessBody H4,
+.supportWildernessBody H3 {
+    margin: 24px 0 8px;
+}
+
+.supportWildernessBody em {
+    font-weight: 600;
+}
+
+.noMarginTop {
+    margin-top: 0;
+}
