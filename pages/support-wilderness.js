@@ -20,7 +20,7 @@ export default function Music() {
         <meta property="og:image" content="/wildernessOG.jpg" key="ogimage" />
         <meta
           property="og:url"
-          content="https://joedaymusic.com/supportwilderness"
+          content="https://joeday.music/supportwilderness"
           key="ogurl"
         />
         <meta property="og:type" content="website" />

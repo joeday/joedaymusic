@@ -11,6 +11,7 @@ export default function Layout({ children }) {
   return (
     <div className={styles.App}>
       <Head>
+        <link rel="canonical" href="https://joeday.music/" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -61,7 +62,7 @@ export default function Layout({ children }) {
         />
         <meta
           property="og:url"
-          content="https://joedaymusic.com/thehalflightdispatch"
+          content="https://joeday.music/thehalflightdispatch"
           key="ogurl"
         />
         <meta property="og:type" content="website" />
