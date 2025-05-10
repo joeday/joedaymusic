@@ -31,9 +31,9 @@ export default function Music() {
         </h1>
         <section className={styles.supportWildernessBody}>
           <caption className={styles.caption}>
-            <em>Pssst</em>! This is a private page only a few people received
-            the link to. If you wish to share with a friend directly, go ahead.
-            Please do not share on social media.
+            Pssst! This is a private page only a few people received the link
+            to. If you wish to share with a friend directly, go ahead. Please do
+            not share on social media.
           </caption>
           <p>
             <em>If you're here</em>, you're someone who has supported me and/or
@@ -41,16 +41,17 @@ export default function Music() {
             written, now it's time to make it. That's where you come in...
           </p>
           <h3>Start here:</h3>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/eF7ha0_Pb_Q?si=eB4klqeyIy9UJ1VA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <div className={styles.iframeContainer}>
+            <iframe
+              className={styles.responsiveIframe}
+              src="https://www.youtube.com/embed/eF7ha0_Pb_Q?si=eB4klqeyIy9UJ1VA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
           <h4>To Support Joe's new Album...</h4>
           <p className={styles.noMarginTop}>
             First off, thank you! We'll keep it easy and informal. I know in the
@@ -62,16 +63,17 @@ export default function Music() {
           <h4 className={styles.supportWildernessH4}>
             Watch: Joe plays Blood Moon from Wilderness
           </h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/jVxDmBX8cag?si=SCrmCFIc_wXYstYe"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <div className={styles.iframeContainer}>
+            <iframe
+              className={styles.responsiveIframe}
+              src="https://www.youtube.com/embed/jVxDmBX8cag?si=SCrmCFIc_wXYstYe"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </section>
       </article>
     </Layout>
