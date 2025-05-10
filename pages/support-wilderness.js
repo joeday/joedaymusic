@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import styles from "./supportwilderness.module.css";
+import styles from "./support-wilderness.module.css";
 import Head from "next/head";
 
 export default function Music() {
