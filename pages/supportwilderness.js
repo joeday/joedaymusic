@@ -7,6 +7,23 @@ export default function Music() {
     <Layout home>
       <Head>
         <meta name="robots" content="noindex" />
+        <meta
+          property="og:title"
+          content="An important message from Joe Day"
+          key="ogtitle"
+        />
+        <meta
+          property="og:description"
+          content="About his upcoming third solo album"
+          key="ogdescription"
+        />
+        <meta property="og:image" content="/wildernessOG.jpg" key="ogimage" />
+        <meta
+          property="og:url"
+          content="https://joedaymusic.com/supportwilderness"
+          key="ogurl"
+        />
+        <meta property="og:type" content="website" />
       </Head>
       <article className={styles.supportWildernessGrid}>
         <h1 className={styles.supportWildernessTitle}>
