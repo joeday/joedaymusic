@@ -64,7 +64,7 @@ export default function Shows(props) {
         <meta property="og:image" content="/JD+CoyotesLive.jpg" key="ogimage" />
         <meta
           property="og:url"
-          content="https://joedaymusic.com/shows"
+          content="https://joeday.music/shows"
           key="ogurl"
         />
         <meta property="og:type" content="website" />

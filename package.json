@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
-  "homepage": "https://joedaymusic.com",
+  "homepage": "https://joeday.music",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
