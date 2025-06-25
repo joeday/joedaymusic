@@ -79,6 +79,7 @@ export default function Layout({ children }) {
                 alt="Joe Day Music Logo"
                 width="514"
                 height="94"
+                priority="true"
               />
             </Link>
           </div>

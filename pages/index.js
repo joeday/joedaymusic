@@ -7,7 +7,8 @@ import { useEffect, useState } from "react";
 
 const HIDE_SUBSCRIBER_MODAL_KEY = "hide-subscription-modal";
 
-const getIsModalHidden = () => localStorage.getItem(HIDE_SUBSCRIBER_MODAL_KEY) === "true";
+const getIsModalHidden = () =>
+  localStorage.getItem(HIDE_SUBSCRIBER_MODAL_KEY) === "true";
 const hideModal = () => localStorage.setItem(HIDE_SUBSCRIBER_MODAL_KEY, "true");
 
 export default function Home() {
@@ -35,13 +36,28 @@ export default function Home() {
 
   function dismissFormModal() {
     setShowModal(false);
-    hideModal()
+    hideModal();
   }
 
   return (
     <Layout home>
       <div className={styles.homeGrid}>
-        <h1 className={styles.headline}>Streaming everywhere now</h1>
+        <h1 className={styles.headline}>Summer 2025 Tour w/ John Van Deusen</h1>
+        <Link href="/shows" className={styles.headlineImg}>
+          <Image
+            priority
+            src="/images/tour2025.jpg"
+            className={styles.responsiveImage}
+            width="900"
+            height="506"
+            alt="Album cover for Joe Day's album Halflight"
+          />
+        </Link>
+        <p>
+          Joe and John Van Deusen hit the road for another northwest summer
+          house show tour. <a href="/shows">Get your tickets now!</a>
+        </p>
+        <h2 className={styles.subHeadline}>STREAMING NOW</h2>
         <section className={styles.homeContent}>
           <div className={styles.homePageColumn}>
             <Image
@@ -119,7 +135,10 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <div className={styles.formModal} style={showModal ? {} : {display: 'none'}}> 
+        <div
+          className={styles.formModal}
+          style={showModal ? {} : { display: "none" }}
+        >
           <button className={styles.dismissButton} onClick={dismissFormModal}>
             X
           </button>
@@ -132,8 +151,8 @@ export default function Home() {
           </ul>
           <p>
             The Halflight Dispatch is Joe Day's email newsletter and the best
-            way to stay in the loop. Show & tour announcements, exclusive
-            merch, song stories, and more delivered directly to your inbox.
+            way to stay in the loop. Show & tour announcements, exclusive merch,
+            song stories, and more delivered directly to your inbox.
           </p>
           <SubscribeForm afterSubmit={dismissFormModal} />
         </div>

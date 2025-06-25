@@ -61,7 +61,11 @@ export default function Shows(props) {
           content="Get tickets while they last"
           key="ogdescription"
         />
-        <meta property="og:image" content="/JD+CoyotesLive.jpg" key="ogimage" />
+        <meta
+          property="og:image"
+          content="/images/tour2025.jpg"
+          key="ogimage"
+        />
         <meta
           property="og:url"
           content="https://joeday.music/shows"
