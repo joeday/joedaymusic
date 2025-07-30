@@ -7,6 +7,7 @@ html {
   --color-gray-600: #777;
   --color-gray-300: #ccc;
   --color-accent: #e14050;
+  --color-accent-dark: #AF2B38;
   --color-success: #2baf78;
 
   --text-size-headline: 48px;
@@ -63,6 +64,29 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.button {
+  background-color: var(--color-accent);
+  color: var(--color-primary-white);
+  min-width: 160px;
+  padding: 12px 32px 11px 32px;
+  border-radius: 6px;
+  border: 2px solid var(--color-accent);
+  display: inline-flex;
+  width: max-content;
+  justify-content: center;
+  align-self: center;
+  margin: 24px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  text-decoration: none;
+  background-color: var(--color-accent-dark);
+  color: var(--color-true-white);
 }
 
 .noBreak {
