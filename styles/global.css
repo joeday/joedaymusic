@@ -19,16 +19,15 @@ html {
   --text-size-sm: 12px;
   --text-size-xs: 10px;
 
-  --font-family-primary: "Oajaca";
+  --font-family-primary: "Oaxaca";
   --font-family-secondary: "Mojave";
 }
 
 h1 {
   font-size: var(--text-size-title-sm);
+  font-family: var(--font-family-primary);
   font-weight: 400;
   text-transform: uppercase;
-  word-spacing: -5px;
-  letter-spacing: -1px;
   margin: 0;
 }
 

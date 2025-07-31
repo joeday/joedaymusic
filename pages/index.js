@@ -42,7 +42,29 @@ export default function Home() {
   return (
     <Layout home>
       <div className={styles.homeGrid}>
-        <h1 className={styles.headline}>Summer 2025 Tour w/ John Van Deusen</h1>
+        <h1 className={styles.headline}>
+          Help make Joe's new album <em>Wilderness</em>
+        </h1>
+        <Link href="/support-wilderness" className={styles.headlineImg}>
+          <Image
+            priority
+            src="/images/help_make_wilderness_lg.jpg"
+            className={styles.responsiveImage}
+            width="900"
+            height="473"
+            alt="An image of Joe Day recording acoustic guitar in a hallway (which is an unusual place to do that) with the caption 'Help make Joe's new album Wilderness. An album about our longing for connection and transcendence.'"
+          />
+        </Link>
+        <p>
+          Joe's most ambitious musical project yet. The most songs, the most
+          collaborators, a vision that was clear before a single song was
+          written. You can help make it real!{" "}
+          <a href="/support-wilderness">Find out all about it here.</a>
+        </p>
+
+        <h2 className={styles.subHeadline}>
+          Summer 2025 Tour with John Van Deusen
+        </h2>
         <Link href="/shows" className={styles.headlineImg}>
           <Image
             priority

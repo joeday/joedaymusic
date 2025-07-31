@@ -41,28 +41,28 @@ export default function Layout({ children }) {
 
         <meta
           name="Joe Day Music"
-          content="New album Halflight out now everywhere you stream music"
+          content="Help make Joe Day's new album Wilderness - donate today"
         />
         <link rel="apple-touch-icon" href="/logo192.png" />
 
         <meta
           property="og:title"
-          content="The Halflight Dispatch"
+          content="Help make Joe Day's next album"
           key="ogtitle"
         />
         <meta
           property="og:description"
-          content="Subscribe for tour announcements, album updates, and more..."
+          content="An album about our longing for connection and transcendence"
           key="ogdescription"
         />
         <meta
           property="og:image"
-          content="/halflight_dispatch.png"
+          content="/help_make_wilderness.jpg"
           key="ogimage"
         />
         <meta
           property="og:url"
-          content="https://joeday.music/thehalflightdispatch"
+          content="https://joeday.music/support-wilderness"
           key="ogurl"
         />
         <meta property="og:type" content="website" />

@@ -1,30 +1,9 @@
 import Layout from "../components/layout";
 import styles from "./support-wilderness.module.css";
-import Head from "next/head";
 
 export default function Music() {
   return (
     <Layout home>
-      <Head>
-        <meta name="robots" content="noindex" />
-        <meta
-          property="og:title"
-          content="An important message from Joe Day"
-          key="ogtitle"
-        />
-        <meta
-          property="og:description"
-          content="About his upcoming third solo album"
-          key="ogdescription"
-        />
-        <meta property="og:image" content="/wildernessOG.jpg" key="ogimage" />
-        <meta
-          property="og:url"
-          content="https://joeday.music/supportwilderness"
-          key="ogurl"
-        />
-        <meta property="og:type" content="website" />
-      </Head>
       <article className={styles.supportWildernessGrid}>
         <h1 className={styles.supportWildernessTitle}>
           Help bring <em>Wilderness</em> to life
@@ -90,7 +69,7 @@ export default function Music() {
             className="button"
             target="blank"
           >
-            sign me up!
+            I want to donate
           </a>
           <h3>The full story</h3>
 
@@ -100,10 +79,10 @@ export default function Music() {
             only way out of the metaphorical desert is by correcting our
             thinking. We target the brain. While I believe that's an important
             part of the puzzle, it's not the only part. What about imagination?
-            What about beauty? What about presence? Trascendence is not merely a
-            cognitive excercise, it's an embodied one that engages every aspect
-            of our being. We all know the power of music and it's ability to
-            take us places we've never been. This album is here for that.
+            What about beauty? What about presence? Transcendence is not merely
+            a cognitive excercise, it's an embodied one that engages every
+            aspect of our being. We all know the power of music and it's ability
+            to take us places we've never been. This album is here for that.
           </p>
           <p>
             I’ve already started recording, and I’m committed to finishing it —

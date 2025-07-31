@@ -39,11 +39,11 @@
   display: flex;
   flex-direction: column;
   max-width: 540px;
-  font-size: var(--text-size-title-sm);
+  font-size: var(--text-size-body);
 }
 
 .albumTitle {
-  font-size: var(--text-size-title);
+  font-size: var(--text-size-title-sm);
   font-weight: unset;
   margin-bottom: 0;
 }
@@ -51,4 +51,14 @@
 .responsiveImage {
   max-width: 100%;
   height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .albumTitle {
+    font-size: var(--text-size-title);
+  }
+  .albumDescription {
+    font-size: var(--text-size-title-sm);
+  }
 }

@@ -18,24 +18,18 @@
 }
 
 .headline {
-  font-size: var(--text-size-headline);
-  font-weight: 300;
+  font-size: var(--text-size-title-sm);
   text-align: center;
-  line-height: 0.9;
-  letter-spacing: -2px;
-  word-spacing: -8px;
-  margin: 24px 0 48px;
+  margin: 24px 0 24px;
 }
 
 .subHeadline {
-  margin-top: 64px;
-  font-size: var(--text-size-title);
+  font-size: var(--text-size-title-sm);
   font-weight: 300;
   text-align: center;
   line-height: 0.9;
   letter-spacing: -2px;
-  word-spacing: -8px;
-  margin: 24px 0 48px;
+  margin: 64px 0 24px;
 }
 
 .responsiveImage {
@@ -125,5 +119,19 @@
     width: 334px;
     padding: 48px 64px;
     transform: unset;
+  }
+  .headline {
+    font-size: var(--text-size-headline);
+    text-align: center;
+  }
+
+  .subHeadline {
+    font-size: var(--text-size-title);
+    font-weight: 300;
+    text-align: center;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    word-spacing: -8px;
+    margin: 64px 0 48px;
   }
 }
