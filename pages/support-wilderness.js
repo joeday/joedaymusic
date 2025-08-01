@@ -36,7 +36,7 @@ export default function Music() {
             ></iframe>
           </div>
           <h4>To Support Joe's new Album...</h4>
-          <p className={styles.noMarginTop}>
+          <p>
             <a
               href="https://renewthearts.donorsupport.co/page/Joe-Day"
               target="blank"
