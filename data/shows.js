@@ -7,19 +7,19 @@ const onSaleOptions = {
 };
 
 export default [
-  // {
-  //   id: 0,
-  //   date: new Date("08/02/2025 6:00:00 PM").toLocaleDateString(
-  //     "en-US",
-  //     options
-  //   ),
-  //   location: "Bellingham, WA",
-  //   otherBands: "John Van Deusen",
-  //   onSale: true,
-  //   onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
-  //     "en-US",
-  //     onSaleOptions
-  //   ),
-  //   ticketLink: "https://sidedooraccess.com/shows/oJ7TFuN9N2JWYCkLoh1M",
-  // }
+  {
+    id: 0,
+    date: new Date("10/24/2025 7:00:00 PM").toLocaleDateString(
+      "en-US",
+      options
+    ),
+    location: "Woodinville, WA",
+    otherBands: "",
+    onSale: true,
+    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
+      "en-US",
+      onSaleOptions
+    ),
+    ticketLink: "https://sidedooraccess.com/shows/VGPQHbahOwbwPBHQC5Ht",
+  },
 ];
