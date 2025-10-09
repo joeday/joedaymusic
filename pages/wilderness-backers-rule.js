@@ -13,25 +13,6 @@ export default function Music() {
           Wilderness Backers Rule!!
         </h1>
         <section className={styles.supportWildernessBody}>
-          {/* <h4>This is a secret page</h4>
-          <p>
-            You're here because you backed my album <em>Wilderness</em>. Thank
-            you so much! I can't wait to share this music with you. If you are
-            here and haven't backed <em>Wilderness</em> yet, what are you
-            waiting for? <a href="support-wilderness">Go donate now!</a>
-          </p>
-
-          <p>
-            Please do not share the link to this page. This is for backers only.
-            If you know someone who should back the project,{" "}
-            <a href="support-wilderness">here's the link.</a>
-          </p>
-          <p>
-            This will be an evolving space, things will come and go. But
-            whatever is here will be all about giving you the inside scoop into
-            the new album.
-          </p>
-          <p>Now, for the good stuff...</p> */}
           <h4>This is a secret page</h4>
           <p>
             You're here because you backed my album <em>Wilderness</em>. Thank
