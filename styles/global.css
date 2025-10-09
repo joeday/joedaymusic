@@ -7,7 +7,7 @@ html {
   --color-gray-600: #777;
   --color-gray-300: #ccc;
   --color-accent: #e14050;
-  --color-accent-dark: #AF2B38;
+  --color-accent-dark: #af2b38;
   --color-success: #2baf78;
 
   --text-size-headline: 48px;
@@ -54,6 +54,15 @@ p {
 
 .tiny {
   font-size: var(--text-size-sm);
+}
+
+.caption {
+  font-size: 12px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: var(--color-gray-600);
+  margin: 12px 0;
 }
 
 a {
