@@ -35,9 +35,12 @@ export default function Music() {
           <p>
             As I said in my email, we had a moment recently where we made a
             small tweak (one chord!) to <em>Highway Dust</em> which ended up
-            resulting in us completely re-recording the song. Brian shot this
-            video of me recording the new version. This was my second, take and
-            is the one you'll hear on the album.
+            resulting in us completely re-recording the song. That story, the
+            moment of inspiration, took place last Friday night. On Tuesday of
+            this week we reconvened in the studio to record the new version
+            (that's when we grabbed this video). It only took me two takes to
+            get it. This is the second take and is the one you'll hear on the
+            album.
           </p>
           <div className={styles.iframeContainer}>
             <iframe
