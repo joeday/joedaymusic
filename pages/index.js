@@ -62,23 +62,6 @@ export default function Home() {
           <a href="/support-wilderness">Find out all about it here.</a>
         </p>
 
-        <h2 className={styles.subHeadline}>
-          Summer 2025 Tour with John Van Deusen
-        </h2>
-        <Link href="/shows" className={styles.headlineImg}>
-          <Image
-            priority
-            src="/images/tour2025.jpg"
-            className={styles.responsiveImage}
-            width="900"
-            height="506"
-            alt="Album cover for Joe Day's album Halflight"
-          />
-        </Link>
-        <p>
-          Joe and John Van Deusen hit the road for another northwest summer
-          house show tour. <a href="/shows">Get your tickets now!</a>
-        </p>
         <h2 className={styles.subHeadline}>STREAMING NOW</h2>
         <section className={styles.homeContent}>
           <div className={styles.homePageColumn}>
