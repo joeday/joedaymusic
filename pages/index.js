@@ -42,9 +42,65 @@ export default function Home() {
   return (
     <Layout home>
       <div className={styles.homeGrid}>
-        <h1 className={styles.headline}>
+        <h1 className={styles.headline}>Grace 15 year anniversary show</h1>
+        <Link
+          href="https://app.tickettailor.com/events/joedaymusic/2054888"
+          className={styles.headlineImg}
+          rel="nofollow"
+          target="_blank"
+        >
+          <Image
+            priority
+            src="/images/graceFB.jpg"
+            className={styles.responsiveImage}
+            width="900"
+            height="473"
+            alt="A horizontal concert poster image promoting Joe's upcoming Grace 15-year anniversary show with John Van Deusen and Micah Kelley"
+          />
+        </Link>
+        <p>
+          Over the last few months,{" "}
+          <a
+            href="https://newsletter.joedaymusic.com/archive/grace-an-introduction/"
+            rel="nofollow"
+            target="_blank"
+          >
+            the story of Joe Day's album Grace has been told
+          </a>{" "}
+          to commemorate its 15th anniversary—a reflection on the community, the
+          people, and the songs that defined an era in Mount Vernon, Seattle,
+          and more. Now, it’s time to hear those songs in the very place where
+          they were born.
+        </p>
+        <p>
+          On <b>August 7th</b>, we are returning to <b>Communion Church</b> (the
+          space many remember as <i>The Gathering</i>) for a celebration of this
+          record and the community it represents.
+          <b></b>
+        </p>
+        <p>
+          The evening features a deep bench of longtime collaborators, beginning
+          with a set by <b>John Van Deusen</b>
+          <b>,&nbsp;</b>followed by <b>Micah Kelley</b> performing a selection
+          of his songs from the era. Finally, <b>Joe Day</b> will take the stage
+          with the original <b>Mindhead</b> lineup (
+          <b>Seth Fikkert, Jeff Morrow, and Jono Orange</b>) along with{" "}
+          <b>Audrey Stout</b> and <b>Craig & Jackie Marais.&nbsp;</b>
+        </p>
+        <p>
+          This will be a night to remember.&nbsp;
+          <a
+            href="https://app.tickettailor.com/events/joedaymusic/2054888"
+            rel="nofollow"
+            target="_blank"
+          >
+            Get your tickets now!
+          </a>
+        </p>
+
+        <h2 className={styles.subHeadline}>
           Help make Joe's new album <em>Wilderness</em>
-        </h1>
+        </h2>
         <Link href="/support-wilderness" className={styles.headlineImg}>
           <Image
             priority
@@ -62,101 +118,6 @@ export default function Home() {
           <a href="/support-wilderness">Find out all about it here.</a>
         </p>
 
-        <h2 className={styles.subHeadline}>
-          Summer 2025 Tour with John Van Deusen
-        </h2>
-        <Link href="/shows" className={styles.headlineImg}>
-          <Image
-            priority
-            src="/images/tour2025.jpg"
-            className={styles.responsiveImage}
-            width="900"
-            height="506"
-            alt="Album cover for Joe Day's album Halflight"
-          />
-        </Link>
-        <p>
-          Joe and John Van Deusen hit the road for another northwest summer
-          house show tour. <a href="/shows">Get your tickets now!</a>
-        </p>
-        <h2 className={styles.subHeadline}>STREAMING NOW</h2>
-        <section className={styles.homeContent}>
-          <div className={styles.homePageColumn}>
-            <Image
-              priority
-              src="/images/joeday-halflight-final-digital-xs.jpg"
-              className={styles.responsiveImage}
-              width="852"
-              height="852"
-              alt="Album cover for Joe Day's album Halflight"
-            />
-            <h2 className="subHeading">Halflight</h2>
-            <p className={styles.description}>
-              Joe Day's 2021 album <em>Halflight</em> is a soundtrack for people
-              living in the dissonance of being ushered into a post-fact world
-              by the very people and institutions that told them truth matters.
-              These songs seek to let people know they’re not alone, they’re
-              seen. That it's possible to move towards wholeness and hope.
-            </p>
-            <h4 className={styles.listenLinksHeader}>Listen now</h4>
-            <ul className={styles.listenLinks}>
-              <li>
-                <a
-                  href="https://tidal.com/browse/album/184054030?u"
-                  target="_blank"
-                >
-                  Tidal
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://open.spotify.com/album/4s1HcvF8Dp5WLVnb1D2lFk?si=Cemb0J1-Qb-X0eTi3gW1uQ"
-                  target="_blank"
-                >
-                  Spotify
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://music.apple.com/us/album/halflight/1567350278"
-                  target="_blank"
-                >
-                  Apple Music
-                </a>
-              </li>
-              <li>
-                <a href="https://joeday.bandcamp.com" target="_blank">
-                  Bandcamp
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.homePageColumn}>
-            <Link href="/podcast" className={styles.headlineImg}>
-              <Image
-                priority
-                src="/images/podcast/CoverLarge.png"
-                className={styles.responsiveImage}
-                width="852"
-                height="852"
-                alt="Cover art for The Halflight Podcast - out January 10th"
-              />
-            </Link>
-            <h2 className="subHeading">The Halflight Podcast</h2>
-            <p className={styles.description}>
-              Each episode a different guest joins Joe to talk about one song
-              from the album. It’s the audio liner notes to <em>Halflight</em>,
-              and it’s way more than that. It’s a podcast about creativity,
-              loneliness, hope, losing faith, relationships, writer’s block,
-              finding faith, evangelicalism, certainty, doubt, church trauma,
-              healing, wonder, surprise, disappointment, prayer, longing; about
-              making the album <em>Halflight</em>.
-              <br />
-              <br />
-              Subscribe now wherever you listen to podcasts.
-            </p>
-          </div>
-        </section>
         <div
           className={styles.formModal}
           style={showModal ? {} : { display: "none" }}

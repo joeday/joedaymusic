@@ -9,17 +9,33 @@ const onSaleOptions = {
 export default [
   {
     id: 0,
-    date: new Date("10/24/2025 7:00:00 PM").toLocaleDateString(
+    date: new Date("04/10/2026 7:00:00 PM").toLocaleDateString(
       "en-US",
-      options
+      options,
     ),
-    location: "Woodinville, WA",
+    location: "Carnation, WA",
     otherBands: "",
     onSale: true,
     onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
       "en-US",
-      onSaleOptions
+      onSaleOptions,
     ),
-    ticketLink: "https://sidedooraccess.com/shows/VGPQHbahOwbwPBHQC5Ht",
+    ticketLink:
+      "https://millerscarnation.com/event/jackson-emmer-with-joe-day/",
+  },
+  {
+    id: 0,
+    date: new Date("08/07/2026 7:00:00 PM").toLocaleDateString(
+      "en-US",
+      options,
+    ),
+    location: "Mount Vernon, WA",
+    otherBands: "",
+    onSale: true,
+    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
+      "en-US",
+      onSaleOptions,
+    ),
+    ticketLink: "https://app.tickettailor.com/events/joedaymusic/2054888",
   },
 ];

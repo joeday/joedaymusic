@@ -47,24 +47,16 @@ export default function Layout({ children }) {
 
         <meta
           property="og:title"
-          content="Help make Joe Day's next album"
+          content="The Grace 15-year anniversary show - August 7th, 2026"
           key="ogtitle"
         />
         <meta
           property="og:description"
-          content="An album about our longing for connection and transcendence"
+          content="Returning to the place where it all started. Get your tickets today!"
           key="ogdescription"
         />
-        <meta
-          property="og:image"
-          content="/help_make_wilderness.jpg"
-          key="ogimage"
-        />
-        <meta
-          property="og:url"
-          content="https://joeday.music/support-wilderness"
-          key="ogurl"
-        />
+        <meta property="og:image" content="/graceFB.jpg" key="ogimage" />
+        <meta property="og:url" content="https://joeday.music/" key="ogurl" />
         <meta property="og:type" content="website" />
 
         <title>Joe Day Music</title>
