@@ -25,7 +25,7 @@ export default [
   },
   {
     id: 1,
-    date: new Date("04/10/2026 7:00:00 PM").toLocaleDateString(
+    date: new Date("05/09/2026 7:00:00 PM").toLocaleDateString(
       "en-US",
       options,
     ),
@@ -36,8 +36,7 @@ export default [
       "en-US",
       onSaleOptions,
     ),
-    ticketLink:
-      "https://millerscarnation.com/event/jackson-emmer-with-joe-day/",
+    ticketLink: "https://millerscarnation.com/event/fretland-with-joe-day/",
   },
   {
     id: 2,
