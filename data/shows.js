@@ -8,23 +8,6 @@ const onSaleOptions = {
 
 export default [
   {
-    id: 0,
-    date: new Date("03/27/2026 7:00:00 PM").toLocaleDateString(
-      "en-US",
-      options,
-    ),
-    location: "Federal Way, WA",
-    otherBands: "",
-    onSale: true,
-    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
-      "en-US",
-      onSaleOptions,
-    ),
-    ticketLink:
-      "https://www.eventbrite.com/e/porchlight-presents-joe-day-federal-way-wa-tickets-1984397257616",
-  },
-  {
-    id: 1,
     date: new Date("05/09/2026 7:00:00 PM").toLocaleDateString(
       "en-US",
       options,
@@ -39,7 +22,6 @@ export default [
     ticketLink: "https://millerscarnation.com/event/fretland-with-joe-day/",
   },
   {
-    id: 2,
     date: new Date("08/07/2026 7:00:00 PM").toLocaleDateString(
       "en-US",
       options,
@@ -54,7 +36,6 @@ export default [
     ticketLink: "https://app.tickettailor.com/events/joedaymusic/2054888",
   },
   {
-    id: 3,
     date: new Date("09/19/2026 7:00:00 PM").toLocaleDateString(
       "en-US",
       options,

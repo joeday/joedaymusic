@@ -51,11 +51,7 @@ export default function Shows(props) {
   return (
     <Layout home>
       <Head>
-        <meta
-          property="og:title"
-          content="Joe Day & the Coyotes Live"
-          key="ogtitle"
-        />
+        <meta property="og:title" content="Joe Day Live" key="ogtitle" />
         <meta
           property="og:description"
           content="Get tickets while they last"
@@ -63,7 +59,7 @@ export default function Shows(props) {
         />
         <meta
           property="og:image"
-          content="/images/tour2025.jpg"
+          content="/images/OGshows2026.jpg"
           key="ogimage"
         />
         <meta
@@ -79,8 +75,8 @@ export default function Shows(props) {
         <section className={styles.shows}>
           <ul className={styles.upcomingShowsList}>
             {props.shows.length != 0
-              ? props.shows.map((showInfo) => (
-                  <Show {...showInfo} key={showInfo.id} />
+              ? props.shows.map((showInfo, index) => (
+                  <Show {...showInfo} key={index} />
                 ))
               : "Nothing scheduled at the moment"}
           </ul>
