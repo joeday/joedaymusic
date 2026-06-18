@@ -8,26 +8,12 @@ const onSaleOptions = {
 
 export default [
   {
-    date: new Date("05/09/2026 7:00:00 PM").toLocaleDateString(
-      "en-US",
-      options,
-    ),
-    location: "Carnation, WA",
-    otherBands: "",
-    onSale: true,
-    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
-      "en-US",
-      onSaleOptions,
-    ),
-    ticketLink: "https://millerscarnation.com/event/fretland-with-joe-day/",
-  },
-  {
     date: new Date("08/07/2026 7:00:00 PM").toLocaleDateString(
       "en-US",
       options,
     ),
     location: "Mount Vernon, WA",
-    otherBands: "",
+    otherBands: "John Van Deusen",
     onSale: true,
     onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
       "en-US",
@@ -41,12 +27,13 @@ export default [
       options,
     ),
     location: "Conway, WA",
-    otherBands: "",
-    onSale: false,
+    otherBands: "Pretty Broken Things",
+    onSale: true,
     onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
       "en-US",
       onSaleOptions,
     ),
-    ticketLink: "",
+    ticketLink:
+      "https://arcadianpublichouse.com/events-1/ola/services/9-19-2026-joe-day-the-coyotes-pretty-broken-things-at-8-pm-arcadian-public-house",
   },
 ];
