@@ -8,20 +8,6 @@ const onSaleOptions = {
 
 export default [
   {
-    date: new Date("08/07/2026 7:00:00 PM").toLocaleDateString(
-      "en-US",
-      options,
-    ),
-    location: "Mount Vernon, WA",
-    otherBands: "John Van Deusen",
-    onSale: true,
-    onSaleStartDate: new Date("05/27/2022 10:00:00 AM").toLocaleDateString(
-      "en-US",
-      onSaleOptions,
-    ),
-    ticketLink: "https://app.tickettailor.com/events/joedaymusic/2054888",
-  },
-  {
     date: new Date("09/19/2026 7:00:00 PM").toLocaleDateString(
       "en-US",
       options,
